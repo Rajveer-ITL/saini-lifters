@@ -1,23 +1,23 @@
-<!-- <script setup>
-import TheHeader from "~/components/TheHeader.vue";
-import PreLoader from "~/components/PreLoader.vue";
-import { ref, onMounted } from "vue";
+<script setup>
+import TheHeader from "@/components/TheHeader.vue";
+// import PreLoader from "~/components/PreLoader.vue";
+// import { ref, onMounted } from "vue";
 
-const hasVisited = ref(false);
+// const hasVisited = ref(false);
 
-onMounted(() => {
-  hasVisited.value =
-    process.client && sessionStorage.getItem("homepage-visited");
-});
+// onMounted(() => {
+//   hasVisited.value =
+//     process.client && sessionStorage.getItem("homepage-visited");
+// });
 </script>
 
 <template>
   <div>
-    <PreLoader
+    <!-- <PreLoader
       v-if="
         !hasVisited && (useRoute().path === '/' || useRoute().path === '/home')
       "
-    />
+    /> -->
     <div>
       <TheHeader />
       <NuxtPage />
@@ -41,8 +41,4 @@ body.dark {
   background-color: #161719;
   color: #ffffff;
 }
-</style> -->
-
-<template>
-  <div class="bg-black h-lvh text-white">hello world</div>
-</template>
+</style>
