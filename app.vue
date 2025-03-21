@@ -34,11 +34,6 @@ html.dark {
   color-scheme: dark;
 }
 body {
-  background-color: white;
-  color: #234a76;
-}
-body.dark {
-  background-color: #161719;
-  color: #ffffff;
+  @apply bg-white dark:bg-[#161719] dark:text-[#ffffff] text-[#234a76];
 }
 </style>
