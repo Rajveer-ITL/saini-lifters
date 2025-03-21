@@ -18,4 +18,15 @@ export default defineNuxtConfig({
     "~": resolve(__dirname, "./"),
     "@": resolve(__dirname, "./"),
   },
+  app: {
+    head: {
+      title: "Saini Lifters - Best Crane Services", // Default title
+      meta: [
+        {
+          name: "description",
+          content: "Providing top-notch crane services for all industries.",
+        },
+      ],
+    },
+  },
 });
