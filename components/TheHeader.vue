@@ -3,6 +3,7 @@
   <div
     v-if="isMobile"
     class="fixed top-0 w-full flex items-center justify-center backdrop-filter backdrop-blur-lg header z-[100]"
+    :class="[isDark ? 'header-bg-black' : 'header-bg-white']"
   >
     <transition name="fade">
       <div class="py-4 flex items-center justify-center w-full">
@@ -10,7 +11,7 @@
           <Menu v-if="!isMenuOpen" class="h-6 w-6" @click="toggleMenu" />
         </div>
         <div
-          class="font-roslindale cursor-pointer w-fit flex items-center justify-center text-[28px]"
+          class="font-roslindale cursor-pointer w-fit flex items-center justify-center text-[28px] logo-text"
           @click="$router.push('/')"
         >
           Saini &nbsp;
@@ -110,18 +111,17 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount, watch } from "vue";
 import gsap from "gsap";
 import baseButton from "./base/BaseButton.vue";
-import { useDark, useToggle } from "@vueuse/core";
 import { Menu, X, Sun, Moon } from "lucide-vue-next";
 import {
   redirectToEmail,
   sendWhatsAppMessage,
 } from "../utils/commonFunctions.js";
+import { commonVariables } from "~/assets/variables/commonVariables";
 
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
+const isDark = ref(false);
 const isMenuOpen = ref(false);
 const selectedOption = ref(null);
 const screenWidth = ref(0); // Initialize to 0 to avoid undefined
@@ -133,28 +133,42 @@ const updateScreenSize = () => {
 };
 
 onMounted(() => {
-  updateScreenSize(); // Ensure correct initial state
+  updateScreenSize();
   window.addEventListener("resize", updateScreenSize);
-  runHeaderAnimation();
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    isDark.value = savedTheme === "dark";
+  } else {
+    isDark.value = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  document.documentElement.classList.toggle("dark", isDark.value);
+  setTimeout(runHeaderAnimation, 100);
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener("resize", updateScreenSize);
 });
 
+watch(
+  () => isDark.value,
+  (newValue) => {
+    commonVariables.value.darkMode = newValue;
+  }
+);
+
 const runHeaderAnimation = () => {
   gsap.to(".header", {
     opacity: 1,
-    duration: 1, // Fade in smoothly
-    delay: 0.2, // Add delay before appearing
+    duration: 1,
+    delay: 0.2,
   });
 
   gsap.from(".logo-text", {
-    y: -100, // Move from top
+    y: -100,
     opacity: 0,
     duration: 1.8,
-    delay: 0.8, // Ensures the header fades in first
-    ease: "elastic.out(1, 0.5)", // Elastic effect
+    delay: 0.8,
+    ease: "elastic.out(1, 0.5)",
   });
 };
 
@@ -176,7 +190,9 @@ const toggleMenu = () => {
 };
 
 const handleToggleDark = () => {
-  toggleDark();
+  isDark.value = !isDark.value;
+  localStorage.setItem("theme", isDark.value ? "dark" : "light");
+  document.documentElement.classList.toggle("dark", isDark.value);
 };
 
 const logoClick = () => {

@@ -16,10 +16,13 @@
       />
     </span>
     <slot name="buttonContent">
-      <span v-if="!isLoading && text">{{ text }}</span>
+      <span v-if="!isLoading && text">{{ text }} </span>
     </slot>
     <span v-if="iconPosition === 'right'" class="ml-2">
-      <component :is="isDark ? Sun : Moon" class="h-4 w-4 darkModeIcon" />
+      <component
+        :is="commonVariables.darkMode ? Sun : Moon"
+        class="h-4 w-4 darkModeIcon"
+      />
     </span>
   </button>
 </template>
@@ -28,9 +31,8 @@
 import { gsap } from "gsap";
 import { computed, watch } from "vue";
 import { Sun, Moon } from "lucide-vue-next";
-import { useDark } from "@vueuse/core";
+import { commonVariables } from "~/assets/variables/commonVariables";
 
-const isDark = useDark();
 const props = defineProps({
   isLoading: Boolean,
   text: String,
@@ -40,13 +42,16 @@ const props = defineProps({
   type: { type: String, default: "primary" },
 });
 
-watch(isDark, (newValue) => {
-  gsap.fromTo(
-    ".darkModeIcon",
-    { opacity: 0, y: newValue ? -70 : 70 },
-    { opacity: 1, y: 0, duration: 1, ease: "expo.out" }
-  );
-});
+watch(
+  () => commonVariables.value.darkMode,
+  (newValue) => {
+    gsap.fromTo(
+      ".darkModeIcon",
+      { opacity: 0, y: newValue ? -70 : 70 },
+      { opacity: 1, y: 0, duration: 1, ease: "expo.out" }
+    );
+  }
+);
 
 const buttonClasses = computed(() => {
   const sizeClasses = {
