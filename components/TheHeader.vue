@@ -154,6 +154,14 @@ onBeforeUnmount(() => {
   window.removeEventListener("resize", updateScreenSize);
 });
 
+watch(isMobile, (newValue) => {
+  if (newValue) {
+    setTimeout(() => {
+      gsap.to(".header", { opacity: 1, duration: 1 });
+    }, 300);
+  }
+});
+
 watch(
   () => isDark.value,
   (newValue) => {
