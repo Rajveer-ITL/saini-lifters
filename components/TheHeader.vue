@@ -112,7 +112,6 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount, watch } from "vue";
-import gsap from "gsap";
 import baseButton from "./base/BaseButton.vue";
 import { Menu, X, Sun, Moon } from "lucide-vue-next";
 import {
@@ -121,6 +120,7 @@ import {
 } from "../utils/commonFunctions.js";
 import { commonVariables } from "~/assets/variables/commonVariables";
 
+const { gsap } = await import("gsap");
 const hasVisited =
   import.meta.client && sessionStorage.getItem("homepage-visited");
 const isDark = ref(false);

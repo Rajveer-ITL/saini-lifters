@@ -11,9 +11,9 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-8">
         <!-- Company Info -->
         <div class="space-y-4 col-span-2">
-          <NuxtLink to="/" class="flex items-center space-x-2">
-            <span class="text-3xl font-bold">Saini Lifters</span>
-          </NuxtLink>
+          <!-- <NuxtLink to="/" class="flex items-center space-x-2"> -->
+          <span class="text-3xl font-bold">Saini Lifters</span>
+          <!-- </NuxtLink> -->
           <p
             :class="
               commonVariables.darkMode ? 'text-gray-400' : 'text-[#234a76]/80'
@@ -50,13 +50,13 @@
           <h3 class="text-lg font-semibold">Quick Links</h3>
           <ul class="space-y-2">
             <li v-for="link in quickLinks" :key="link.to">
-              <NuxtLink
+              <!-- <NuxtLink
                 :to="link.to"
                 class="transition-colors"
                 :class="linkClass"
               >
                 {{ link.label }}
-              </NuxtLink>
+              </NuxtLink> -->
             </li>
           </ul>
         </div>

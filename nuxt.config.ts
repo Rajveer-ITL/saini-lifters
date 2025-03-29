@@ -1,5 +1,6 @@
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
+import viteCompression from "vite-plugin-compression";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -15,10 +16,20 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  components: true,
+  vite: {
+    plugins: [viteCompression({ algorithm: "brotliCompress" })],
+  },
 
   alias: {
     "~": resolve(__dirname, "./"),
     "@": resolve(__dirname, "./"),
+  },
+
+  nitro: {
+    routeRules: {
+      "/": { cache: { swr: true } },
+    },
   },
 
   app: {
@@ -34,14 +45,28 @@ export default defineNuxtConfig({
         {
           rel: "preload",
           as: "video",
-          href: "/public/video/headerCardMainVideo.mp4",
+          href: "/video/headerCardMainVideo.mp4",
           type: "video/mp4",
         },
         {
           rel: "preload",
           as: "video",
-          href: "/public/video/cranesWorking.mp4",
+          href: "/video/cranesWorking.mp4",
           type: "video/mp4",
+        },
+        {
+          rel: "preload",
+          as: "font",
+          href: "/fonts/Roslindale/Roslindale_Desktop/Roslindale-DeckNarrowBold-Testing.otf",
+          type: "font/otf",
+          crossorigin: "anonymous",
+        },
+        {
+          rel: "preload",
+          as: "font",
+          href: "/fonts/mint-grotesk-font-family-1721994350-0/MintGroteskTrial-RegularDisplay-BF64336b1cd46bb.otf",
+          type: "font/otf",
+          crossorigin: "anonymous",
         },
       ],
     },
