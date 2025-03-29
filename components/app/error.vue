@@ -1,5 +1,6 @@
 <script setup>
 import { Home, Wrench } from "lucide-vue-next";
+
 defineProps({
   error: Object,
 });
@@ -7,19 +8,16 @@ defineProps({
 
 <template>
   <div
-    v-if="error.statusCode === 404"
+    v-if="error?.statusCode === 404"
     class="min-h-screen w-full flex flex-col items-center justify-center bg-background text-foreground p-4"
   >
-    <!-- Main Content -->
     <div class="text-center space-y-8 max-w-2xl px-4">
-      <!-- 404 Number -->
       <div
         class="md:text-[12rem] text-[8rem] font-bold leading-none tracking-tight text-[#FF4057] select-none font-roslindale"
       >
         404
       </div>
 
-      <!-- Text Content -->
       <div class="space-y-4">
         <h1 class="text-4xl font-bold tracking-tight">Page Not Found</h1>
         <p class="text-xl max-w-lg mx-auto">
@@ -28,7 +26,6 @@ defineProps({
         </p>
       </div>
 
-      <!-- Buttons -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
         <NuxtLink
           to="/"
@@ -47,7 +44,6 @@ defineProps({
       </div>
     </div>
 
-    <!-- Bottom Accent Line -->
     <div
       class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#FF4057] to-transparent"
     />
