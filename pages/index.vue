@@ -8,7 +8,7 @@
     </client-only>
 
     <LazyAboutSection />
-    <!-- <LazyBaseCarousel /> -->
+    <LazyBaseCarousel />
     <!-- <LazyBaseLine /> -->
     <!-- <LazyTheFooter /> -->
   </div>
@@ -24,9 +24,9 @@ const LazyHeaderCard = defineAsyncComponent(() =>
 const LazyAboutSection = defineAsyncComponent(() =>
   import("~/components/pageSection/aboutSection.vue")
 );
-// const LazyBaseCarousel = defineAsyncComponent(() =>
-//   import("~/components/base/baseCarousel.vue")
-// );
+const LazyBaseCarousel = defineAsyncComponent(() =>
+  import("~/components/base/baseCarousel.vue")
+);
 // const LazyBaseLine = defineAsyncComponent(() =>
 //   import("~/components/BaseLine.vue")
 // );

@@ -71,7 +71,7 @@
 </template>
 
 <script setup>
-import { onMounted, defineProps, defineAsyncComponent } from "vue";
+import { onMounted, defineAsyncComponent } from "vue";
 import { ChevronDown } from "lucide-vue-next";
 
 // Lazy-load dependencies for better performance

@@ -8,16 +8,19 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: false },
   css: ["~/assets/css/tailwind.css"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   alias: {
     "~": resolve(__dirname, "./"),
     "@": resolve(__dirname, "./"),
   },
+
   app: {
     head: {
       title: "Saini Lifters - Best Crane Services", // Default title
@@ -29,4 +32,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  modules: ["@nuxt/image"],
 });
