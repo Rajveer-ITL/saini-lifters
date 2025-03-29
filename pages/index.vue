@@ -9,8 +9,8 @@
 
     <LazyAboutSection />
     <LazyBaseCarousel />
-    <!-- <LazyBaseLine /> -->
-    <!-- <LazyTheFooter /> -->
+    <LazyBaseLine />
+    <LazyTheFooter />
   </div>
 </template>
 
@@ -27,12 +27,12 @@ const LazyAboutSection = defineAsyncComponent(() =>
 const LazyBaseCarousel = defineAsyncComponent(() =>
   import("~/components/base/baseCarousel.vue")
 );
-// const LazyBaseLine = defineAsyncComponent(() =>
-//   import("~/components/BaseLine.vue")
-// );
-// const LazyTheFooter = defineAsyncComponent(() =>
-//   import("~/components/TheFooter.vue")
-// );
+const LazyBaseLine = defineAsyncComponent(() =>
+  import("~/components/base/baseLine.vue")
+);
+const LazyTheFooter = defineAsyncComponent(() =>
+  import("~/components/TheFooter.vue")
+);
 
 // Homepage Title
 const homePageTitle = ref([
