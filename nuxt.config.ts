@@ -30,6 +30,20 @@ export default defineNuxtConfig({
           content: "Providing top-notch crane services for all industries.",
         },
       ],
+      link: [
+        {
+          rel: "preload",
+          as: "video",
+          href: "/public/video/headerCardMainVideo.mp4",
+          type: "video/mp4",
+        },
+        {
+          rel: "preload",
+          as: "video",
+          href: "/public/video/cranesWorking.mp4",
+          type: "video/mp4",
+        },
+      ],
     },
   },
 

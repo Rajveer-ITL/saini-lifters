@@ -72,7 +72,7 @@ const cranes = useState("cranes", () => [
     jib: { value: "21m", label: "JIB" },
     luffing: { value: "63m", label: "Luffing" },
     totalBoom: { value: "162m", label: "Total Boom" },
-    image: "crane-1.png",
+    image: "crane-1.webp",
   },
   {
     name: "XCMG QAY300",
@@ -81,7 +81,7 @@ const cranes = useState("cranes", () => [
     jib: { value: "86m", label: "JIB" },
     luffing: { value: "67m", label: "Luffing" },
     totalBoom: { value: "270m", label: "Total Boom" },
-    image: "crane-2.png",
+    image: "crane-2.webp",
   },
   {
     name: "XCMG QAY200",
@@ -90,7 +90,7 @@ const cranes = useState("cranes", () => [
     jib: { value: "56m", label: "JIB" },
     luffing: { value: "34m", label: "Luffing" },
     totalBoom: { value: "867m", label: "Total Boom" },
-    image: "crane-4.png",
+    image: "crane-4.webp",
   },
   {
     name: "GROVE GMK90",
@@ -99,7 +99,7 @@ const cranes = useState("cranes", () => [
     jib: { value: "24m", label: "JIB" },
     luffing: { value: "48m", label: "Luffing" },
     totalBoom: { value: "130m", label: "Total Boom" },
-    image: "crane-5.png",
+    image: "crane-5.webp",
   },
 ]);
 

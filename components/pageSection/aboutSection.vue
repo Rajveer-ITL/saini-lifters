@@ -12,7 +12,7 @@
           class="w-full flex justify-center mb-5 md:mb-0 md:w-auto md:mr-[16px] about-title-img-1"
         >
           <img
-            src="../../assets/images/strength.jpg"
+            src="../../assets/images/strength.webp"
             alt="img1"
             loading="lazy"
             class="rounded-[12px] w-[140px] md:w-[110px]"
@@ -39,7 +39,7 @@
           class="w-full mt-5 md:mt-0 md:w-auto md:ml-[20px] about-title-img-3"
         >
           <img
-            src="../../assets/images/rise.jpg"
+            src="../../assets/images/rise.webp"
             alt="img3"
             loading="lazy"
             class="rounded-[12px] w-full md:w-[120px]"
