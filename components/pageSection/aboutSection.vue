@@ -16,6 +16,8 @@
             alt="img1"
             loading="lazy"
             class="rounded-[12px] w-[140px] md:w-[110px]"
+            width="110"
+            height="165"
           />
         </div>
 
@@ -44,6 +46,8 @@
             alt="img3"
             loading="lazy"
             class="rounded-[12px] w-full md:w-[120px]"
+            width="120"
+            height="81"
           />
         </div>
       </div>
