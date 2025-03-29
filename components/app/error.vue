@@ -35,7 +35,7 @@ defineProps({
           Back to Home
         </NuxtLink>
         <NuxtLink
-          to="/service"
+          to="/services"
           class="min-w-[200px] border border-[#FF4057] text-[#FF4057] px-6 py-3 rounded-lg flex items-center justify-center gap-2"
         >
           <Wrench class="h-5 w-5" />

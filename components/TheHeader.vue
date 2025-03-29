@@ -71,7 +71,7 @@
       <baseButton
         text="SERVICES"
         :isLoading="false"
-        @click="$router.push('/service')"
+        @click="$router.push('/services')"
       />
       <baseButton
         text="WHATSAPP"
@@ -217,7 +217,7 @@ const logoClick = () => {
 
 const menuOptions = [
   { name: "ABOUT", route: "/about-us" },
-  { name: "SERVICES", route: "/service" },
+  { name: "SERVICES", route: "/services" },
   { name: "WHATSAPP", link: "sendWhatsAppMessage" },
   { name: "CONTACT", route: "/contact-us" },
   { name: "EMAIL", link: "redirectToEmail" },
