@@ -121,6 +121,8 @@ import {
 } from "../utils/commonFunctions.js";
 import { commonVariables } from "~/assets/variables/commonVariables";
 
+const hasVisited =
+  import.meta.client && sessionStorage.getItem("homepage-visited");
 const isDark = ref(false);
 const isMenuOpen = ref(false);
 const selectedOption = ref(null);
@@ -136,13 +138,16 @@ onMounted(() => {
   updateScreenSize();
   window.addEventListener("resize", updateScreenSize);
   const savedTheme = localStorage.getItem("theme");
-  if (savedTheme) {
-    isDark.value = savedTheme === "dark";
-  } else {
-    isDark.value = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  }
+  isDark.value = savedTheme
+    ? savedTheme === "dark"
+    : window.matchMedia("(prefers-color-scheme: dark)").matches;
   document.documentElement.classList.toggle("dark", isDark.value);
-  setTimeout(runHeaderAnimation, 100);
+
+  if (hasVisited) {
+    gsap.to(".header", { opacity: 1, duration: 1 });
+  } else {
+    setTimeout(runHeaderAnimation, 100);
+  }
 });
 
 onBeforeUnmount(() => {
@@ -167,7 +172,7 @@ const runHeaderAnimation = () => {
     y: -100,
     opacity: 0,
     duration: 1.8,
-    delay: 0.8,
+    delay: 2.2,
     ease: "elastic.out(1, 0.5)",
   });
 };
@@ -177,11 +182,13 @@ const selectOption = (option) => {
     selectedOption.value = option.name;
     navigateTo(option.route);
     isMenuOpen.value = false;
+    return;
+  }
+  selectedOption.value = option.name;
+  if (option.link === "sendWhatsAppMessage") {
+    sendWhatsAppMessage();
   } else {
-    selectedOption.value = option.name;
-    option.link === "sendWhatsAppMessage"
-      ? sendWhatsAppMessage()
-      : redirectToEmail();
+    redirectToEmail();
   }
 };
 
@@ -214,7 +221,7 @@ const menuOptions = [
   opacity: 0;
 }
 .header-bg-white {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.515);
 }
 .header-bg-black {
   background-color: rgb(22 23 25 / 50%);

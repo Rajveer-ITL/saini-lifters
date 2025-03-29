@@ -73,7 +73,9 @@
 <script setup>
 import { onMounted, defineAsyncComponent } from "vue";
 import { ChevronDown } from "lucide-vue-next";
+import { useRouter } from "nuxt/app";
 
+const router = useRouter();
 // Lazy-load dependencies for better performance
 const TextGenerate = defineAsyncComponent(() =>
   import("../inspiraUi/textGenerate.vue")
@@ -97,53 +99,58 @@ const scrollToElement = () => {
 
 // Client-side animations (Nuxt 3 best practice)
 onMounted(async () => {
-  if (import.meta.client) {
-    const gsap = (await import("gsap")).default;
+  const hasVisited =
+    import.meta.client && sessionStorage.getItem("homepage-visited");
+  if (router.currentRoute.value.path === "/" && !hasVisited) {
+    sessionStorage.setItem("homepage-visited", "true");
+    if (import.meta.client) {
+      const gsap = (await import("gsap")).default;
 
-    gsap.from(".chevron-down", {
-      y: 30,
-      duration: 1,
-      yoyo: true,
-      repeat: -1,
-    });
+      gsap.from(".chevron-down", {
+        y: 30,
+        duration: 1,
+        yoyo: true,
+        repeat: -1,
+      });
 
-    const tl = gsap.timeline();
-    tl.from(".header-card", {
-      opacity: 0,
-      duration: 2.5,
-      delay: 2,
-      y: 600,
-      scale: 0,
-      ease: "circ.out",
-    }).to(".header-card", {
-      opacity: 1,
-      duration: 2,
-      y: 0,
-      scale: 1,
-      ease: "circ.out",
-    });
-
-    tl.from(
-      ".header-card-title",
-      {
+      const tl = gsap.timeline();
+      tl.from(".header-card", {
         opacity: 0,
-        duration: 1,
-        y: 100,
+        duration: 2.5,
+        delay: 2,
+        y: 600,
+        scale: 0,
         ease: "circ.out",
-        stagger: 0.3,
-      },
-      "-=2.4"
-    ).to(
-      ".header-card-title",
-      {
+      }).to(".header-card", {
         opacity: 1,
-        duration: 1,
+        duration: 2,
         y: 0,
+        scale: 1,
         ease: "circ.out",
-        stagger: 0.3,
-      },
-      "-=2.4"
-    );
+      });
+
+      tl.from(
+        ".header-card-title",
+        {
+          opacity: 0,
+          duration: 1,
+          y: 100,
+          ease: "circ.out",
+          stagger: 0.3,
+        },
+        "-=2.4"
+      ).to(
+        ".header-card-title",
+        {
+          opacity: 1,
+          duration: 1,
+          y: 0,
+          ease: "circ.out",
+          stagger: 0.3,
+        },
+        "-=2.4"
+      );
+    }
   }
 });
 </script>

@@ -1,23 +1,23 @@
 <script setup>
 import TheHeader from "@/components/TheHeader.vue";
-// import PreLoader from "~/components/PreLoader.vue";
-// import { ref, onMounted } from "vue";
+import PreLoader from "~/components/PreLoader.vue";
+import { ref, onMounted } from "vue";
+import { useRoute } from "#imports"; // Using Nuxt's built-in useRoute
 
-// const hasVisited = ref(false);
+const hasVisited = ref(false);
+const route = useRoute();
 
-// onMounted(() => {
-//   hasVisited.value =
-//     process.client && sessionStorage.getItem("homepage-visited");
-// });
+onMounted(() => {
+  hasVisited.value =
+    import.meta.client && sessionStorage.getItem("homepage-visited");
+});
 </script>
 
 <template>
   <div>
-    <!-- <PreLoader
-      v-if="
-        !hasVisited && (useRoute().path === '/' || useRoute().path === '/home')
-      "
-    /> -->
+    <PreLoader
+      v-if="!hasVisited && (route.path === '/' || route.path === '/home')"
+    />
     <div>
       <TheHeader />
       <NuxtPage />
