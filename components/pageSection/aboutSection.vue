@@ -22,12 +22,9 @@
         </div>
 
         <!-- Animated Text -->
-        <span class="text-[#FF4057]">&nbsp;&nbsp;Strength&nbsp;</span>
-        <span>in Every &nbsp;</span>
-        <span>Lift, &nbsp;</span>
-        <span class="text-[#FF4057]">Reliability &nbsp;</span>
-        <span>in Every&nbsp;</span>
-        <span class="text-[#FF4057]">Rise</span>
+        <span class="text-[#FF4057] mr-3">Strength</span> in Every Lift,
+        <span class="text-[#FF4057] mr-3">Reliability</span> in Every
+        <span class="text-[#FF4057] ml-3">Rise</span>
 
         <span
           class="three-dots text-[#FF4057]"
@@ -53,16 +50,16 @@
       </div>
 
       <!-- Paragraph -->
-      <div class="mb-[48px] flex items-center justify-center">
-        <p class="text-center font-mint w-11/12">
-          Saini Lifters began its journey in 2001 as a transport business. Over
-          the years, we evolved into the container crane industry, proudly
-          owning a reach stacker and a side shifter. With continuous growth and
-          dedication, we have expanded into the realm of all-terrain cranes,
-          specializing in bridge construction and factory operations. With the
-          support and blessings of God, Saini Lifters continues to reach new
-          heights in heavy lifting and industrial projects.
-        </p>
+      <div
+        class="mb-[48px] flex items-center justify-center text-center font-mint"
+      >
+        Saini Lifters began its journey in 2001 as a transport business. Over
+        the years, we evolved into the container crane industry, proudly owning
+        a reach stacker and a side shifter. With continuous growth and
+        dedication, we have expanded into the realm of all-terrain cranes,
+        specializing in bridge construction and factory operations. With the
+        support and blessings of God, Saini Lifters continues to reach new
+        heights in heavy lifting and industrial projects.
       </div>
 
       <!-- Button -->
@@ -80,18 +77,23 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { navigateTo } from "nuxt/app";
-import gsap from "gsap";
 
 const dots = ref([".", ".", ".", " "]);
 const img1Ref = ref(null);
 const img3Ref = ref(null);
 
+const loadGSAP = async () => {
+  const { gsap } = await import("gsap");
+  return gsap;
+};
+
 const navigateToPage = (path) => {
   navigateTo(path);
 };
 
-onMounted(() => {
+onMounted(async () => {
   if (import.meta.client) {
+    const gsap = await loadGSAP();
     const ctx = gsap.context(() => {
       // Wave Animation for Dots
       gsap
