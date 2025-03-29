@@ -139,7 +139,7 @@ const currentYear = new Date().getFullYear();
 const quickLinks = [
   { to: "/about", label: "About Us" },
   { to: "/services", label: "Services" },
-  { to: "/work", label: "Our Work" },
+  // { to: "/work", label: "Our Work" },
   { to: "/contact-us", label: "Contact" },
 ];
 const linkClass = computed(() =>
