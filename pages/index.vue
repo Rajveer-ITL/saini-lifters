@@ -1,11 +1,13 @@
 <template>
   <div>
-    <client-only>
-      <LazyHeaderCard
-        :title="homePageTitle"
-        videoUrl="/video/cranesWorking.mp4"
-      />
-    </client-only>
+    <div style="min-height: 100vh">
+      <client-only>
+        <LazyHeaderCard
+          :title="homePageTitle"
+          videoUrl="/video/cranesWorking.mp4"
+        />
+      </client-only>
+    </div>
 
     <LazyAboutSection />
     <LazyBaseCarousel />

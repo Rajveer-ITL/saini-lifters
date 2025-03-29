@@ -15,9 +15,11 @@ onMounted(() => {
 
 <template>
   <div>
-    <PreLoader
-      v-if="!hasVisited && (route.path === '/' || route.path === '/home')"
-    />
+    <ClientOnly>
+      <PreLoader
+        v-if="!hasVisited && (route.path === '/' || route.path === '/home')"
+      />
+    </ClientOnly>
     <div>
       <TheHeader />
       <NuxtPage />
