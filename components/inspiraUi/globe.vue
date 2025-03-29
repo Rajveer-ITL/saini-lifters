@@ -1,7 +1,7 @@
 <template>
   <div
     :class="
-      clsx(' inset-0 mx-auto aspect-[1/1] w-full max-w-[350px]', $props.class)
+      clsx(' inset-0 mx-auto aspect-[1/1] w-full max-w-[400px]', $props.class)
     "
   >
     <canvas
