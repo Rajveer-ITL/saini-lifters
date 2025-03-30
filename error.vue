@@ -1,8 +1,23 @@
 <script setup>
 import { Home, Wrench } from "lucide-vue-next";
+import { useSeoMeta } from "#imports";
 
 defineProps({
   error: Object,
+});
+
+// Add SEO metadata
+useSeoMeta({
+  title: "Page Not Found - Saini Lifters",
+  description:
+    "Oops! The page you are looking for is missing. Check out our services or return to the homepage.",
+  ogTitle: "404 - Page Not Found | Saini Lifters",
+  ogDescription:
+    "We couldn't find the page you were looking for. But don't worry, we offer the best crane services. Explore now!",
+  ogImage:
+    "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp", // Update with an actual image
+  ogType: "website",
+  twitterCard: "summary_large_image",
 });
 </script>
 
@@ -49,10 +64,13 @@ defineProps({
     />
   </div>
 
-  <div v-else>
-    <h1 class="text-center text-2xl font-bold">
+  <div v-else class="text-center py-10">
+    <h1 class="text-2xl font-bold">
       An error occurred: {{ error.statusCode }}
     </h1>
-    <NuxtLink to="/" class="text-blue-500">Go back to home</NuxtLink>
+    <p class="text-lg text-gray-600">Something went wrong. Please try again.</p>
+    <NuxtLink to="/" class="mt-4 text-blue-500 font-semibold">
+      Go back to home
+    </NuxtLink>
   </div>
 </template>
