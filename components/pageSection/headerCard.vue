@@ -33,7 +33,7 @@
           </div>
         </div>
         <div
-          v-if="subTitle"
+          v-if="props.subTitle"
           class="text-white mt-4 text-2xl md:w-[60%] text-center"
         >
           <TextGenerate :words="subTitle" />
@@ -42,7 +42,7 @@
 
       <div
         v-if="isDownIconHash"
-        class="flex items-center justify-center chevron-down"
+        class="absolute bottom-[-100px] left-1/2 chevron-down"
       >
         <ChevronDown
           class="h-10 w-10 cursor-pointer text-red-500"
@@ -88,7 +88,7 @@ import { useRouter } from "nuxt/app";
 const router = useRouter();
 // Lazy-load dependencies for better performance
 const TextGenerate = defineAsyncComponent(() =>
-  import("../inspiraUi/textGenerate.vue")
+  import("@/components/inspiraUi/textGenerate.vue")
 );
 
 // Props
@@ -115,13 +115,6 @@ onMounted(async () => {
     sessionStorage.setItem("homepage-visited", "true");
     if (import.meta.client) {
       const gsap = (await import("gsap")).default;
-
-      gsap.from(".chevron-down", {
-        y: 30,
-        duration: 1,
-        yoyo: true,
-        repeat: -1,
-      });
 
       const tl = gsap.timeline();
       tl.from(".header-card", {

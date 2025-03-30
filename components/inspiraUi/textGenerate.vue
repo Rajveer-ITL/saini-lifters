@@ -1,22 +1,27 @@
 <template>
-  <div class="leading-snug tracking-wide" :class="props.class">
-    <client-only>
-      <div ref="scope">
-        <span
-          v-for="(word, idx) in wordsArray"
-          :key="word + idx"
-          class="inline-block"
-          :style="spanStyle"
-        >
-          {{ word }}&nbsp;
-        </span>
-      </div>
-    </client-only>
+  <div :class="cn('leading-snug tracking-wide', props.class)">
+    <div ref="scope">
+      <span
+        v-for="(word, idx) in wordsArray"
+        :key="word + idx"
+        class="inline-block"
+        :style="spanStyle"
+      >
+        {{ word }}&nbsp;
+      </span>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
+import {
+  computed,
+  type HTMLAttributes,
+  onMounted,
+  ref,
+  withDefaults,
+} from "vue";
+import { clsx as cn } from "clsx";
 
 const props = withDefaults(
   defineProps<{
@@ -24,12 +29,12 @@ const props = withDefaults(
     filter?: boolean;
     duration?: number;
     delay?: number;
-    class?: string;
+    class: HTMLAttributes["class"];
   }>(),
   { duration: 1, delay: 5, filter: true }
 );
 
-const scope = ref<HTMLElement | null>(null);
+const scope = ref(null);
 const wordsArray = computed(() => props.words.split(" "));
 
 const spanStyle = computed(() => ({
@@ -39,11 +44,11 @@ const spanStyle = computed(() => ({
 }));
 
 onMounted(() => {
-  if (process.client && scope.value) {
-    const spans = scope.value.querySelectorAll("span");
+  if (scope.value) {
+    const spans = (scope.value as HTMLElement).querySelectorAll("span");
 
     setTimeout(() => {
-      spans.forEach((span, index) => {
+      spans.forEach((span: HTMLElement, index: number) => {
         setTimeout(() => {
           span.style.opacity = "1";
           span.style.filter = props.filter ? "blur(0px)" : "none";
