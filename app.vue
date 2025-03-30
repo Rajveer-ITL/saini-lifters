@@ -15,6 +15,7 @@ useHead({
     lang: "en",
   },
 });
+
 const hasVisited = ref(false);
 const route = useRoute();
 
@@ -30,6 +31,17 @@ onMounted(() => {
       <PreLoader
         v-if="!hasVisited && (route.path === '/' || route.path === '/home')"
       />
+    </ClientOnly>
+    <ClientOnly>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-KPZBMV9J"
+          height="0"
+          width="0"
+          style="display: none; visibility: hidden"
+          title="Google Tag Manager"
+        ></iframe>
+      </noscript>
     </ClientOnly>
     <div>
       <TheHeader />
