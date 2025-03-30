@@ -38,6 +38,9 @@ export default defineNuxtConfig({
 
     head: {
       title: "Saini Lifters - Best Crane Services", // Default title
+      htmlAttrs: {
+        lang: "en", // Change as needed
+      },
       meta: [
         {
           name: "description",

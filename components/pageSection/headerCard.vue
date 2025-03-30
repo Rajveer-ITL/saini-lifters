@@ -62,6 +62,16 @@
         class="video-player object-cover md:rounded-[34px]"
       >
         <source :src="videoUrl" type="video/mp4" />
+
+        <!-- Captions (Subtitles) -->
+        <track
+          src="/captions/captions.vtt"
+          kind="captions"
+          srclang="en"
+          label="English"
+          default
+        />
+
         Your browser does not support the video tag.
       </video>
 

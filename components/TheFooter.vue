@@ -26,19 +26,24 @@
             <a
               href="https://facebook.com"
               class="transition-colors hover:text-red-500"
+              aria-label="Visit our Facebook page"
             >
               <FacebookIcon class="h-6 w-6" />
             </a>
+
             <a
               href="https://twitter.com"
               class="transition-colors hover:text-red-500"
+              aria-label="Visit our Twitter profile"
             >
               <TwitterIcon class="h-6 w-6" />
             </a>
+
             <a
               href="#"
               class="transition-colors hover:text-red-500"
               @click.prevent="sendWhatsAppMessage"
+              aria-label="Send us a message on WhatsApp"
             >
               <MessageCircleMore class="h-6 w-6" />
             </a>
@@ -107,6 +112,7 @@
               allowfullscreen
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              title="Google Map location of Saini Lifters Crane Service"
             ></iframe>
           </div>
         </div>

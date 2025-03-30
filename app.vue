@@ -3,7 +3,18 @@ import TheHeader from "@/components/TheHeader.vue";
 import PreLoader from "~/components/PreLoader.vue";
 import { ref, onMounted } from "vue";
 import { useRoute } from "#imports"; // Using Nuxt's built-in useRoute
+import { useSeoMeta } from "#imports";
 
+useSeoMeta({
+  title: "Saini Lifters - Best Crane Services",
+  description: "Providing top-notch crane services for all industries.",
+  ogLocale: "en_US", // Open Graph locale
+});
+useHead({
+  htmlAttrs: {
+    lang: "en",
+  },
+});
 const hasVisited = ref(false);
 const route = useRoute();
 
