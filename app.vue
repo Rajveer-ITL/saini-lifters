@@ -2,14 +2,8 @@
 import TheHeader from "@/components/TheHeader.vue";
 import PreLoader from "~/components/PreLoader.vue";
 import { ref, onMounted } from "vue";
-import { useRoute } from "#imports"; // Using Nuxt's built-in useRoute
-import { useSeoMeta } from "#imports";
+import { useRoute, useRuntimeConfig, useHead } from "#imports";
 
-useSeoMeta({
-  title: "Saini Lifters - Best Crane Services",
-  description: "Providing top-notch crane services for all industries.",
-  ogLocale: "en_US", // Open Graph locale
-});
 useHead({
   htmlAttrs: {
     lang: "en",
@@ -21,14 +15,14 @@ const route = useRoute();
 const config = useRuntimeConfig();
 
 onMounted(() => {
-  hasVisited.value =
-    import.meta.client && sessionStorage.getItem("homepage-visited");
+  hasVisited.value = sessionStorage.getItem("homepage-visited") ? true : false;
+
   if (import.meta.client) {
     (function (c, l, a, r, i, t, y) {
       c[a] =
         c[a] ||
-        function () {
-          (c[a].q = c[a].q || []).push(arguments);
+        function (...args) {
+          (c[a].q = c[a].q || []).push(args);
         };
       t = l.createElement(r);
       t.async = 1;
@@ -38,15 +32,6 @@ onMounted(() => {
     })(window, document, "clarity", "script", config.public.clarityId);
   }
 });
-
-watch(
-  () => route.fullPath,
-  () => {
-    if (import.meta.client && window.clarity) {
-      window.clarity("trackPageView");
-    }
-  }
-);
 </script>
 
 <template>
