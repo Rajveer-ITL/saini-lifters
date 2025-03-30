@@ -88,7 +88,9 @@ export default defineNuxtConfig({
       script: [
         {
           type: "text/javascript",
-          src: `https://www.googletagmanager.com/gtag/js?id=${process.env.NUXT_PUBLIC_GOOGLE_ANALYTICS_ID}`,
+          src: `https://www.googletagmanager.com/gtag/js?id=${
+            useRuntimeConfig().public.googleAnalyticsId
+          }`,
           async: true,
           "data-partytown": true, // ✅ Offloads to Partytown
         },
@@ -98,7 +100,7 @@ export default defineNuxtConfig({
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
-            gtag('config', '${process.env.NUXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
+          gtag('config', '${useRuntimeConfig().public.googleAnalyticsId}');
           `,
           "data-partytown": true, // ✅ Ensures Partytown processes this script
         },
@@ -113,7 +115,9 @@ export default defineNuxtConfig({
               j.async = true;
               j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
               f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', '${process.env.NUXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}');
+            })(window, document, 'script', 'dataLayer', '${
+              useRuntimeConfig().public.googleTagManagerId
+            }');
           `,
           "data-partytown": true, // ✅ Uses Partytown correctly
         },
