@@ -55,7 +55,6 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, defineAsyncComponent } from "vue";
-// import { useHead } from "nuxt/app";
 import EmblaCarousel from "embla-carousel";
 import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-vue-next";
 import { useState } from "#imports";
@@ -145,17 +144,6 @@ onUnmounted(() => {
   stopAutoplay();
   emblaApi.value?.destroy();
 });
-
-// useHead({
-//   title: "Crane Showcase | Saini Lifters",
-//   meta: [
-//     {
-//       name: "description",
-//       content:
-//         "Explore our range of cranes, including XCMG and GROVE models, ideal for heavy lifting and industrial projects.",
-//     },
-//   ],
-// });
 </script>
 
 <style scoped>

@@ -138,6 +138,7 @@ import { reactive, ref } from "vue";
 import { PhoneCall, Mail, MapPin, Loader } from "lucide-vue-next";
 import Globe from "@/components/inspiraUi/globe.vue";
 import BorderBeam from "@/components/inspiraUi/borderBeam.vue";
+import { useHead } from "#imports";
 
 const form = reactive({
   firstName: "",
@@ -153,4 +154,63 @@ const onSubmit = async () => {
   await new Promise((resolve) => setTimeout(resolve, 2000));
   isLoading.value = false;
 };
+
+useHead({
+  title:
+    "Contact Saini Lifters | Get a Quote for Crane Rental & Lifting Services",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Get in touch with Saini Lifters for professional crane rental, heavy lifting solutions, and equipment services. Contact us today for inquiries and customized lifting solutions.",
+    },
+
+    // Open Graph / Facebook
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://www.sainilifters.com/contact-us" },
+    {
+      property: "og:title",
+      content: "Contact Saini Lifters | Crane Rental & Lifting Solutions",
+    },
+    {
+      property: "og:description",
+      content:
+        "Need a reliable crane rental service? Contact Saini Lifters for expert lifting solutions, customized services, and nationwide coverage. Get a free consultation today!",
+    },
+    {
+      property: "og:image",
+      content:
+        "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/contact-page-6BHvaWdqcIDkfsWHceg0G6MLmwqa6U.webp",
+    },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
+
+    // Twitter
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:url", content: "https://www.sainilifters.com/contact-us" },
+    {
+      name: "twitter:title",
+      content: "Contact Saini Lifters | Crane Rental & Lifting Solutions",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Reach out to Saini Lifters for professional crane rental and lifting solutions. Get a quote for your project and speak with our expert team today.",
+    },
+    {
+      name: "twitter:image",
+      content:
+        "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/contact-page-6BHvaWdqcIDkfsWHceg0G6MLmwqa6U.webp",
+    },
+
+    // Additional SEO Boosters
+    {
+      name: "keywords",
+      content:
+        "contact crane rental, crane rental inquiry, heavy lifting services, lifting solutions contact, Saini Lifters contact",
+    },
+    { name: "robots", content: "index, follow" },
+    { name: "author", content: "Saini Lifters" },
+  ],
+});
 </script>

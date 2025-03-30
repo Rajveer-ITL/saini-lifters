@@ -65,22 +65,61 @@ import DotPattern from "@/components/inspiraUi/dottedBackground.vue";
 import ServiceCard from "@/components/base/serviceCard.vue";
 
 useHead({
-  title: "Professional Lifting Solutions - Crane & Equipment Rentals",
+  title:
+    "Crane Rental Services | Professional Lifting Solutions - Saini Lifters",
   meta: [
     {
       name: "description",
       content:
-        "Rent high-quality lifting equipment, cranes, and forklifts with professional service and nationwide coverage.",
+        "Saini Lifters offers professional crane rental services with a wide range of lifting solutions, including mobile cranes, tower cranes, forklifts, and heavy-duty lifting equipment. Trusted nationwide for industrial, construction, and infrastructure projects.",
     },
+
+    // Open Graph / Facebook
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://www.sainilifters.com/services" },
     {
       property: "og:title",
-      content: "Professional Lifting Solutions - Crane & Equipment Rentals",
+      content: "Crane Rental & Heavy Lifting Services - Saini Lifters",
     },
     {
       property: "og:description",
       content:
-        "Find the best lifting and material handling solutions for your business with our top-tier rental services.",
+        "Get reliable crane rental services for industrial and construction projects. Saini Lifters provides mobile cranes, forklifts, reach stackers, and specialized lifting equipment with expert operators and nationwide coverage.",
     },
+    {
+      property: "og:image",
+      content:
+        "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/services-page-LhYMfOojrB74W0Isy9D8xlumW5mMy3.webp",
+    },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
+
+    // Twitter
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:url", content: "https://www.sainilifters.com/services" },
+    {
+      name: "twitter:title",
+      content: "Crane Rental & Heavy Lifting Services - Saini Lifters",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Explore our professional crane rental services with a range of lifting solutions for construction, industrial, and heavy-duty applications. Trusted by top industries nationwide.",
+    },
+    {
+      name: "twitter:image",
+      content:
+        "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/services-page-LhYMfOojrB74W0Isy9D8xlumW5mMy3.webp",
+    },
+
+    // Additional SEO Boosters
+    {
+      name: "keywords",
+      content:
+        "crane rental, heavy lifting, lifting equipment, mobile cranes, tower cranes, forklift rental, industrial lifting services",
+    },
+    { name: "robots", content: "index, follow" },
+    { name: "author", content: "Saini Lifters" },
   ],
 });
 

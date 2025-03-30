@@ -52,6 +52,7 @@ import StatsSection from "@/components/base/statsSection.vue";
 import IndustriesSection from "@/components/base/industriesSection.vue";
 import CtaSection from "@/components/base/ctaSection.vue";
 import { Building2, Calendar, Forklift, Users } from "lucide-vue-next";
+import { useHead } from "#imports";
 
 const aboutUsPageTitle = ref(["ABOUT", "SAINI", "LIFTERS", "."]);
 const stats = ref([
@@ -78,4 +79,57 @@ const journeyInfo = ref([
   { icon: Forklift, label: "50-400 Ton Capacity" },
   { icon: Users, label: "Expert Team" },
 ]);
+
+// Set up Open Graph and SEO meta tags
+useHead({
+  title: "About Us - Saini Lifters | Experts in Heavy Lifting & Crane Services",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Learn about Saini Lifters, a leader in heavy lifting and crane services since 2001. Specializing in container cranes, reach stackers, side shifters, and all-terrain cranes, we provide reliable lifting solutions for industrial and construction projects.",
+    },
+
+    // Open Graph / Facebook
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://www.sainilifters.com/about-us" },
+    { property: "og:title", content: "About Us - Saini Lifters" },
+    {
+      property: "og:description",
+      content:
+        "Discover the story of Saini Lifters, a trusted name in heavy lifting for over two decades. We specialize in advanced crane solutions for industrial and bridge construction projects, ensuring safety, efficiency, and precision.",
+    },
+    {
+      property: "og:image",
+      content:
+        "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/about-us-page.webp",
+    },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
+
+    // Twitter
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:url", content: "https://www.sainilifters.com/about-us" },
+    { name: "twitter:title", content: "About Us - Saini Lifters" },
+    {
+      name: "twitter:description",
+      content:
+        "Learn about Saini Lifters' expertise in heavy lifting and crane services. With over two decades of experience, we provide innovative lifting solutions for large-scale industrial projects.",
+    },
+    {
+      name: "twitter:image",
+      content:
+        "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/about-us-page.webp",
+    },
+
+    // Additional SEO Boosters
+    {
+      name: "keywords",
+      content:
+        "heavy lifting company, crane rental services, industrial lifting solutions, bridge construction cranes, Saini Lifters history, lifting equipment providers",
+    },
+    { name: "robots", content: "index, follow" },
+    { name: "author", content: "Saini Lifters" },
+  ],
+});
 </script>
