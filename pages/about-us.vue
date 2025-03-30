@@ -102,7 +102,7 @@ useHead({
     {
       property: "og:image",
       content:
-        "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/about-us-page.webp",
+        "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/about-us-sRj1OQtzVztCEErJRykB66GqGrIVih.webp?v=1",
     },
     { property: "og:image:width", content: "1200" },
     { property: "og:image:height", content: "630" },
@@ -119,7 +119,7 @@ useHead({
     {
       name: "twitter:image",
       content:
-        "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/about-us-page.webp",
+        "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/about-us-sRj1OQtzVztCEErJRykB66GqGrIVih.webp?v=1",
     },
 
     // Additional SEO Boosters
