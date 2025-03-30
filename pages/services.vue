@@ -6,7 +6,7 @@
     >
       <div class="text-center space-y-4 px-4 z-10">
         <h1 class="text-4xl md:text-6xl font-bold">
-          <span class="text-red-500">Professional</span> Lifting Solutions
+          <span class="text-[#FF4057]">Professional</span> Lifting Solutions
         </h1>
         <p
           class="text-lg md:text-xl text-gray-500 dark:text-gray-300 max-w-2xl mx-auto"

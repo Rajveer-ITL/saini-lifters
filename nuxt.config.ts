@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     public: {
       googleAnalyticsId: "G-G2G9X0Y0DG", // Replace with your GA ID
       googleTagManagerId: "GTM-KPZBMV9J", // Replace with your GTM ID
+      clarityId: "qtqa1sk6lw", // Replace with your Clarity ID
     },
   },
 
@@ -88,11 +89,9 @@ export default defineNuxtConfig({
       script: [
         {
           type: "text/javascript",
-          src: `https://www.googletagmanager.com/gtag/js?id=${
-            useRuntimeConfig().public.googleAnalyticsId
-          }`,
+          src: "https://www.googletagmanager.com/gtag/js?id=G-G2G9X0Y0DG",
           async: true,
-          "data-partytown": true, // ✅ Offloads to Partytown
+          "data-partytown": true,
         },
         {
           type: "text/javascript",
@@ -100,9 +99,9 @@ export default defineNuxtConfig({
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
-          gtag('config', '${useRuntimeConfig().public.googleAnalyticsId}');
+            gtag('config', 'G-G2G9X0Y0DG');
           `,
-          "data-partytown": true, // ✅ Ensures Partytown processes this script
+          "data-partytown": true,
         },
         {
           type: "text/javascript",
@@ -115,11 +114,9 @@ export default defineNuxtConfig({
               j.async = true;
               j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
               f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', '${
-              useRuntimeConfig().public.googleTagManagerId
-            }');
+            })(window, document, 'script', 'dataLayer', 'GTM-KPZBMV9J');
           `,
-          "data-partytown": true, // ✅ Uses Partytown correctly
+          "data-partytown": true,
         },
       ],
     },

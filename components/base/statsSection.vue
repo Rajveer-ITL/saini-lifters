@@ -9,7 +9,7 @@
         >
           <component
             :is="stat.icon"
-            class="w-12 h-12 mx-auto mb-4 text-red-500"
+            class="w-12 h-12 mx-auto mb-4 text-[#FF4057]"
           />
           <p
             class="whitespace-pre-wrap text-4xl font-bold mb-2 tracking-tighter"

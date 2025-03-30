@@ -22,15 +22,15 @@
           </div>
           <div class="space-y-2 flex flex-col">
             <div class="flex items-center space-x-3 dark:text-white">
-              <PhoneCall class="h-5 w-5 text-red-500" />
+              <PhoneCall class="h-5 w-5 text-[#FF4057]" />
               <span>+91 9322296990</span>
             </div>
             <div class="flex items-center space-x-3 dark:text-white">
-              <Mail class="h-5 w-5 text-red-500" />
+              <Mail class="h-5 w-5 text-[#FF4057]" />
               <span>charanjit@sainilifters.com</span>
             </div>
             <div class="flex items-center space-x-3 dark:text-white">
-              <MapPin class="h-5 w-5 text-red-500" />
+              <MapPin class="h-5 w-5 text-[#FF4057]" />
               <span
                 >Plot No. J-854, Steel Market Rd, Kalamboli, Maharashtra</span
               >

@@ -18,11 +18,35 @@ useHead({
 
 const hasVisited = ref(false);
 const route = useRoute();
+const config = useRuntimeConfig();
 
 onMounted(() => {
   hasVisited.value =
     import.meta.client && sessionStorage.getItem("homepage-visited");
+  if (import.meta.client) {
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      if (y) y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", config.public.clarityId);
+  }
 });
+
+watch(
+  () => route.fullPath,
+  () => {
+    if (import.meta.client && window.clarity) {
+      window.clarity("trackPageView");
+    }
+  }
+);
 </script>
 
 <template>

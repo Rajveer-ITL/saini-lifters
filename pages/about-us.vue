@@ -22,7 +22,7 @@
               :key="i"
               class="flex items-center gap-3"
             >
-              <component :is="item.icon" class="text-red-500 w-6 h-6" />
+              <component :is="item.icon" class="text-[#FF4057] w-6 h-6" />
               <span>{{ item.label }}</span>
             </div>
           </div>

@@ -25,7 +25,7 @@
           <div class="flex space-x-4">
             <a
               href="https://facebook.com"
-              class="transition-colors hover:text-red-500"
+              class="transition-colors hover:text-[#FF4057]"
               aria-label="Visit our Facebook page"
             >
               <FacebookIcon class="h-6 w-6" />
@@ -33,7 +33,7 @@
 
             <a
               href="https://twitter.com"
-              class="transition-colors hover:text-red-500"
+              class="transition-colors hover:text-[#FF4057]"
               aria-label="Visit our Twitter profile"
             >
               <TwitterIcon class="h-6 w-6" />
@@ -41,7 +41,7 @@
 
             <a
               href="#"
-              class="transition-colors hover:text-red-500"
+              class="transition-colors hover:text-[#FF4057]"
               @click.prevent="sendWhatsAppMessage"
               aria-label="Send us a message on WhatsApp"
             >
@@ -150,8 +150,8 @@ const quickLinks = [
 ];
 const linkClass = computed(() =>
   commonVariables.value.darkMode
-    ? "text-gray-400 hover:text-red-500"
-    : "text-[#234a76] hover:text-red-500"
+    ? "text-gray-400 hover:text-[#FF4057]"
+    : "text-[#234a76] hover:text-[#FF4057]"
 );
 const textClass = computed(() =>
   commonVariables.value.darkMode ? "text-gray-400" : "text-[#234a76]"

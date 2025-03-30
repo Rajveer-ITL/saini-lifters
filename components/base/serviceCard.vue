@@ -4,7 +4,7 @@
   >
     <div class="flex items-center gap-4 mb-4">
       <div class="p-3 rounded-lg bg-red-500/10">
-        <component :is="service.icon" class="w-6 h-6 mx-auto text-red-500" />
+        <component :is="service.icon" class="w-6 h-6 mx-auto text-[#FF4057]" />
       </div>
       <div>
         <h3 class="text-xl font-semibold">{{ service.title }}</h3>

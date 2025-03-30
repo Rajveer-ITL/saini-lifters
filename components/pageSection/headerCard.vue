@@ -45,7 +45,7 @@
         class="absolute bottom-[-100px] left-1/2 chevron-down"
       >
         <ChevronDown
-          class="h-10 w-10 cursor-pointer text-red-500"
+          class="h-10 w-10 cursor-pointer text-[#FF4057]"
           @click="scrollToElement"
         />
       </div>

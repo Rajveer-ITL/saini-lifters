@@ -15,7 +15,9 @@
       <div class="mb-4 flex items-center justify-between">
         <div>
           <h3 class="text-xl font-bold">{{ crane.name }}</h3>
-          <p class="text-lg font-semibold text-red-500">{{ crane.capacity }}</p>
+          <p class="text-lg font-semibold text-[#FF4057]">
+            {{ crane.capacity }}
+          </p>
         </div>
         <Download
           class="h-5 w-5 cursor-pointer"
