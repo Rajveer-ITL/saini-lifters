@@ -126,9 +126,7 @@ function onResize() {
 
 watch(
   () => commonVariables.value.darkMode,
-  (newValue) => {
-    console.log(" commonVariables.value.darkMode changed to:", newValue);
-
+  () => {
     if (globe) {
       globe.destroy(); // Destroy the existing globe instance
       globe = null; // Clear the reference

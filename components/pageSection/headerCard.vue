@@ -36,7 +36,7 @@
           v-if="props.subTitle"
           class="text-white mt-4 text-2xl md:w-[60%] text-center"
         >
-          <TextGenerate :words="subTitle" />
+          <TextGenerate :words="subTitle" :class="'text-white'" />
         </div>
       </div>
 
