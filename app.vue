@@ -49,6 +49,8 @@ onMounted(() => {
           width="0"
           style="display: none; visibility: hidden"
           title="Google Tag Manager"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </noscript>
     </ClientOnly>
