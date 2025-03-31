@@ -2,14 +2,12 @@
 module.exports = {
   darkMode: "class",
   content: [
-    "./app.vue", // Main Nuxt entry point
-    "./components/**/*.{vue,js,ts,jsx,tsx}", // Your components
-    "./layouts/**/*.vue", // Nuxt layouts
-    "./pages/**/*.vue", // Nuxt pages
-    "./plugins/**/*.{js,ts}", // Nuxt plugins
-    "./nuxt.config.{js,ts}", // Nuxt config
-    "./index.html", // Include Vue 3 index file
-    "./src/**/*.{vue,js,ts,jsx,tsx}", // Include Vue 3 source files
+    "./app.vue",
+    "./components/**/*.{vue,js,ts,jsx,tsx}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}", // Nuxt config might not need Tailwind scanning
   ],
   theme: {
     extend: {
