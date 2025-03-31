@@ -11,6 +11,7 @@
 
     <LazyAboutSection />
     <LazyBaseCarousel />
+    <LazyFaqSection />
     <LazyBaseLine />
     <LazyTheFooter />
   </div>
@@ -32,6 +33,9 @@ const LazyBaseCarousel = defineAsyncComponent(() =>
 );
 const LazyBaseLine = defineAsyncComponent(() =>
   import("~/components/base/baseLine.vue")
+);
+const LazyFaqSection = defineAsyncComponent(() =>
+  import("~/components/pageSection/faqSection.vue")
 );
 const LazyTheFooter = defineAsyncComponent(() =>
   import("~/components/TheFooter.vue")
