@@ -58,7 +58,19 @@ export default defineNuxtConfig({
           content: "Providing top-notch crane services for all industries.",
         },
       ],
+
       link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "/favicon.png",
+          sizes: "32x32",
+        },
+        {
+          rel: "apple-touch-icon",
+          href: "/apple-touch-icon-180x180.png",
+        },
         {
           rel: "preload",
           as: "video",
