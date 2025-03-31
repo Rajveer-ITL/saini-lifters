@@ -28,6 +28,7 @@
               class="transition-colors hover:text-[#FF4057]"
               aria-label="Visit our Facebook page"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <FacebookIcon class="h-6 w-6" />
             </a>
@@ -36,6 +37,7 @@
               class="transition-colors hover:text-[#FF4057]"
               aria-label="Visit our Facebook page"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Linkedin class="h-6 w-6" />
             </a>
@@ -45,6 +47,7 @@
               class="transition-colors hover:text-[#FF4057]"
               aria-label="Visit our Twitter profile"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <TwitterIcon class="h-6 w-6" />
             </a>
