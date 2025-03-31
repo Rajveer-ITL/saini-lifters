@@ -41,7 +41,7 @@
       </div>
 
       <div
-        v-if="isDownIconHash"
+        v-if="isDesktop && isDownIconHash"
         class="absolute bottom-[-100px] left-1/2 chevron-down"
       >
         <ChevronDown
@@ -81,15 +81,19 @@
 </template>
 
 <script setup>
-import { onMounted, defineAsyncComponent } from "vue";
+import { ref, onMounted, onBeforeUnmount, defineAsyncComponent } from "vue";
+import { useWindowSize } from "@vueuse/core";
 import { ChevronDown } from "lucide-vue-next";
 import { useRouter } from "nuxt/app";
 
+const { width } = useWindowSize();
 const router = useRouter();
 // Lazy-load dependencies for better performance
 const TextGenerate = defineAsyncComponent(() =>
   import("@/components/inspiraUi/textGenerate.vue")
 );
+
+const isDesktop = ref(false);
 
 // Props
 const props = defineProps({
@@ -111,6 +115,7 @@ const scrollToElement = () => {
 onMounted(async () => {
   const hasVisited =
     import.meta.client && sessionStorage.getItem("homepage-visited");
+  isDesktop.value = width.value > 768;
   if (router.currentRoute.value.path === "/" && !hasVisited) {
     sessionStorage.setItem("homepage-visited", "true");
     if (import.meta.client) {

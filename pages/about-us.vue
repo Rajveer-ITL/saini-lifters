@@ -54,7 +54,7 @@ import CtaSection from "@/components/base/ctaSection.vue";
 import { Building2, Calendar, Forklift, Users } from "lucide-vue-next";
 import { useHead } from "#imports";
 
-const aboutUsPageTitle = ref(["ABOUT", "SAINI", "LIFTERS", "."]);
+const aboutUsPageTitle = ref(["ABOUT", "SAINI", "LIFTERS"]);
 const stats = ref([
   { icon: "Clock", label: "Years of Experience", value: 15 },
   { icon: "Forklift", label: "Cranes in Fleet", value: 20 },
