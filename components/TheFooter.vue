@@ -27,14 +27,24 @@
               href="https://facebook.com"
               class="transition-colors hover:text-[#FF4057]"
               aria-label="Visit our Facebook page"
+              target="_blank"
             >
               <FacebookIcon class="h-6 w-6" />
+            </a>
+            <a
+              href="https://in.linkedin.com"
+              class="transition-colors hover:text-[#FF4057]"
+              aria-label="Visit our Facebook page"
+              target="_blank"
+            >
+              <Linkedin class="h-6 w-6" />
             </a>
 
             <a
               href="https://twitter.com"
               class="transition-colors hover:text-[#FF4057]"
               aria-label="Visit our Twitter profile"
+              target="_blank"
             >
               <TwitterIcon class="h-6 w-6" />
             </a>
@@ -135,6 +145,7 @@ import {
   MailIcon,
   MapPinIcon,
   FacebookIcon,
+  Linkedin,
   TwitterIcon,
   MessageCircleMore,
 } from "lucide-vue-next";
