@@ -48,15 +48,36 @@ export default defineNuxtConfig({
     layoutTransition: { name: "layout", mode: "out-in" },
 
     head: {
-      title: "Saini Lifters - Best Crane Services",
+      title:
+        "Best Crane Rental Services - Reliable & Affordable | Saini Lifters",
       htmlAttrs: {
         lang: "en",
       },
       meta: [
         {
           name: "description",
-          content: "Providing top-notch crane services for all industries.",
+          content:
+            "Looking for crane rental services? We provide top-quality cranes for construction, industrial use, and heavy lifting. Available 24/7.",
         },
+        {
+          name: "keywords",
+          content:
+            "crane rental, crane services, heavy lifting, industrial cranes, mobile crane hire",
+        },
+        {
+          property: "og:title",
+          content: "Best Crane Rental Services - Saini Lifters",
+        },
+        {
+          property: "og:description",
+          content: "Reliable crane rental services for all your needs.",
+        },
+        {
+          property: "og:image",
+          content:
+            "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
+        },
+        { property: "og:url", content: "https://www.sainilifters.com/" },
       ],
 
       link: [
