@@ -1,23 +1,24 @@
 <script setup>
-import { ref } from "vue";
+import { defineProps, defineEmits } from "vue";
 import { ChevronDown, ChevronUp } from "lucide-vue-next";
 
-defineProps({
+const props = defineProps({
   question: String,
   answer: String,
+  isOpen: Boolean,
 });
 
-const isOpen = ref(false);
+const emit = defineEmits(["toggle"]);
 </script>
 
 <template>
   <div class="border-b border-gray-200 dark:border-gray-700 last:border-0">
     <button
       class="flex w-full items-center justify-between py-6 text-left"
-      @click="isOpen = !isOpen"
+      @click="emit('toggle')"
       :aria-expanded="isOpen"
     >
-      <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
+      <h3 class="text-xl font-semibold">
         {{ question }}
       </h3>
       <span class="ml-4 flex-shrink-0 text-red-500">

@@ -1,4 +1,5 @@
 <script setup>
+import { ref, computed } from "vue";
 import FAQItem from "@/components/base/faqItem.vue";
 
 const faqs = [
@@ -28,28 +29,39 @@ const faqs = [
       "Saini Lifters operates nationwide with a strong presence in major metropolitan areas. For projects in remote locations, please contact us to discuss logistics and availability. We pride ourselves on our ability to mobilize equipment efficiently to meet our clients' needs.",
   },
 ];
+
+const activeIndex = ref(null);
+
+const toggleFAQ = (index) => {
+  activeIndex.value = activeIndex.value === index ? null : index;
+};
+
+const containerClasses = computed(
+  () =>
+    "mx-auto max-w-3xl rounded-2xl p-8 shadow-lg backdrop-blur-sm bg-white/5 dark:bg-black/20"
+);
 </script>
 
 <template>
   <section class="w-full pb-20">
     <div class="container mx-auto px-4 md:px-6">
       <div class="mx-auto max-w-4xl text-center">
-        <h2
-          class="mb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl"
-        >
+        <h2 class="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
           Frequently Asked <span class="text-red-500">Questions</span>
         </h2>
-        <p class="mb-12 text-lg text-gray-600 dark:text-gray-300">
+        <p class="mb-12 text-lg">
           Find answers to common questions about our lifting services and
           equipment
         </p>
       </div>
-      <div class="mx-auto max-w-3xl rounded-2xl p-8 shadow-lg backdrop-blur-sm">
+      <div :class="containerClasses">
         <FAQItem
           v-for="(faq, index) in faqs"
           :key="index"
           :question="faq.question"
           :answer="faq.answer"
+          :isOpen="activeIndex === index"
+          @toggle="toggleFAQ(index)"
         />
       </div>
     </div>
