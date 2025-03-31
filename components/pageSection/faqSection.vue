@@ -38,7 +38,7 @@ const toggleFAQ = (index) => {
 
 const containerClasses = computed(
   () =>
-    "mx-auto max-w-3xl rounded-2xl p-8 shadow-lg backdrop-blur-sm bg-white/5 dark:bg-black/20"
+    "mx-auto max-w-6xl rounded-2xl p-8 shadow-lg backdrop-blur-sm bg-white/5 dark:bg-black/20"
 );
 </script>
 
