@@ -28,10 +28,11 @@
 </template>
 
 <script setup>
-import { gsap } from "gsap";
 import { computed, watch } from "vue";
 import { Sun, Moon } from "lucide-vue-next";
 import { commonVariables } from "~/assets/variables/commonVariables";
+
+const { gsap } = await import("gsap");
 
 const props = defineProps({
   isLoading: Boolean,

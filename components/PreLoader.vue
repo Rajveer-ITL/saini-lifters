@@ -26,9 +26,9 @@
 </template>
 
 <script setup>
-import { gsap } from "gsap";
 import { onMounted, ref, computed } from "vue";
 
+const { gsap } = await import("gsap");
 const hasVisited = ref(false);
 const companyFirstName = ref(["S", "A", "I", "N", "I"]);
 const companyLastName = ref(["L", "I", "F", "T", "E", "R", "S"]);

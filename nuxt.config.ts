@@ -30,6 +30,10 @@ export default defineNuxtConfig({
   components: true,
   vite: {
     plugins: [viteCompression({ algorithm: "brotliCompress" })],
+    build: {
+      rollupOptions: { treeshake: true },
+      minify: "esbuild", // Ensure esbuild is used for minification
+    },
   },
 
   alias: {
