@@ -8,6 +8,7 @@ module.exports = {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}", // Nuxt config might not need Tailwind scanning
+    "./error.vue",
   ],
   theme: {
     extend: {
@@ -18,4 +19,5 @@ module.exports = {
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
+  important: true,
 };

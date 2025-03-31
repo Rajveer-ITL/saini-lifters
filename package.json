@@ -31,8 +31,8 @@
     "vue-use-spring": "^0.3.3"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
     "vite-plugin-compression": "^0.5.1"
   }

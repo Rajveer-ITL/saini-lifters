@@ -6,6 +6,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineNuxtConfig({
+  compatibilityDate: "2024-11-01",
+  devtools: { enabled: false },
+  css: ["./assets/css/tailwind.css"],
+
   runtimeConfig: {
     public: {
       googleAnalyticsId: "G-G2G9X0Y0DG", // Replace with your GA ID
@@ -15,10 +19,6 @@ export default defineNuxtConfig({
   },
 
   modules: ["@nuxt/image"],
-
-  compatibilityDate: "2024-11-01",
-  devtools: { enabled: false },
-  css: ["~/assets/css/tailwind.css"],
 
   postcss: {
     plugins: {
