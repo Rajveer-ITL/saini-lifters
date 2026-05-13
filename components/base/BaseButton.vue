@@ -28,11 +28,16 @@
 </template>
 
 <script setup>
-import { computed, watch } from "vue";
+import { computed, watch, onMounted } from "vue";
 import { Sun, Moon } from "lucide-vue-next";
 import { commonVariables } from "~/assets/variables/commonVariables";
 
-const { gsap } = await import("gsap");
+let gsap = null;
+
+onMounted(async () => {
+  const { gsap: g } = await import("gsap");
+  gsap = g;
+});
 
 const props = defineProps({
   isLoading: Boolean,
@@ -46,6 +51,7 @@ const props = defineProps({
 watch(
   () => commonVariables.value.darkMode,
   (newValue) => {
+    if (!gsap) return;
     gsap.fromTo(
       ".darkModeIcon",
       { opacity: 0, y: newValue ? -70 : 70 },

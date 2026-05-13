@@ -28,23 +28,23 @@
 <script setup>
 import { onMounted, ref, computed } from "vue";
 
-const { gsap } = await import("gsap");
 const hasVisited = ref(false);
 const companyFirstName = ref(["S", "A", "I", "N", "I"]);
 const companyLastName = ref(["L", "I", "F", "T", "E", "R", "S"]);
-const tl = gsap.timeline();
 
 const isMobile = computed(
   () => typeof window !== "undefined" && window.innerWidth < 600
 );
 
-onMounted(() => {
+onMounted(async () => {
+  const { gsap } = await import("gsap");
+  const tl = gsap.timeline();
   if (!hasVisited.value) {
-    runPreloaderAnimation();
+    runPreloaderAnimation(gsap, tl);
   }
 });
 
-const runPreloaderAnimation = () => {
+const runPreloaderAnimation = (gsap, tl) => {
   // Calculate responsive font sizes
 
   const largeFontSize = isMobile.value ? "50px" : "100px";
@@ -52,55 +52,55 @@ const runPreloaderAnimation = () => {
 
   tl.fromTo(
     ".companyFirstName",
-    { y: 200, opacity: 0.3, fontSize: largeFontSize },
+    { y: 100, opacity: 0, fontSize: largeFontSize },
     {
-      duration: 1,
+      duration: 0.4,
       y: 0,
       opacity: 1,
-      stagger: 0.1,
+      stagger: 0.04,
     }
   );
   tl.fromTo(
     ".companyLastName",
-    { y: 200, opacity: 0.3, fontSize: largeFontSize },
+    { y: 100, opacity: 0, fontSize: largeFontSize },
     {
-      duration: 1,
+      duration: 0.4,
       y: 0,
       opacity: 1,
       color: "#FF4057",
-      stagger: -0.1,
+      stagger: -0.04,
     },
-    "-=1.5"
+    "-=0.6"
   );
   tl.to(".companyFirstName", {
-    duration: 1,
+    duration: 0.3,
     fontSize: smallFontSize,
   });
   tl.to(
     ".companyLastName",
     {
-      duration: 1,
+      duration: 0.3,
       fontSize: smallFontSize,
     },
-    "-=1"
+    "-=0.3"
   );
   tl.to(
     ".spacing",
     {
-      duration: 1,
+      duration: 0.3,
       margin: isMobile.value ? "2px" : "4px",
     },
-    "-=1"
+    "-=0.3"
   );
 
   tl.to(
     ".main-div",
     {
       opacity: 0,
-      duration: 1.8,
-      y: -600,
+      duration: 0.5,
+      y: -300,
     },
-    "-=1"
+    "-=0.1"
   );
 };
 </script>

@@ -47,7 +47,7 @@ Looking forward to your prompt response with the quotation and availability.`;
   const encodedMessage = encodeURIComponent(message);
 
   // WhatsApp link (change the phone number to your target recipient's number)
-  const phoneNumber = "918928333827"; // Replace with the recipient's WhatsApp number
+  const phoneNumber = "919322296990";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
   // Open WhatsApp link

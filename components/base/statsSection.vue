@@ -14,7 +14,10 @@
           <p
             class="whitespace-pre-wrap text-4xl font-bold mb-2 tracking-tighter"
           >
-            <NumberTicker :value="stat.value" />+
+            <ClientOnly>
+              <NumberTicker :value="stat.value" />+
+              <template #fallback>{{ stat.value }}+</template>
+            </ClientOnly>
           </p>
           <p class="text-gray-500 dark:text-gray-400">{{ stat.label }}</p>
         </div>

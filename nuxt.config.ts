@@ -53,7 +53,7 @@ export default defineNuxtConfig({
 
     head: {
       title:
-        "Best Crane Rental Services - Reliable & Affordable | Saini Lifters",
+        "Crane on Rent in Navi Mumbai | Saini Lifters",
       htmlAttrs: {
         lang: "en",
       },
@@ -61,20 +61,20 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Looking for crane rental services? We provide top-quality cranes for construction, industrial use, and heavy lifting. Available 24/7.",
+            "Saini Lifters — crane on rent in Navi Mumbai, Panvel & Kalamboli since 2001. Mobile cranes, hydra, manlift, reach stacker & container stacker. Call +91 9322296990.",
         },
         {
           name: "keywords",
           content:
-            "crane rental, crane services, heavy lifting, industrial cranes, mobile crane hire",
+            "crane on rent in navi mumbai, crane on rent in panvel, crane rental navi mumbai, crane hire navi mumbai, crane on hire panvel, crane service near me, heavy crane on rent, mobile crane rental, hydra crane rental, manlift rental, boom lift rental, container stacker rental, reach stacker rental, side shifter rental, crawler crane rental, all terrain crane rental, pick and carry crane, crane rental kalamboli, crane rental raigad, crane rental thane, crane rental mumbai",
         },
         {
           property: "og:title",
-          content: "Best Crane Rental Services - Saini Lifters",
+          content: "Crane on Rent in Navi Mumbai | Saini Lifters",
         },
         {
           property: "og:description",
-          content: "Reliable crane rental services for all your needs.",
+          content: "Crane on rent in Navi Mumbai, Panvel & Kalamboli. Mobile cranes, hydra, manlift & more. Call Saini Lifters: +91 9322296990.",
         },
         {
           property: "og:image",
@@ -82,6 +82,8 @@ export default defineNuxtConfig({
             "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
         },
         { property: "og:url", content: "https://www.sainilifters.com/" },
+        { property: "og:locale", content: "en_IN" },
+        { property: "og:site_name", content: "Saini Lifters" },
       ],
 
       link: [
