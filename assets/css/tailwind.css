@@ -4,6 +4,7 @@
     format("opentype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "mint";
@@ -11,6 +12,7 @@
     format("opentype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @tailwind base;

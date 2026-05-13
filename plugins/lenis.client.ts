@@ -1,6 +1,5 @@
 import Lenis from "lenis";
 import { defineNuxtPlugin } from "#app";
-import { MotionPlugin } from "@vueuse/motion";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const lenis = new Lenis({
@@ -9,15 +8,12 @@ export default defineNuxtPlugin((nuxtApp) => {
     smooth: true,
   } as any);
 
-  // Animation loop
   function raf(time: number) {
     lenis.raf(time);
     requestAnimationFrame(raf);
   }
 
   requestAnimationFrame(raf);
-
-  nuxtApp.vueApp.use(MotionPlugin);
 
   return {
     provide: {

@@ -1,12 +1,10 @@
 <template>
   <div>
     <div style="min-height: 100vh">
-      <client-only>
-        <LazyHeaderCard
-          :title="homePageTitle"
-          videoUrl="/video/cranesWorking.mp4"
-        />
-      </client-only>
+      <HeaderCard
+        :title="homePageTitle"
+        videoUrl="/video/cranesWorking.mp4"
+      />
     </div>
 
     <!-- Hidden SEO H1 visible to crawlers but naturally placed -->
@@ -66,10 +64,7 @@
 <script setup>
 import { ref, defineAsyncComponent } from "vue";
 import { useHead } from "#imports";
-
-const LazyHeaderCard = defineAsyncComponent(
-  () => import("~/components/pageSection/headerCard.vue"),
-);
+import HeaderCard from "~/components/pageSection/headerCard.vue";
 const LazyAboutSection = defineAsyncComponent(
   () => import("~/components/pageSection/aboutSection.vue"),
 );

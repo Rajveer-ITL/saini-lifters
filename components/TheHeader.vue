@@ -8,7 +8,15 @@
     <transition name="fade">
       <div class="py-4 flex items-center justify-center w-full">
         <div class="absolute left-1 ml-4">
-          <Menu v-if="!isMenuOpen" class="h-6 w-6" @click="toggleMenu" />
+          <button
+            v-if="!isMenuOpen"
+            @click="toggleMenu"
+            :aria-expanded="isMenuOpen"
+            aria-label="Open navigation menu"
+            class="p-1 rounded focus:outline-none"
+          >
+            <Menu class="h-6 w-6" aria-hidden="true" />
+          </button>
         </div>
         <div
           class="font-roslindale cursor-pointer w-fit flex items-center justify-center text-[28px] logo-text"
@@ -18,8 +26,14 @@
           <span class="text-[#FF4057]"> Lifters</span>
         </div>
         <div class="absolute right-1 mr-4">
-          <Sun v-if="isDark" class="h-6 w-6" @click="handleToggleDark" />
-          <Moon v-else class="h-6 w-6" @click="handleToggleDark" />
+          <button
+            @click="handleToggleDark"
+            :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+            class="p-1 rounded focus:outline-none"
+          >
+            <Sun v-if="isDark" class="h-6 w-6" aria-hidden="true" />
+            <Moon v-else class="h-6 w-6" aria-hidden="true" />
+          </button>
         </div>
       </div>
     </transition>
@@ -37,7 +51,13 @@
             Saini &nbsp;
             <span class="text-[#FF4057]"> Lifters</span>
           </div>
-          <X class="w-6 h-6" @click="toggleMenu" />
+          <button
+            @click="toggleMenu"
+            aria-label="Close navigation menu"
+            class="p-1 rounded focus:outline-none"
+          >
+            <X class="w-6 h-6" aria-hidden="true" />
+          </button>
         </div>
         <div
           class="flex-1 overflow-y-auto w-full flex flex-col items-start gap-8 font-roslindale px-8 py-6 text-[25px]"
@@ -163,9 +183,7 @@ onMounted(async () => {
     : window.matchMedia("(prefers-color-scheme: dark)").matches;
   document.documentElement.classList.toggle("dark", isDark.value);
 
-  if (hasVisited) {
-    gsap.to(".header", { opacity: 1, duration: 1 });
-  } else {
+  if (!hasVisited) {
     setTimeout(runHeaderAnimation, 100);
   }
 });
@@ -174,13 +192,6 @@ onBeforeUnmount(() => {
   window.removeEventListener("resize", updateScreenSize);
 });
 
-watch(isMobile, (newValue) => {
-  if (newValue && gsap) {
-    setTimeout(() => {
-      gsap.to(".header", { opacity: 1, duration: 1 });
-    }, 300);
-  }
-});
 
 watch(
   () => isDark.value,
@@ -190,12 +201,6 @@ watch(
 );
 
 const runHeaderAnimation = () => {
-  gsap.to(".header", {
-    opacity: 1,
-    duration: 1,
-    delay: 0.2,
-  });
-
   gsap.from(".logo-text", {
     y: -100,
     opacity: 0,
@@ -249,7 +254,7 @@ const menuOptions = [
 
 <style scoped>
 .header {
-  opacity: 0;
+  opacity: 1;
 }
 .header-bg-white {
   background-color: rgba(255, 255, 255, 0.515);

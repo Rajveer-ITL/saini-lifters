@@ -1,5 +1,6 @@
 <template>
   <button
+    type="button"
     :class="buttonClasses"
     :disabled="isLoading"
     class="border-[#234a76] dark:border-white overflow-hidden flex items-center justify-center px-3 py-[6px] font-mint text-[12px] border font-semibold hover:opacity-75 disabled:opacity-50 disabled:cursor-not-allowed"
@@ -9,7 +10,7 @@
       <img
         v-if="icon.name"
         :src="getIconSrc(icon.name)"
-        alt="icon"
+        :alt="icon.name || 'button icon'"
         width="18"
         height="18"
         class="max-w-fit"

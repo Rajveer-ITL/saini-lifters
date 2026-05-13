@@ -12,8 +12,8 @@
           class="w-full flex justify-center mb-5 md:mb-0 md:w-auto md:mr-[16px] about-title-img-1"
         >
           <img
-            src="../../assets/images/strength.webp"
-            alt="img1"
+            src="../../assets/images/strength-small.jpg"
+            alt="Strength — crane lifting heavy load safely"
             loading="lazy"
             class="rounded-[12px] w-[140px] md:w-[110px]"
             width="110"
@@ -39,8 +39,8 @@
           class="w-full mt-5 md:mt-0 md:w-auto md:ml-[20px] about-title-img-3"
         >
           <img
-            src="../../assets/images/rise.webp"
-            alt="img3"
+            src="../../assets/images/rise-small.jpg"
+            alt="Reliability — crane rising to new heights"
             loading="lazy"
             class="rounded-[12px] w-full md:w-[120px]"
             width="120"

@@ -1,11 +1,16 @@
 <template>
   <div class="relative overflow-hidden backdrop-blur-sm border-2 rounded-lg flex flex-col h-full">
     <div class="relative aspect-video w-full overflow-hidden p-3 bg-gray-50 dark:bg-zinc-800">
-      <img
+      <NuxtImg
         :src="`/image/${crane.image}`"
         :alt="`${crane.name} on rent in Navi Mumbai`"
         class="object-contain w-full h-full"
+        width="400"
+        height="225"
+        format="webp"
+        quality="80"
         loading="lazy"
+        decoding="async"
       />
     </div>
     <div class="p-6 flex flex-col flex-1">

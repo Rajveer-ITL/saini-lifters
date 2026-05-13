@@ -44,7 +44,19 @@ export default defineNuxtConfig({
   nitro: {
     routeRules: {
       "/": { cache: { swr: true } },
+      "/_nuxt/**": { headers: { "cache-control": "public, max-age=31536000, immutable" } },
+      "/image/**": { headers: { "cache-control": "public, max-age=31536000, immutable" } },
+      "/fonts/**": { headers: { "cache-control": "public, max-age=31536000, immutable" } },
+      "/video/**": { headers: { "cache-control": "public, max-age=86400" } },
+      "/equipment/container-stacker": { redirect: { to: "/equipment/forklift", statusCode: 301 } },
     },
+    compressPublicAssets: { gzip: true, brotli: true },
+  },
+
+  image: {
+    quality: 80,
+    format: ["webp", "avif", "png", "jpg"],
+    screens: { xs: 320, sm: 640, md: 768, lg: 1024, xl: 1280, xxl: 1920 },
   },
 
   app: {
@@ -89,6 +101,12 @@ export default defineNuxtConfig({
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         {
+          rel: "preload",
+          as: "image",
+          href: "/image/eq-all-terrain-crane-poster.jpg",
+          fetchpriority: "high",
+        },
+        {
           rel: "icon",
           type: "image/png",
           href: "/favicon.png",
@@ -97,18 +115,6 @@ export default defineNuxtConfig({
         {
           rel: "apple-touch-icon",
           href: "/apple-touch-icon-180x180.png",
-        },
-        {
-          rel: "preload",
-          as: "video",
-          href: "/video/headerCardMainVideo.mp4",
-          type: "video/mp4",
-        },
-        {
-          rel: "preload",
-          as: "video",
-          href: "/video/cranesWorking.mp4",
-          type: "video/mp4",
         },
         {
           rel: "preload",
@@ -125,39 +131,7 @@ export default defineNuxtConfig({
           crossorigin: "anonymous",
         },
       ],
-      script: [
-        {
-          type: "text/javascript",
-          src: "https://www.googletagmanager.com/gtag/js?id=G-G2G9X0Y0DG",
-          async: true,
-          "data-partytown": true,
-        },
-        {
-          type: "text/javascript",
-          innerHTML: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'G-G2G9X0Y0DG');
-          `,
-          "data-partytown": true,
-        },
-        {
-          type: "text/javascript",
-          innerHTML: `
-            (function(w, d, s, l, i) {
-              w[l] = w[l] || [];
-              w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-              var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-              j.async = true;
-              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-              f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-KPZBMV9J');
-          `,
-          "data-partytown": true,
-        },
-      ],
+      script: [],
     },
   },
 });

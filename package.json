@@ -10,12 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@builder.io/partytown": "^0.10.3",
     "@nuxt/image": "^1.10.0",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.16",
     "@vueuse/core": "^12.4.0",
-    "@vueuse/motion": "^2.2.6",
     "@vueuse/nuxt": "^12.4.0",
     "clsx": "^2.1.1",
     "cobe": "^0.6.3",
