@@ -43,7 +43,7 @@ const containerClasses = computed(
 </script>
 
 <template>
-  <section class="w-full pb-20">
+  <section class="w-full py-20">
     <div class="container mx-auto px-4 md:px-6">
       <div class="mx-auto max-w-4xl text-center">
         <h2 class="mb-4 text-4xl font-bold tracking-tight md:text-5xl">
