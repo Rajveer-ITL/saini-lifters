@@ -86,12 +86,13 @@
             >
               {{ item.name }}
             </h2>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">
               Fleet:
               <span class="font-semibold text-gray-700 dark:text-gray-300">{{
                 item.fleet
               }}</span>
             </p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">{{ item.description }}</p>
             <div
               class="flex items-center gap-1 text-sm font-semibold text-[#FF4057]"
             >
@@ -163,6 +164,7 @@ const equipmentItems = [
     fleet: "50T – 700T",
     category: "Cranes",
     image: "eq-all-terrain-crane.png",
+    description: "XCMG QAY160 & QAY300 all terrain telescopic cranes for bridge construction, power plant installation and heavy industrial lifts. Highway-capable, 24/7 from Kalamboli.",
   },
   {
     name: "Rough Terrain Crane",
@@ -170,6 +172,7 @@ const equipmentItems = [
     fleet: "25T – 130T",
     category: "Cranes",
     image: "eq-rough-terrain-crane.png",
+    description: "4-wheel drive rough terrain cranes for off-road and construction site lifts. Ideal for projects with uneven ground, MIDC construction zones and building sites.",
   },
   {
     name: "Crawler Crane",
@@ -177,6 +180,7 @@ const equipmentItems = [
     fleet: "100T – 400T",
     category: "Cranes",
     image: "eq-crawler-crane.png",
+    description: "Track-mounted crawler cranes for long-duration bridge, dam and infrastructure projects. Low ground pressure — suited for soft ground and reclaimed coastal areas.",
   },
   {
     name: "Manlift & Boom Lift",
@@ -184,6 +188,7 @@ const equipmentItems = [
     fleet: "Up to 185 ft",
     category: "Manlifts & AWP",
     image: "eq-articulated-boomlift.png",
+    description: "Articulating and telescopic boom lifts for facade work, MEP installations and elevated maintenance. Electric and diesel models available from 30 ft to 185 ft working height.",
   },
   {
     name: "Reach Stacker",
@@ -191,6 +196,7 @@ const equipmentItems = [
     fleet: "45T capacity",
     category: "Container Handling",
     image: "eq-reach-stacker.png",
+    description: "45T reach stackers for ISO container stacking up to 3 high. Essential equipment for JNPT area container yards, CFS terminals and port logistics operations.",
   },
   {
     name: "Forklift",
@@ -198,6 +204,7 @@ const equipmentItems = [
     fleet: "Up to 25T",
     category: "Container Handling",
     image: "eq-forklift.png",
+    description: "Heavy-duty forklifts from 5T to 25T for warehouse, factory and port operations. Available with various attachments for different load types at MIDC sites.",
   },
   {
     name: "Side Shifter",
@@ -205,6 +212,7 @@ const equipmentItems = [
     fleet: "20T – 40T",
     category: "Container Handling",
     image: "eq-side-shifter.png",
+    description: "Container side shifters for precise horizontal positioning in warehouses, terminals and container yards. Reduces handling time and improves stacking accuracy.",
   },
   {
     name: "Farana (Pick & Carry)",
@@ -212,6 +220,7 @@ const equipmentItems = [
     fleet: "20T – 50T",
     category: "Pick & Carry",
     image: "eq-farana.png",
+    description: "Pick-and-carry Farana cranes for flexible on-site movement of heavy loads without outriggers. 360° swing and high mobility make them ideal for Navi Mumbai factories and industrial yards.",
   },
   {
     name: "Transport Trailer",
@@ -219,6 +228,7 @@ const equipmentItems = [
     fleet: "20ft / 40ft ISO",
     category: "Transport",
     image: "eq-transport-trailer.png",
+    description: "Heavy-duty transport trailers for over-dimensional cargo and equipment movement. ISO 20ft and 40ft configurations for plant machinery, steel structures and crane components.",
   },
 ];
 

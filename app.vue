@@ -1,8 +1,9 @@
 <script setup>
 import TheHeader from "@/components/TheHeader.vue";
 import PreLoader from "~/components/PreLoader.vue";
+import CookieBanner from "@/components/CookieBanner.vue";
 import { ref, onMounted } from "vue";
-import { useRoute, useRuntimeConfig, useHead } from "#imports";
+import { useRoute, useHead } from "#imports";
 import { sendWhatsAppMessage } from "~/utils/commonFunctions";
 
 useHead({
@@ -13,61 +14,9 @@ useHead({
 
 const hasVisited = ref(false);
 const route = useRoute();
-const config = useRuntimeConfig();
 
 onMounted(() => {
   hasVisited.value = sessionStorage.getItem("homepage-visited") ? true : false;
-
-  if (import.meta.client) {
-    // Load all analytics after page is interactive - never block rendering
-    window.addEventListener("load", () => {
-      // Google Analytics
-      const gaScript = document.createElement("script");
-      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${config.public.googleAnalyticsId}`;
-      gaScript.async = true;
-      document.head.appendChild(gaScript);
-      gaScript.onload = () => {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(...args) {
-          window.dataLayer.push(args);
-        }
-        gtag("js", new Date());
-        gtag("config", config.public.googleAnalyticsId);
-      };
-
-      // Google Tag Manager
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        const f = d.getElementsByTagName(s)[0];
-        const j = d.createElement(s);
-        const dl = l !== "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(
-        window,
-        document,
-        "script",
-        "dataLayer",
-        config.public.googleTagManagerId,
-      );
-
-      // Microsoft Clarity
-      (function (c, l, a, r, i, t, y) {
-        c[a] =
-          c[a] ||
-          function (...args) {
-            (c[a].q = c[a].q || []).push(args);
-          };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        if (y) y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", config.public.clarityId);
-    });
-  }
 });
 </script>
 
@@ -115,6 +64,11 @@ onMounted(() => {
           />
         </svg>
       </button>
+    </ClientOnly>
+
+    <!-- Cookie Consent Banner -->
+    <ClientOnly>
+      <CookieBanner />
     </ClientOnly>
   </div>
 </template>

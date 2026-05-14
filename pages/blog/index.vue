@@ -104,8 +104,55 @@ useHead({
     },
   ],
   link: [{ rel: "canonical", href: "https://www.sainilifters.com/blog" }],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: "Crane Rental Blog | Saini Lifters Navi Mumbai",
+        url: "https://www.sainilifters.com/blog",
+        description: "Expert guides and insights on crane rental, heavy lifting and equipment in Navi Mumbai and Maharashtra.",
+        publisher: {
+          "@type": "Organization",
+          name: "Saini Lifters",
+          url: "https://www.sainilifters.com",
+          logo: { "@type": "ImageObject", url: "https://www.sainilifters.com/favicon.png" },
+        },
+        hasPart: [
+          { "@type": "BlogPosting", headline: "Types of Cranes Used in Construction in India", url: "https://www.sainilifters.com/blog/types-of-cranes-india" },
+          { "@type": "BlogPosting", headline: "Crane Rental Cost Per Day in India", url: "https://www.sainilifters.com/blog/crane-rental-cost-per-day-india" },
+          { "@type": "BlogPosting", headline: "Crane Rental vs Buying: Which is Better?", url: "https://www.sainilifters.com/blog/crane-rent-vs-buy" },
+          { "@type": "BlogPosting", headline: "Mobile Crane vs Crawler Crane: Key Differences", url: "https://www.sainilifters.com/blog/mobile-crane-vs-crawler-crane" },
+          { "@type": "BlogPosting", headline: "All Terrain Crane vs Rough Terrain Crane", url: "https://www.sainilifters.com/blog/all-terrain-vs-rough-terrain-crane" },
+          { "@type": "BlogPosting", headline: "Crane on Rent Near JNPT Port - Complete Guide", url: "https://www.sainilifters.com/blog/crane-rental-near-jnpt" },
+          { "@type": "BlogPosting", headline: "Hydra Crane vs Farana Crane", url: "https://www.sainilifters.com/blog/hydra-crane-vs-farana-crane" },
+          { "@type": "BlogPosting", headline: "How to Book a Crane on Rent in Navi Mumbai", url: "https://www.sainilifters.com/blog/how-to-book-crane-navi-mumbai" },
+        ],
+      }),
+    },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.sainilifters.com" },
+          { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.sainilifters.com/blog" },
+        ],
+      }),
+    },
+  ],
 });
 const posts = [
+  {
+    slug: "all-terrain-telescopic-crane-navi-mumbai",
+    title: "All Terrain Telescopic Crane on Rent in Navi Mumbai – Complete 2026 Guide",
+    category: "Guide",
+    excerpt:
+      "Everything you need to know about renting an all terrain telescopic crane in Navi Mumbai — XCMG QAY160 & QAY300, rental rates, when to use one, and how to book from Saini Lifters.",
+    image: "eq-all-terrain-crane.png",
+  },
   {
     slug: "types-of-cranes-india",
     title: "Types of Cranes Used in Construction in India",

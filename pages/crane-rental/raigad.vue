@@ -40,12 +40,11 @@
       <h2 class="text-3xl font-bold mb-6">
         Crane Rental Across Raigad District
       </h2>
+      <p class="text-gray-600 dark:text-gray-300 mb-4">
+        Raigad district is home to some of Maharashtra's most critical industrial corridors — Taloja MIDC, Patalganga MIDC, Khopoli MIDC, Pen industrial zone, and the growing JNPT port hinterland at Uran. These areas host petrochemical refineries, pharmaceutical plants, power transmission projects, automobile component manufacturers and large civil infrastructure projects that require heavy lifting solutions daily.
+      </p>
       <p class="text-gray-600 dark:text-gray-300 mb-8">
-        Raigad district is home to major industrial estates, power plants,
-        chemical industries and growing infrastructure projects. Saini Lifters,
-        based in Kalamboli (within Raigad district), serves the entire Raigad
-        region with a full fleet of mobile cranes, hydra cranes, manlifts and
-        heavy lifting equipment.
+        Saini Lifters is headquartered at Kalamboli, which falls within Raigad district — giving us the fastest mobilisation time for any crane rental requirement across Raigad. Our all terrain telescopic cranes, mobile cranes, hydra cranes and manlifts are available 24/7 for both short-duration and long-term project deployments.
       </p>
 
       <div class="grid md:grid-cols-3 gap-4 mb-10">
@@ -70,6 +69,52 @@
           <p class="text-gray-500 dark:text-gray-400 text-sm">
             {{ s.desc }} - Capacity: <strong>{{ s.capacity }}</strong>
           </p>
+        </div>
+      </div>
+
+      <!-- Industries served in Raigad -->
+      <h2 class="text-3xl font-bold mb-4">Industries We Serve in Raigad</h2>
+      <p class="text-gray-600 dark:text-gray-300 mb-6">
+        Raigad's industrial base is diverse. Our crane and lifting solutions are used across the following sectors in the district:
+      </p>
+      <ul class="grid sm:grid-cols-2 gap-3 mb-10">
+        <li
+          v-for="ind in industries"
+          :key="ind"
+          class="flex items-center gap-3 text-gray-600 dark:text-gray-300"
+        >
+          <span class="w-5 h-5 rounded-full bg-[#FF4057] text-white flex items-center justify-center flex-shrink-0 text-xs">✓</span>
+          {{ ind }}
+        </li>
+      </ul>
+
+      <!-- All terrain crane focus -->
+      <div class="bg-gray-50 dark:bg-zinc-900/50 rounded-xl p-6 mb-10">
+        <h2 class="text-2xl font-bold mb-3">All Terrain Telescopic Crane in Raigad</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-3">
+          Raigad's infrastructure projects — including bridge construction along NH-66, power transmission tower erection and refinery plant maintenance — require high-capacity all terrain telescopic cranes. Our XCMG QAY160 (160T) and QAY300 (300T) cranes are available for Raigad deployments with quick mobilisation from our Kalamboli yard.
+        </p>
+        <p class="text-gray-600 dark:text-gray-300">
+          All terrain telescopic cranes are preferred in Raigad because they travel on public roads without trailer support and can reach heights of 78–90 metres main boom, making them ideal for power plant and bridge projects in Raigad's open industrial corridors.
+        </p>
+        <div class="mt-4">
+          <NuxtLink
+            to="/equipment/all-terrain-crane"
+            class="inline-block text-[#FF4057] font-semibold hover:underline"
+          >View All Terrain Crane Specifications →</NuxtLink>
+        </div>
+      </div>
+
+      <!-- FAQs -->
+      <h2 class="text-3xl font-bold mb-6">FAQs – Crane Rental in Raigad</h2>
+      <div class="space-y-5">
+        <div
+          v-for="faq in faqs"
+          :key="faq.q"
+          class="border-b border-gray-200 dark:border-zinc-700 pb-4"
+        >
+          <h3 class="font-bold mb-2">{{ faq.q }}</h3>
+          <p class="text-gray-500 dark:text-gray-400 text-sm">{{ faq.a }}</p>
         </div>
       </div>
     </section>
@@ -100,18 +145,18 @@
 import { useHead } from "#imports";
 
 useHead({
-  title: "Crane on Rent in Raigad | Saini Lifters - Call +91 9322296990",
+  title: "Crane on Rent in Raigad | All Terrain Telescopic Crane | Saini Lifters",
   meta: [
     {
       name: "description",
       content:
-        "Crane on rent in Raigad district - Panvel, Pen, Alibag, Khopoli, Uran. Mobile cranes, hydra, manlift & reach stacker. Saini Lifters. Call +91 9322296990.",
+        "Crane on rent in Raigad district - Panvel, Taloja MIDC, Patalganga, Khopoli, Uran. All terrain telescopic cranes (160T–300T), mobile cranes, hydra, manlift. Based in Kalamboli. Call +91 9322296990.",
     },
     { name: "robots", content: "index, follow" },
     {
       name: "keywords",
       content:
-        "crane on rent in raigad, crane rental raigad, crane hire raigad district, mobile crane raigad, crane rental panvel raigad",
+        "crane on rent in raigad, crane rental raigad, all terrain crane raigad, telescopic crane rental raigad, crane hire raigad district, mobile crane raigad, crane rental panvel raigad, crane taloja midc, crane patalganga midc",
     },
     {
       property: "og:url",
@@ -203,13 +248,18 @@ const areas = [
 
 const services = [
   {
+    name: "All Terrain Telescopic Crane",
+    desc: "XCMG QAY160 and QAY300 all terrain cranes for bridge, power plant and infrastructure projects in Raigad",
+    capacity: "160T–300T",
+  },
+  {
     name: "Mobile Crane",
-    desc: "All-terrain and mobile cranes for large construction projects in Raigad",
+    desc: "All-terrain and mobile cranes for large construction projects across Raigad district",
     capacity: "90T–300T",
   },
   {
     name: "Hydra Crane",
-    desc: "Pick-and-carry hydra cranes for factory and industrial operations in Raigad",
+    desc: "Pick-and-carry hydra cranes for factory and industrial operations at Taloja and Patalganga MIDC",
     capacity: "8T–14T",
   },
   {
@@ -221,6 +271,41 @@ const services = [
     name: "Crawler Crane",
     desc: "Heavy crawler cranes for bridge, dam and large civil projects in Raigad",
     capacity: "80T–400T",
+  },
+  {
+    name: "Reach Stacker",
+    desc: "Container and logistics equipment for JNPT hinterland and Uran port area operations",
+    capacity: "45T",
+  },
+];
+
+const industries = [
+  "Petrochemical & Chemical Plants (Patalganga MIDC)",
+  "Pharmaceutical & API Manufacturing (Taloja MIDC)",
+  "Power Transmission & Substation Projects",
+  "Bridge Construction (NH-66 Corridor)",
+  "Automobile Component Manufacturing (Khopoli)",
+  "Port & Logistics (JNPT, Uran, Dronagiri)",
+  "Infrastructure & Civil Engineering",
+  "Industrial Machinery Installation",
+];
+
+const faqs = [
+  {
+    q: "How quickly can a crane be mobilised in Raigad from Saini Lifters?",
+    a: "Since our yard is in Kalamboli, which is within Raigad district itself, we can typically mobilise a crane to Panvel, Taloja MIDC or Patalganga within 2–4 hours. For Alibag, Pen or Mahad, mobilisation is typically within the same day. Call +91 9322296990 to confirm.",
+  },
+  {
+    q: "Do you provide all terrain telescopic cranes in Raigad?",
+    a: "Yes. Our XCMG QAY160 (160T) and QAY300 (300T) all terrain telescopic cranes are available for deployment across Raigad district for bridge, power plant, refinery and large infrastructure projects. These cranes travel on public roads and require no special transport, making them ideal for Raigad's industrial corridors.",
+  },
+  {
+    q: "Which MIDC zones in Raigad do you cover?",
+    a: "We regularly provide cranes at Taloja MIDC, Patalganga MIDC and Khopoli MIDC in Raigad. Our hydra cranes (8T–14T) are the most common choice for factory machine shifting within MIDC zones, while all terrain telescopic cranes are deployed for plant expansion and heavy equipment installation.",
+  },
+  {
+    q: "What is the minimum hire period for crane rental in Raigad?",
+    a: "The minimum hire period is one day (8 or 12-hour shift). Weekly and monthly rates are available for long-term Raigad project deployments at preferential pricing. Call +91 9322296990 for a project-specific quote.",
   },
 ];
 </script>

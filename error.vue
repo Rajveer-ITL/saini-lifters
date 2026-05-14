@@ -6,16 +6,16 @@ defineProps({
   error: Object,
 });
 
-// Add SEO metadata
 useSeoMeta({
-  title: "Page Not Found - Saini Lifters",
+  title: "Page Not Found | Saini Lifters",
   description:
-    "Oops! The page you are looking for is missing. Check out our services or return to the homepage.",
+    "The page you are looking for does not exist. Return to our homepage or explore our crane rental services.",
+  robots: "noindex, nofollow",
   ogTitle: "404 - Page Not Found | Saini Lifters",
   ogDescription:
-    "We couldn't find the page you were looking for. But don't worry, we offer the best crane services. Explore now!",
+    "We couldn't find the page you were looking for. Explore our crane rental services in Navi Mumbai.",
   ogImage:
-    "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp", // Update with an actual image
+    "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
   ogType: "website",
   twitterCard: "summary_large_image",
 });

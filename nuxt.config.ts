@@ -117,12 +117,37 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/png",
-          href: "/favicon.png",
+          href: "/favicon-light.png",
+          media: "(prefers-color-scheme: light)",
+          sizes: "32x32",
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "/favicon-dark.png",
+          media: "(prefers-color-scheme: dark)",
           sizes: "32x32",
         },
         {
           rel: "apple-touch-icon",
-          href: "/apple-touch-icon-180x180.png",
+          sizes: "180x180",
+          href: "/apple-touch-icon.png",
+        },
+        {
+          rel: "manifest",
+          href: "/site.webmanifest",
+        },
+        {
+          rel: "preload",
+          as: "video",
+          href: "/video/headerCardMainVideo.mp4",
+          type: "video/mp4",
+        },
+        {
+          rel: "preload",
+          as: "video",
+          href: "/video/cranesWorking.mp4",
+          type: "video/mp4",
         },
         {
           rel: "preload",

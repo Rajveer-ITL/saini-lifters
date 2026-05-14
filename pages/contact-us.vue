@@ -5,11 +5,10 @@
       <h1
         class="text-4xl md:text-5xl font-bold tracking-tight text-[#234a76] dark:text-white mb-3"
       >
-        Get in <span class="text-[#FF4057]">Touch</span>
+        Contact <span class="text-[#FF4057]">Saini Lifters</span>
       </h1>
-      <p class="text-gray-600 dark:text-gray-400 text-lg max-w-xl mx-auto">
-        Let's discuss how we can help with your heavy lifting and industrial
-        needs.
+      <p class="text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+        Crane on rent in Navi Mumbai, Panvel &amp; Kalamboli — call, email or fill the form below and our team will respond within the hour.
       </p>
     </section>
 
@@ -142,6 +141,7 @@
                   >
                   <input
                     id="first-name"
+                    v-model="form.firstName"
                     placeholder="First name"
                     required
                     class="border border-gray-300 dark:border-zinc-600 dark:bg-zinc-900 dark:text-white placeholder:text-zinc-400 w-full rounded-lg p-2.5 text-sm focus:outline-none focus:border-[#FF4057] transition-colors"
@@ -220,7 +220,7 @@
     </section>
 
     <!-- Full-width Map Section -->
-    <section class="max-w-5xl mx-auto px-4 pb-16">
+    <section class="max-w-5xl mx-auto px-4 pb-12">
       <div
         class="rounded-2xl overflow-hidden border border-gray-200 dark:border-zinc-700 shadow-sm"
       >
@@ -249,6 +249,53 @@
         </div>
       </div>
     </section>
+
+    <!-- Service Areas -->
+    <section class="max-w-5xl mx-auto px-4 py-10">
+      <h2 class="text-2xl font-bold mb-4 text-center">Areas We Serve</h2>
+      <p class="text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-6">
+        Our crane fleet is based at Kalamboli, Navi Mumbai — enabling fast deployment across the following areas:
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+        <div
+          v-for="area in serviceAreas"
+          :key="area"
+          class="flex items-center gap-2 p-3 border border-gray-200 dark:border-zinc-700 rounded-lg"
+        >
+          <span class="w-2 h-2 rounded-full bg-[#FF4057] flex-shrink-0"></span>
+          <span class="text-sm text-gray-700 dark:text-gray-300">{{ area }}</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About + Directions -->
+    <section class="max-w-5xl mx-auto px-4 pb-16">
+      <div class="bg-gray-50 dark:bg-zinc-900/50 rounded-2xl p-6 md:p-8 space-y-4">
+        <h2 class="text-2xl font-bold">Crane Rental in Navi Mumbai – Available 24/7</h2>
+        <p class="text-gray-600 dark:text-gray-300">
+          Saini Lifters is Navi Mumbai's trusted crane rental company, operating since 2001 from our Kalamboli yard. We provide
+          <NuxtLink to="/services/all-terrain-crane-rental" class="text-[#FF4057] font-semibold hover:underline">all terrain telescopic crane rental</NuxtLink>,
+          <NuxtLink to="/services/mobile-crane-rental" class="text-[#FF4057] hover:underline">mobile crane rental</NuxtLink>,
+          <NuxtLink to="/services/crawler-crane-rental" class="text-[#FF4057] hover:underline">crawler crane rental</NuxtLink>,
+          <NuxtLink to="/services/hydra-crane-rental" class="text-[#FF4057] hover:underline">hydra crane rental</NuxtLink>,
+          <NuxtLink to="/services/manlift-rental" class="text-[#FF4057] hover:underline">manlift and boom lift rental</NuxtLink>,
+          and <NuxtLink to="/services/reach-stacker-rental" class="text-[#FF4057] hover:underline">reach stacker rental</NuxtLink> with certified operators included.
+        </p>
+        <p class="text-gray-600 dark:text-gray-300">
+          Our XCMG QAY160 (160T) and QAY300 (300T) all terrain telescopic cranes are available around the clock for bridge construction, power plant installations, industrial machinery erection and high-rise building projects across Navi Mumbai, Panvel, Raigad, Mumbai and Thane.
+        </p>
+        <h3 class="text-lg font-bold pt-2">How to Reach Our Yard at Kalamboli</h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          Our crane yard is located at Plot No. J-854, Steel Market Road, Sector AWC, Kalamboli — inside the Navi Mumbai Steel Market industrial complex, just off the Mumbai–Pune Expressway (NH-48) at the Kalamboli exit. Key landmarks nearby include Panvel Railway Station (8 km), JNPT Port Gate 1 (12 km), Kharghar Sector 35 (5 km) and Taloja MIDC (10 km).
+        </p>
+        <p class="text-gray-600 dark:text-gray-300">
+          From Panvel: take NH-48 towards Mumbai, exit at Kalamboli interchange and follow signs for Steel Market Road. From JNPT: take the Uran–Panvel road towards Kalamboli, turn left at the Kalamboli steel market. We are open 24 hours and our team is always available for emergency crane deployment across Navi Mumbai and Raigad.
+        </p>
+        <p class="text-gray-600 dark:text-gray-300">
+          For immediate requirements, call us directly at <a href="tel:+919322296990" class="text-[#FF4057] font-semibold">+91 9322296990</a>. For project enquiries, billing and long-term contracts, use the contact form above or email us at <a href="mailto:charanjit@sainilifters.com" class="text-[#FF4057] hover:underline">charanjit@sainilifters.com</a>. We typically respond to form submissions within one business hour.
+        </p>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -258,6 +305,15 @@ import { PhoneCall, Mail, MapPin, Loader, Clock } from "lucide-vue-next";
 import Globe from "@/components/inspiraUi/globe.vue";
 import BorderBeam from "@/components/inspiraUi/borderBeam.vue";
 import { useHead } from "#imports";
+import { useToast } from "vue-toastification";
+
+const toast = useToast();
+
+const serviceAreas = [
+  "Kalamboli", "Panvel", "Navi Mumbai", "Raigad",
+  "Mumbai", "Thane", "Taloja MIDC", "Patalganga MIDC",
+  "JNPT / Uran", "Kharghar", "Belapur", "Khopoli",
+];
 
 const form = reactive({
   firstName: "",
@@ -270,8 +326,22 @@ const isLoading = ref(false);
 
 const onSubmit = async () => {
   isLoading.value = true;
-  await new Promise((resolve) => setTimeout(resolve, 2000));
-  isLoading.value = false;
+  try {
+    await $fetch("/api/contact", {
+      method: "POST",
+      body: { ...form },
+    });
+    toast.success("Message sent! We'll get back to you soon.");
+    form.firstName = "";
+    form.lastName = "";
+    form.phone = "";
+    form.email = "";
+    form.message = "";
+  } catch {
+    toast.error("Something went wrong. Please call us directly at +91 9322296990.");
+  } finally {
+    isLoading.value = false;
+  }
 };
 
 const breadcrumbSchema = {
@@ -350,6 +420,35 @@ useHead({
     {
       type: "application/ld+json",
       innerHTML: JSON.stringify(breadcrumbSchema),
+    },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        name: "Saini Lifters Crane Service",
+        telephone: "+91-9322296990",
+        email: "charanjit@sainilifters.com",
+        url: "https://www.sainilifters.com",
+        image: "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Plot No. J-854, Steel Market Rd, Sector AWC",
+          addressLocality: "Kalamboli, Panvel",
+          addressRegion: "Navi Mumbai, Maharashtra",
+          postalCode: "410218",
+          addressCountry: "IN",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 19.0319,
+          longitude: 73.1042,
+        },
+        openingHours: "Mo-Su 00:00-24:00",
+        priceRange: "$$",
+        areaServed: ["Navi Mumbai", "Panvel", "Kalamboli", "Raigad", "Mumbai", "Thane", "Maharashtra"],
+        description: "Crane on rent in Navi Mumbai, Panvel & Kalamboli since 2001. All terrain telescopic cranes, mobile cranes, hydra cranes, manlifts & reach stackers.",
+      }),
     },
   ],
 });

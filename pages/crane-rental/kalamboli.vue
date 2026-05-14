@@ -43,14 +43,13 @@
 
     <section class="max-w-5xl mx-auto px-4 py-16">
       <h2 class="text-3xl font-bold mb-6">
-        Crane Rental in Kalamboli - Our Home Base
+        Crane Rental in Kalamboli – Our Home Base
       </h2>
-      <p class="text-gray-600 dark:text-gray-300 mb-6 text-lg">
-        Saini Lifters is located at Plot No. J-854, Steel Market Rd, Sector AWC,
-        Kalamboli, Navi Mumbai 410218. Being based in Kalamboli means we can
-        deploy cranes faster than any other provider - right to your doorstep in
-        the Steel Market, MIDC zones, construction sites and logistics hubs of
-        Kalamboli.
+      <p class="text-gray-600 dark:text-gray-300 mb-4 text-lg">
+        Saini Lifters is located at Plot No. J-854, Steel Market Rd, Sector AWC, Kalamboli, Navi Mumbai 410218. As a Kalamboli-based crane company, we have an unmatched advantage — same-day deployment across Kalamboli's Steel Market industrial zone, the Kalamboli MIDC cluster, surrounding construction projects and logistics hubs within the 410218 pin code.
+      </p>
+      <p class="text-gray-600 dark:text-gray-300 mb-8">
+        Kalamboli is a high-density industrial area in Navi Mumbai with a large concentration of steel traders, auto ancillary manufacturers, logistics warehouses and construction material suppliers. Our cranes are regularly engaged for machinery shifting, structural steel erection, warehouse construction and equipment installation across the area.
       </p>
 
       <div class="grid md:grid-cols-2 gap-6 mb-12">
@@ -68,6 +67,34 @@
         </div>
       </div>
 
+      <!-- All terrain crane feature -->
+      <div class="bg-gray-50 dark:bg-zinc-900/50 rounded-xl p-6 mb-10">
+        <h2 class="text-2xl font-bold mb-3">All Terrain Telescopic Crane in Kalamboli</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-3">
+          Our XCMG QAY160 (160T) and QAY300 (300T) all terrain telescopic cranes are based in Kalamboli — which means if you need an all terrain crane in Navi Mumbai, Panvel or anywhere in Raigad district, you get the shortest possible deployment time. These cranes are highway-capable and can be on your site within hours of booking.
+        </p>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          The all terrain telescopic crane is the most versatile heavy lift crane for Kalamboli's industrial environment — capable of lifting 160T at close radius or reaching 78 metres at reduced loads. It sets up on outriggers in 2–4 hours and can relocate to a different part of your site the same day.
+        </p>
+        <NuxtLink
+          to="/equipment/all-terrain-crane"
+          class="inline-block text-[#FF4057] font-semibold hover:underline"
+        >View All Terrain Crane Fleet & Specs →</NuxtLink>
+      </div>
+
+      <!-- Why Kalamboli projects choose us -->
+      <h2 class="text-3xl font-bold mb-6">Why Kalamboli Projects Choose Saini Lifters</h2>
+      <ul class="grid sm:grid-cols-2 gap-3 mb-10">
+        <li
+          v-for="reason in whyKalamboli"
+          :key="reason"
+          class="flex items-center gap-3 text-gray-600 dark:text-gray-300"
+        >
+          <span class="w-5 h-5 rounded-full bg-[#FF4057] text-white flex items-center justify-center flex-shrink-0 text-xs">✓</span>
+          {{ reason }}
+        </li>
+      </ul>
+
       <div class="bg-[#FF4057]/5 dark:bg-[#FF4057]/10 rounded-xl p-6 mb-10">
         <h2 class="text-2xl font-bold mb-3">Our Address in Kalamboli</h2>
         <p class="text-gray-600 dark:text-gray-300">
@@ -80,7 +107,7 @@
         </p>
       </div>
 
-      <h2 class="text-3xl font-bold mb-6">FAQs - Crane Rental in Kalamboli</h2>
+      <h2 class="text-3xl font-bold mb-6">FAQs – Crane Rental in Kalamboli</h2>
       <div class="space-y-5">
         <div
           v-for="faq in faqs"
@@ -142,18 +169,18 @@ const breadcrumbSchema = {
 };
 
 useHead({
-  title: "Crane on Rent in Kalamboli | Saini Lifters - Navi Mumbai",
+  title: "Crane on Rent in Kalamboli | All Terrain Telescopic Crane | Saini Lifters",
   meta: [
     {
       name: "description",
       content:
-        "Crane on rent in Kalamboli, Navi Mumbai. Saini Lifters is based in Kalamboli - fastest deployment. Mobile cranes, hydra, manlift & more. Call +91 9322296990.",
+        "Crane on rent in Kalamboli, Navi Mumbai. Saini Lifters is headquartered in Kalamboli — same-day deployment of all terrain telescopic cranes (160T–300T), mobile cranes, hydra & manlift. Call +91 9322296990.",
     },
     { name: "robots", content: "index, follow" },
     {
       name: "keywords",
       content:
-        "crane on rent in kalamboli, crane rental kalamboli, crane hire kalamboli navi mumbai, hydra crane kalamboli",
+        "crane on rent in kalamboli, crane rental kalamboli, all terrain telescopic crane kalamboli, crane hire kalamboli navi mumbai, hydra crane kalamboli, telescopic crane navi mumbai kalamboli",
     },
     {
       property: "og:url",
@@ -216,8 +243,12 @@ useHead({
 
 const services = [
   {
+    name: "All Terrain Telescopic Crane in Kalamboli",
+    desc: "XCMG QAY160 (160T) and QAY300 (300T) all terrain cranes — based in Kalamboli for same-day deployment to any Navi Mumbai site.",
+  },
+  {
     name: "Mobile Crane Rental in Kalamboli",
-    desc: "XCMG and Grove mobile cranes deployed same-day from our Kalamboli yard.",
+    desc: "XCMG and Grove mobile cranes (90T–300T) deployed same-day from our Kalamboli yard.",
   },
   {
     name: "Hydra Crane in Kalamboli",
@@ -231,20 +262,47 @@ const services = [
     name: "Reach Stacker in Kalamboli",
     desc: "45T reach stackers for container and logistics operations in Kalamboli.",
   },
+  {
+    name: "Crawler Crane in Kalamboli",
+    desc: "80T–400T crawler cranes for large civil and infrastructure projects near Kalamboli.",
+  },
+];
+
+const whyKalamboli = [
+  "Kalamboli-based yard — shortest deployment distance in Navi Mumbai",
+  "All terrain telescopic cranes (160T–700T) dispatched same-day",
+  "24/7 availability including emergency weekend lifts",
+  "Certified operators with 10+ years MIDC and site experience",
+  "No mobilisation delay — cranes kept ready at the Kalamboli yard",
+  "Known to all major contractors in Steel Market, Sector AWC",
+  "Competitive daily and monthly rates with no hidden charges",
+  "Full coordination with your site engineer and safety officer",
 ];
 
 const faqs = [
   {
     q: "Where is Saini Lifters located in Kalamboli?",
-    a: "Saini Lifters is located at Plot No. J-854, Steel Market Rd, Sector AWC, Kalamboli, Panvel, Navi Mumbai 410218.",
+    a: "Saini Lifters is located at Plot No. J-854, Steel Market Rd, Sector AWC, Kalamboli, Panvel, Navi Mumbai 410218. We are in the heart of Kalamboli's Steel Market industrial area.",
+  },
+  {
+    q: "Can I get an all terrain telescopic crane in Kalamboli today?",
+    a: "Yes — our all terrain telescopic cranes (XCMG QAY160 and QAY300) are based in Kalamboli. Subject to availability, we can deploy on the same day for urgent lifts. Call +91 9322296990 to check crane availability.",
   },
   {
     q: "Can I get a crane on rent in Kalamboli today?",
-    a: "Yes - since our yard is in Kalamboli, we can often deploy a crane on the same day for local requirements. Call +91 9322296990 to check availability.",
+    a: "Yes — since our yard is in Kalamboli, we can often deploy a crane on the same day for local requirements, including hydra cranes, mobile cranes and manlifts. Call +91 9322296990.",
+  },
+  {
+    q: "What types of projects do you handle in Kalamboli?",
+    a: "We handle machine shifting in steel and manufacturing units, structural steel erection for new construction, equipment installation in MIDC factories, warehouse construction, manlift for painting and maintenance work, and all terrain crane deployments for large lifts across Kalamboli and greater Navi Mumbai.",
   },
   {
     q: "What is the minimum hire duration for a crane in Kalamboli?",
-    a: "The minimum hire duration is one day (8 or 12 hours). We also offer weekly and monthly rates at discounted pricing.",
+    a: "The minimum hire duration is one day (8 or 12 hours). We also offer weekly and monthly rates at discounted pricing. Long-term project contracts are available.",
+  },
+  {
+    q: "Do you offer a crane with operator in Kalamboli?",
+    a: "Yes — all crane rentals from Saini Lifters in Kalamboli include a certified, trained operator at no extra charge. Our operators are experienced with Kalamboli's local road conditions, site access and safety requirements.",
   },
 ];
 </script>
