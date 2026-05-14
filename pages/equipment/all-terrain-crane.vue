@@ -53,6 +53,31 @@
         </li>
       </ul>
 
+      <!-- Why Rent Section -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Why Rent an All Terrain Crane from Saini Lifters?</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Saini Lifters has operated all terrain telescopic cranes since 2001 — one of the longest-serving heavy lift fleets in Navi Mumbai. Our XCMG QAY160 and QAY300 cranes are maintained to manufacturer standards and come with certified, experienced operators who understand the specific ground conditions and site access challenges across Panvel, Kalamboli and the Raigad industrial corridor.</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">Every all terrain crane deployment includes a pre-lift site survey, outrigger pad planning, load chart verification and operator-rigger briefing. This eliminates surprises on lift day and ensures your project stays on schedule. For pan-India projects in Odisha, Madhya Pradesh or Gujarat, we handle all ODC transport permits and route surveys.</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border border-gray-200 dark:border-zinc-700 rounded-xl overflow-hidden">
+            <thead class="bg-[#FF4057] text-white">
+              <tr>
+                <th class="p-3 text-left font-semibold">Factor</th>
+                <th class="p-3 text-left font-semibold">All Terrain Crane</th>
+                <th class="p-3 text-left font-semibold">Crawler Crane</th>
+                <th class="p-3 text-left font-semibold">Mobile Crane</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 dark:divide-zinc-700">
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Road Travel</td><td class="p-3 text-green-600 dark:text-green-400">Highway speed ✓</td><td class="p-3 text-red-500">Trailer only</td><td class="p-3 text-green-600 dark:text-green-400">Highway speed ✓</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Capacity</td><td class="p-3">50T – 700T</td><td class="p-3">100T – 400T+</td><td class="p-3">50T – 500T</td></tr>
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Setup Time</td><td class="p-3">2–4 hours</td><td class="p-3">2–5 days</td><td class="p-3">1–3 hours</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Best For</td><td class="p-3">Multi-site, long reach</td><td class="p-3">Long-duration, soft ground</td><td class="p-3">Short lifts, urban sites</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <h2 class="text-3xl font-bold mb-6">FAQs — All Terrain Crane Rental Navi Mumbai</h2>
       <div class="space-y-5 mb-12">
         <div v-for="faq in faqs" :key="faq.q" class="border-b border-gray-200 dark:border-zinc-700 pb-4">
@@ -127,6 +152,8 @@ useHead({
           { "@type": "Question", name: "What is an all terrain telescopic crane?", acceptedAnswer: { "@type": "Answer", text: "An all terrain telescopic crane combines on-road mobility with off-road capability. It uses a telescoping boom to reach great heights and capacities from 50T up to 700T or more. Ideal for bridge construction, power plant erection and heavy industrial lifts." } },
           { "@type": "Question", name: "How much does a 300T crane rental cost per day in Navi Mumbai?", acceptedAnswer: { "@type": "Answer", text: "The daily rate for a 300T all terrain crane in Navi Mumbai depends on the project scope, duration and site conditions. Call Saini Lifters at +91 9322296990 for an accurate quote specific to your project." } },
           { "@type": "Question", name: "Do you deploy all terrain cranes pan-India?", acceptedAnswer: { "@type": "Answer", text: "Yes, Saini Lifters deploys all terrain cranes across Maharashtra, Odisha, Madhya Pradesh and other Indian states for large infrastructure and industrial projects. Contact us for mobilisation details." } },
+          { "@type": "Question", name: "What is the difference between an all terrain crane and a rough terrain crane?", acceptedAnswer: { "@type": "Answer", text: "An all terrain crane travels on public highways at full speed and operates off-road — ideal for multi-site projects. A rough terrain crane is not road-legal and must be transported on a trailer, but has lower ground pressure for soft or muddy construction sites." } },
+          { "@type": "Question", name: "How long does it take to set up a 160T all terrain crane on site?", acceptedAnswer: { "@type": "Answer", text: "A 160T XCMG QAY160 can typically be set up and ready to lift within 2–4 hours on a prepared site, including outrigger extension, boom erection and load chart verification. For a 300T crane, allow 4–6 hours. Saini Lifters coordinates all groundwork and safety checks." } },
         ],
       }),
     },
@@ -156,5 +183,7 @@ const faqs = [
   { q: "What is an all terrain telescopic crane?", a: "An all terrain telescopic crane combines on-road mobility with off-road capability. It uses a telescoping boom to reach great heights and capacities from 50T up to 700T or more. Ideal for bridge construction, power plant erection and heavy industrial lifts." },
   { q: "How much does a 300T crane rental cost per day in Navi Mumbai?", a: "The daily rate for a 300T all terrain crane in Navi Mumbai depends on project scope, duration and site conditions. Call Saini Lifters at +91 9322296990 for an accurate quote." },
   { q: "Do you deploy all terrain cranes pan-India?", a: "Yes, Saini Lifters deploys all terrain cranes across Maharashtra, Odisha, Madhya Pradesh and other Indian states for large infrastructure and industrial projects." },
+  { q: "What is the difference between an all terrain crane and a rough terrain crane?", a: "An all terrain crane can travel on public highways at full speed and operate off-road, making it ideal for multi-site projects. A rough terrain crane is not road-legal and must be transported on a trailer — but it has lower ground pressure, making it better for soft or muddy construction sites and MIDC zones." },
+  { q: "How long does it take to set up a 160T all terrain crane on site?", a: "A 160T all terrain crane like the XCMG QAY160 can typically be set up and ready to lift within 2–4 hours on a prepared site. Setup includes positioning, outrigger extension, boom erection and load chart verification. For a 300T crane, allow 4–6 hours. Saini Lifters coordinates all groundwork and safety checks before the first lift." },
 ];
 </script>

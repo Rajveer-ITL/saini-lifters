@@ -23,9 +23,12 @@
 
     <!-- Image Gallery -->
     <section class="max-w-7xl mx-auto px-4 py-16">
-      <h2 class="text-2xl font-bold mb-8">
+      <h2 class="text-2xl font-bold mb-4">
         Our <span class="text-[#FF4057]">Equipment Fleet</span>
       </h2>
+      <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-4xl">
+        Browse photos of Saini Lifters' crane and heavy equipment fleet — XCMG all-terrain cranes (160T to 300T), SANY crawler cranes, Kalmar reach stackers and Farana pick &amp; carry cranes. All equipment operates with trained, certified operators experienced in Navi Mumbai, Panvel MIDC and pan-India project logistics.
+      </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
         <div
           v-for="img in images"
@@ -136,7 +139,7 @@ useHead({
     {
       name: "description",
       content:
-        "Gallery of Saini Lifters crane and lifting equipment fleet. XCMG QAY300, mobile cranes, hydra cranes, manlifts and reach stackers in action in Navi Mumbai.",
+        "Gallery of Saini Lifters crane and lifting equipment fleet in Navi Mumbai — XCMG all-terrain cranes (160T–300T), SANY crawler cranes, Kalmar reach stackers, Farana pick & carry cranes and manlifts. Call +91 9322296990.",
     },
     { name: "robots", content: "index, follow" },
     { property: "og:url", content: "https://www.sainilifters.com/gallery" },
@@ -185,39 +188,39 @@ useHead({
 const images = [
   {
     src: "crane-1.webp",
-    title: "XCMG QAY160 - 160T All-Terrain Crane",
+    title: "XCMG QAY160 — 160T All-Terrain Crane",
     alt: "XCMG QAY160 all-terrain crane on rent in Navi Mumbai",
-    desc: "160-tonne XCMG all-terrain crane available for rent in Navi Mumbai.",
+    desc: "160-tonne XCMG QAY160 all-terrain crane deployed at a bridge construction project in Navi Mumbai. Available on rent with certified operator and rigger team for infrastructure, power plant erection and heavy industrial lifting.",
   },
   {
     src: "crane-2.webp",
-    title: "XCMG QAY300 - 300T All-Terrain Crane",
+    title: "XCMG QAY300 — 300T All-Terrain Crane",
     alt: "XCMG QAY300 crane on rent in Panvel Navi Mumbai",
-    desc: "Our largest XCMG crane - 300T capacity for mega projects.",
+    desc: "300-tonne XCMG QAY300 all-terrain crane at a heavy infrastructure project in Maharashtra. Our largest mobile crane handles tandem lifts, heavy girder erection and process plant equipment installation across pan-India project sites.",
   },
   {
     src: "crane-3.webp",
-    title: "Mobile Crane - Heavy Lift Operation",
+    title: "Mobile Crane — Kalamboli Industrial Site",
     alt: "Mobile crane on rent in Navi Mumbai Kalamboli",
-    desc: "Mobile crane performing heavy lift at a construction site in Navi Mumbai.",
+    desc: "Mobile crane deployed at a factory in Kalamboli MIDC for machine erection and equipment installation. Our cranes are available for short-duration lifts with fast deployment across Navi Mumbai and Panvel.",
   },
   {
     src: "crane-4.webp",
-    title: "XCMG QAY200 - 200T All-Terrain Crane",
+    title: "XCMG QAY200 — 200T All-Terrain Crane",
     alt: "XCMG QAY200 crane on rent in Navi Mumbai",
-    desc: "200-tonne XCMG QAY200 for industrial and infrastructure projects.",
+    desc: "200-tonne XCMG QAY200 performing structural steel lift at an industrial project in Panvel MIDC. Suitable for power substation equipment setting, steel structure erection and precast concrete panel installation.",
   },
   {
     src: "crane-5.webp",
-    title: "Grove GMK90 - 90T Mobile Crane",
+    title: "Grove GMK90 — 90T Mobile Crane",
     alt: "Grove GMK90 mobile crane on rent Panvel Navi Mumbai",
-    desc: "Grove GMK90 mobile crane - versatile and reliable for mid-scale projects.",
+    desc: "Grove GMK90 90-tonne all-terrain mobile crane available on rent in Navi Mumbai. Ideal for mid-scale construction projects, equipment setting and roof slab positioning where a large crane footprint is impractical.",
   },
   {
-    src: "crane-1.webp",
-    title: "Crane Fleet - Saini Lifters Navi Mumbai",
-    alt: "Saini Lifters crane fleet Kalamboli Navi Mumbai",
-    desc: "Our crane fleet ready for deployment across Navi Mumbai, Panvel and Raigad.",
+    src: "eq-reach-stacker.png",
+    title: "Kalmar Reach Stacker — 45T Container Handler",
+    alt: "Kalmar reach stacker on rent in Navi Mumbai near JNPT",
+    desc: "Kalmar 45T reach stacker for container yard and CFS operations near JNPT, Navi Mumbai. Stacks 20ft and 40ft ISO containers three-high and is deployed to container freight stations and inland container depots across the region.",
   },
 ];
 </script>

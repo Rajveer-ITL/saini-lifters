@@ -208,6 +208,31 @@
         </li>
       </ul>
 
+      <!-- Why Rent Section -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Why Rent Aerial Work Platforms from Saini Lifters?</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Saini Lifters maintains a diverse fleet of aerial work platforms (AWP) — telescopic boom lifts, articulated boom lifts and scissor lifts — to cover every height access requirement in Navi Mumbai, Panvel and Kalamboli. Whether you need to reach a 56-metre chimney stack or maintain industrial lighting 6 metres above a factory floor, we have the right platform.</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">All our manlifts are delivered with a certified operator, pre-delivery inspection certificate and safety harness. Our operators are trained in working at height protocols under Indian safety regulations — reducing your site's liability while ensuring the work gets done efficiently and safely.</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border border-gray-200 dark:border-zinc-700 rounded-xl overflow-hidden">
+            <thead class="bg-[#FF4057] text-white">
+              <tr>
+                <th class="p-3 text-left font-semibold">Platform Type</th>
+                <th class="p-3 text-left font-semibold">Max Height</th>
+                <th class="p-3 text-left font-semibold">Power</th>
+                <th class="p-3 text-left font-semibold">Best For</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 dark:divide-zinc-700">
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Telescopic Boom Lift</td><td class="p-3">185ft (56m)</td><td class="p-3">Diesel / 4WD</td><td class="p-3">Chimneys, facades, high towers</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Articulated Boom Lift</td><td class="p-3">120ft (36m)</td><td class="p-3">Diesel</td><td class="p-3">Over-obstacle access, complex reach</td></tr>
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Electric Scissor Lift</td><td class="p-3">50ft (15m)</td><td class="p-3">Electric</td><td class="p-3">Indoor factory, warehouse, mall</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Diesel Scissor Lift</td><td class="p-3">50ft (15m)</td><td class="p-3">Diesel</td><td class="p-3">Outdoor rough terrain, construction</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <h2 class="text-3xl font-bold mb-6">
         FAQs — Manlift & Boom Lift Rental Navi Mumbai
       </h2>
@@ -389,6 +414,22 @@ useHead({
               text: "A 185ft telescopic boom lift reaches approximately 56 metres (56m). This is among the tallest aerial work platforms available on rent in Navi Mumbai, suitable for high-rise facades, cooling towers and tall industrial structures.",
             },
           },
+          {
+            "@type": "Question",
+            name: "What is the daily rental rate for a boom lift in Navi Mumbai?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Boom lift rental rates in Navi Mumbai: scissor lift (19–50ft) ₹3,500–₹6,000/day; articulated boom lift (60–120ft) ₹8,000–₹15,000/day; telescopic boom lift at 185ft ₹18,000–₹28,000/day. Call Saini Lifters at +91 9322296990 for exact rates based on your project duration.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you provide a trained operator with boom lift rental?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes — all Saini Lifters aerial work platform rentals include a trained and certified operator with working-at-height certification, experienced in HVAC, electrical, telecom and construction access work across Navi Mumbai and Panvel industrial zones.",
+            },
+          },
         ],
       }),
     },
@@ -418,6 +459,14 @@ const faqs = [
   {
     q: "How high is a 185ft boom lift in metres?",
     a: "A 185ft telescopic boom lift reaches approximately 56 metres — among the tallest aerial work platforms available on rent in Navi Mumbai, suitable for high-rise facades, cooling towers and tall industrial structures.",
+  },
+  {
+    q: "What is the daily rental rate for a boom lift in Navi Mumbai?",
+    a: "Boom lift rental rates in Navi Mumbai depend on height and type. A diesel scissor lift (19–50ft) costs approximately ₹3,500–₹6,000 per day. An articulated boom lift (60–120ft) is ₹8,000–₹15,000 per day. A telescopic boom lift at 185ft is ₹18,000–₹28,000 per day. Call Saini Lifters at +91 9322296990 for exact rates based on your project duration and location.",
+  },
+  {
+    q: "Do you provide a trained operator with boom lift rental?",
+    a: "Yes — all Saini Lifters aerial work platform rentals include a trained and certified operator. Our operators hold working-at-height certifications and are experienced in HVAC, electrical, telecom and construction access work across Navi Mumbai and Panvel industrial zones.",
   },
 ];
 </script>

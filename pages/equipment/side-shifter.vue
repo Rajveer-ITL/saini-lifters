@@ -53,6 +53,30 @@
         </li>
       </ul>
 
+      <!-- Why Rent Section -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Why Rent a Side Shifter for CFS and Export Container Operations?</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Container freight stations (CFS) and export cargo handlers near JNPT deal with a constant challenge: containers arrive in one position and need to be placed precisely in another — often in tight, congested yards where a reach stacker or crane cannot manoeuvre. The side shifter solves this with its lateral shifting head, repositioning containers left or right by up to 600mm without moving the machine's footprint.</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">Saini Lifters provides Kalmar side shifters in 20T and 40T capacity for CFS operations, export cargo staging, reefer container positioning and container terminal fine placement near JNPT. Both models handle 20ft and 40ft ISO standard containers including refrigerated (reefer) units. Available with experienced operators who understand export documentation workflows and CFS timelines.</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border border-gray-200 dark:border-zinc-700 rounded-xl overflow-hidden">
+            <thead class="bg-[#FF4057] text-white">
+              <tr>
+                <th class="p-3 text-left font-semibold">Operation</th>
+                <th class="p-3 text-left font-semibold">Side Shifter</th>
+                <th class="p-3 text-left font-semibold">Reach Stacker</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 dark:divide-zinc-700">
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Lateral fine positioning</td><td class="p-3 text-green-600 dark:text-green-400">Specialist ✓</td><td class="p-3">Limited</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Stacking height</td><td class="p-3">Ground level only</td><td class="p-3 text-green-600 dark:text-green-400">3 containers ✓</td></tr>
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Tight CFS yards</td><td class="p-3 text-green-600 dark:text-green-400">Ideal ✓</td><td class="p-3">Less manoeuvrable</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Reefer containers</td><td class="p-3 text-green-600 dark:text-green-400">Yes ✓</td><td class="p-3 text-green-600 dark:text-green-400">Yes ✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <h2 class="text-3xl font-bold mb-6">FAQs — Side Shifter Rental Navi Mumbai</h2>
       <div class="space-y-5 mb-12">
         <div v-for="faq in faqs" :key="faq.q" class="border-b border-gray-200 dark:border-zinc-700 pb-4">
@@ -98,7 +122,7 @@ useHead({
   script: [
     { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "Service", "name": "Side Shifter Container Handler Rental", "provider": { "@type": "LocalBusiness", "name": "Saini Lifters Crane Service", "telephone": "+91-9322296990", "url": "https://www.sainilifters.com" }, "areaServed": ["Navi Mumbai", "Kalamboli", "JNPT", "Panvel"], "url": "https://www.sainilifters.com/equipment/side-shifter" }) },
     { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.sainilifters.com" }, { "@type": "ListItem", position: 2, name: "Equipment", item: "https://www.sainilifters.com/equipment" }, { "@type": "ListItem", position: 3, name: "Side Shifter", item: "https://www.sainilifters.com/equipment/side-shifter" }] }) },
-    { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "What does a side shifter do?", acceptedAnswer: { "@type": "Answer", text: "A side shifter is a container handling machine with a lateral (side-to-side) shifting attachment. It allows containers to be repositioned horizontally without moving the whole machine, enabling precise container placement in tight CFS, export cargo and terminal operations." } }, { "@type": "Question", name: "What is the difference between a side shifter and a reach stacker?", acceptedAnswer: { "@type": "Answer", text: "A reach stacker is designed for stacking and transporting containers across a yard. A side shifter specialises in fine lateral positioning — repositioning containers in rows without moving the machine forward or back. Both are often used together in container terminal operations." } }, { "@type": "Question", name: "Are side shifters compatible with 20ft and 40ft containers?", acceptedAnswer: { "@type": "Answer", text: "Yes — our Kalmar side shifters handle both 20ft and 40ft ISO standard containers, including export refrigerated (reefer) units. Available for 20T and 40T capacity requirements." } }] }) },
+    { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "What does a side shifter do?", acceptedAnswer: { "@type": "Answer", text: "A side shifter is a container handling machine with a lateral (side-to-side) shifting attachment. It allows containers to be repositioned horizontally without moving the whole machine, enabling precise container placement in tight CFS, export cargo and terminal operations." } }, { "@type": "Question", name: "What is the difference between a side shifter and a reach stacker?", acceptedAnswer: { "@type": "Answer", text: "A reach stacker is designed for stacking and transporting containers across a yard. A side shifter specialises in fine lateral positioning — repositioning containers in rows without moving the machine forward or back. Both are often used together in container terminal operations." } }, { "@type": "Question", name: "Are side shifters compatible with 20ft and 40ft containers?", acceptedAnswer: { "@type": "Answer", text: "Yes — our Kalmar side shifters handle both 20ft and 40ft ISO standard containers, including export refrigerated (reefer) units. Available for 20T and 40T capacity requirements." } }, { "@type": "Question", name: "What is the daily rental rate for a side shifter in Navi Mumbai?", acceptedAnswer: { "@type": "Answer", text: "A Kalmar 20T side shifter costs approximately ₹12,000–₹16,000 per day including operator. The 40T model is ₹18,000–₹24,000 per day. Monthly rates available for ongoing CFS operations. Call +91 9322296990 for a quote." } }, { "@type": "Question", name: "Can a side shifter be used at night for urgent export operations?", acceptedAnswer: { "@type": "Answer", text: "Yes — Saini Lifters provides side shifters with operators for night shifts and 24/7 operations for urgent export loading deadlines near JNPT. Additional charges apply for overtime and night-shift premiums. Call +91 9322296990 to arrange urgent deployment." } }] }) },
   ],
 });
 
@@ -122,5 +146,7 @@ const faqs = [
   { q: "What does a side shifter do?", a: "A side shifter has a lateral shifting attachment that repositions containers horizontally without moving the whole machine — enabling precise container placement in tight CFS, export cargo and terminal operations." },
   { q: "What is the difference between a side shifter and a reach stacker?", a: "A reach stacker stacks and transports containers across a yard. A side shifter specialises in fine lateral positioning — repositioning containers in rows without forward/backward movement. Both are often used together in container terminals." },
   { q: "Are side shifters compatible with 20ft and 40ft containers?", a: "Yes — our Kalmar side shifters handle both 20ft and 40ft ISO standard containers, including export reefer units. Available in 20T and 40T capacities." },
+  { q: "What is the daily rental rate for a side shifter in Navi Mumbai?", a: "A Kalmar 20T side shifter costs approximately ₹12,000–₹16,000 per day including operator. The 40T model is ₹18,000–₹24,000 per day. Monthly rates are available for ongoing CFS and container terminal operations. Call +91 9322296990 for a project-specific quote." },
+  { q: "Can a side shifter be used at night for urgent export operations?", a: "Yes — Saini Lifters provides side shifters with operators for night shifts and 24/7 operations for urgent export loading deadlines near JNPT. Additional charges apply for overtime and night-shift premiums. Call +91 9322296990 to arrange urgent deployment." },
 ];
 </script>

@@ -112,6 +112,12 @@
         <p class="text-gray-500 dark:text-gray-300 mb-6">
           Also see:
           <NuxtLink
+            to="/equipment/crawler-crane"
+            class="text-[#FF4057] hover:underline"
+            >Full Crawler Specs</NuxtLink
+          >
+          |
+          <NuxtLink
             to="/services/all-terrain-crane-rental"
             class="text-[#FF4057] hover:underline"
             >All-Terrain Crane</NuxtLink

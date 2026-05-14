@@ -105,6 +105,12 @@
         <p class="text-gray-500 dark:text-gray-300 mb-6">
           Also see:
           <NuxtLink
+            to="/equipment/manlift-boom-lift"
+            class="text-[#FF4057] hover:underline"
+            >Full Manlift Specs</NuxtLink
+          >
+          |
+          <NuxtLink
             to="/services/hydra-crane-rental"
             class="text-[#FF4057] hover:underline"
             >Hydra Crane</NuxtLink

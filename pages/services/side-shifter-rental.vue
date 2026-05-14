@@ -104,6 +104,7 @@
         <h2 class="text-3xl font-bold mb-4">
           Book Side Shifter in Navi Mumbai
         </h2>
+        <p class="text-gray-500 dark:text-gray-300 mb-6">Also see: <NuxtLink to="/equipment/side-shifter" class="text-[#FF4057] hover:underline">Full Side Shifter Specs</NuxtLink> | <NuxtLink to="/equipment/reach-stacker" class="text-[#FF4057] hover:underline">Reach Stacker</NuxtLink> | <NuxtLink to="/crane-rental/kalamboli" class="text-[#FF4057] hover:underline">Crane Rental Kalamboli</NuxtLink></p>
         <div class="flex flex-wrap gap-4 justify-center">
           <a
             href="tel:+919322296990"

@@ -53,6 +53,30 @@
         </li>
       </ul>
 
+      <!-- Why Rent Section -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Why Choose a Rough Terrain Crane for Navi Mumbai Construction Sites?</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Navi Mumbai's construction landscape — from reclaimed coastal land in Panvel to rocky MIDC industrial zones in Taloja — presents ground conditions that standard road cranes struggle with. Rough terrain cranes are purpose-built for these environments. Their large rubber tyres and 4×4 drive allow them to position themselves precisely within a construction site without needing hard-standing or outrigger pads.</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">SANY's rough terrain cranes (50T and 130T) are widely used across Navi Mumbai's construction zones for pre-engineered building (PEB) erection, equipment setting in power substations, bridge approach lifting and structural steel installation in tight MIDC yard configurations where an all terrain crane's footprint would be impractical.</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border border-gray-200 dark:border-zinc-700 rounded-xl overflow-hidden">
+            <thead class="bg-[#FF4057] text-white">
+              <tr>
+                <th class="p-3 text-left font-semibold">Factor</th>
+                <th class="p-3 text-left font-semibold">Rough Terrain Crane</th>
+                <th class="p-3 text-left font-semibold">All Terrain Crane</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 dark:divide-zinc-700">
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Road Travel</td><td class="p-3 text-red-500">Trailer transport only</td><td class="p-3 text-green-600 dark:text-green-400">Highway speed ✓</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Soft Ground</td><td class="p-3 text-green-600 dark:text-green-400">Excellent — large tyres ✓</td><td class="p-3">Needs hard outrigger pads</td></tr>
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Capacity (Saini fleet)</td><td class="p-3">50T & 130T</td><td class="p-3">160T – 700T</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Day Rate</td><td class="p-3 text-green-600 dark:text-green-400">Lower ✓</td><td class="p-3">Higher</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <h2 class="text-3xl font-bold mb-6">FAQs — Rough Terrain Crane Rental Navi Mumbai</h2>
       <div class="space-y-5 mb-12">
         <div v-for="faq in faqs" :key="faq.q" class="border-b border-gray-200 dark:border-zinc-700 pb-4">
@@ -98,7 +122,7 @@ useHead({
   script: [
     { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "Service", "name": "Rough Terrain Crane Rental", "provider": { "@type": "LocalBusiness", "name": "Saini Lifters Crane Service", "telephone": "+91-9322296990", "url": "https://www.sainilifters.com" }, "areaServed": ["Navi Mumbai", "Panvel", "Kalamboli", "Raigad", "Maharashtra"], "url": "https://www.sainilifters.com/equipment/rough-terrain-crane" }) },
     { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.sainilifters.com" }, { "@type": "ListItem", position: 2, name: "Equipment", item: "https://www.sainilifters.com/equipment" }, { "@type": "ListItem", position: 3, name: "Rough Terrain Crane", item: "https://www.sainilifters.com/equipment/rough-terrain-crane" }] }) },
-    { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "What is the difference between a rough terrain crane and an all terrain crane?", acceptedAnswer: { "@type": "Answer", text: "A rough terrain crane is designed for off-road use only — it has large rubber tyres and a single engine driving both the undercarriage and crane. An all terrain crane can drive on public roads at highway speed. Rough terrain cranes are ideal for confined construction sites and MIDC zones where road transport is not needed." } }, { "@type": "Question", name: "What is the maximum capacity of your rough terrain cranes?", acceptedAnswer: { "@type": "Answer", text: "Saini Lifters operates SANY rough terrain cranes up to 130T capacity in Navi Mumbai and the surrounding region. For lifts above 130T, we recommend our all terrain or crawler crane fleet." } }, { "@type": "Question", name: "Are rough terrain cranes available in Panvel and Raigad?", acceptedAnswer: { "@type": "Answer", text: "Yes, our rough terrain cranes are available throughout Navi Mumbai, Panvel, Taloja MIDC, Raigad and the surrounding industrial areas. Call +91 9322296990 for availability and rates." } }] }) },
+    { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "What is the difference between a rough terrain crane and an all terrain crane?", acceptedAnswer: { "@type": "Answer", text: "A rough terrain crane is designed for off-road use only — it has large rubber tyres and a single engine driving both the undercarriage and crane. An all terrain crane can drive on public roads at highway speed. Rough terrain cranes are ideal for confined construction sites and MIDC zones where road transport is not needed." } }, { "@type": "Question", name: "What is the maximum capacity of your rough terrain cranes?", acceptedAnswer: { "@type": "Answer", text: "Saini Lifters operates SANY rough terrain cranes up to 130T capacity in Navi Mumbai and the surrounding region. For lifts above 130T, we recommend our all terrain or crawler crane fleet." } }, { "@type": "Question", name: "Are rough terrain cranes available in Panvel and Raigad?", acceptedAnswer: { "@type": "Answer", text: "Yes, our rough terrain cranes are available throughout Navi Mumbai, Panvel, Taloja MIDC, Raigad and the surrounding industrial areas. Call +91 9322296990 for availability and rates." } }, { "@type": "Question", name: "Can a rough terrain crane be used on soft or muddy ground?", acceptedAnswer: { "@type": "Answer", text: "Yes — rough terrain cranes are specifically designed for soft, uneven and muddy ground. Their large-diameter tyres spread the machine's weight over a wider area, reducing ground pressure compared to road cranes. For extremely soft waterfront or reclaimed land, a crawler crane on steel tracks offers even greater stability." } }, { "@type": "Question", name: "What is the approximate daily rental rate for a rough terrain crane in Navi Mumbai?", acceptedAnswer: { "@type": "Answer", text: "A SANY 50T rough terrain crane costs approximately ₹12,000–₹18,000 per day including operator. The 130T model is ₹22,000–₹32,000 per day. Monthly rates offer significant savings. Call +91 9322296990 for project-specific pricing." } }] }) },
   ],
 });
 
@@ -122,5 +146,7 @@ const faqs = [
   { q: "What is the difference between a rough terrain crane and an all terrain crane?", a: "A rough terrain crane is designed for off-road use only — large rubber tyres, single engine. An all terrain crane drives on public roads. Rough terrain cranes are ideal for confined construction sites and MIDC zones." },
   { q: "What is the maximum capacity of your rough terrain cranes?", a: "Saini Lifters operates SANY rough terrain cranes up to 130T in Navi Mumbai. For lifts above 130T, we recommend our all terrain or crawler crane fleet." },
   { q: "Are rough terrain cranes available in Panvel and Raigad?", a: "Yes — our rough terrain cranes are available in Navi Mumbai, Panvel, Taloja MIDC, Raigad and surrounding industrial areas. Call +91 9322296990 for availability." },
+  { q: "Can a rough terrain crane be used on a construction site with soft or muddy ground?", a: "Yes — rough terrain cranes are specifically designed for soft, uneven and muddy ground conditions. Their large-diameter tyres spread the machine's weight over a wider area, reducing ground pressure compared to road cranes. However, for extremely soft waterfront or reclaimed land, a crawler crane on steel tracks offers even greater stability." },
+  { q: "What is the approximate daily rental rate for a rough terrain crane in Navi Mumbai?", a: "A SANY 50T rough terrain crane costs approximately ₹12,000–₹18,000 per day including operator. The 130T model is ₹22,000–₹32,000 per day. Monthly rates offer significant savings for site-based projects. Call Saini Lifters at +91 9322296990 for project-specific pricing." },
 ];
 </script>

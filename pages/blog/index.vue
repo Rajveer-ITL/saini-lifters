@@ -146,5 +146,45 @@ const posts = [
       "Essential crane safety rules and regulations for construction sites in India. Protect your workers and project.",
     image: "blog-crane-safety-rules.png",
   },
+  {
+    slug: "crane-rental-near-jnpt",
+    title: "Crane on Rent Near JNPT Port — Complete Guide for Navi Mumbai",
+    category: "Guide",
+    excerpt:
+      "Everything you need to know about renting a crane near JNPT — access routes, permit requirements, container yard operations and why Kalamboli is the key mobilisation base.",
+    image: "eq-reach-stacker.png",
+  },
+  {
+    slug: "hydra-crane-vs-farana-crane",
+    title: "Hydra Crane vs Farana Crane — Which is Right for Your Factory?",
+    category: "Education",
+    excerpt:
+      "Hydra or Farana? A practical comparison of India's two most popular pick and carry cranes — capacity, indoor use, cost and the right choice for your MIDC factory operation.",
+    image: "eq-farana.png",
+  },
+  {
+    slug: "all-terrain-vs-rough-terrain-crane",
+    title: "All Terrain Crane vs Rough Terrain Crane — Key Differences",
+    category: "Education",
+    excerpt:
+      "Understand the difference between all terrain and rough terrain cranes — when each is the better choice, how they compare on ground conditions and cost.",
+    image: "eq-rough-terrain-crane.png",
+  },
+  {
+    slug: "how-to-book-crane-navi-mumbai",
+    title: "How to Book a Crane on Rent in Navi Mumbai — Step-by-Step 2026 Guide",
+    category: "Guide",
+    excerpt:
+      "A step-by-step guide to booking crane rental in Navi Mumbai — from defining your lift requirements to confirming the operator and getting the crane on site.",
+    image: "eq-all-terrain-crane.png",
+  },
+  {
+    slug: "forklift-rent-vs-buy-navi-mumbai",
+    title: "Forklift on Rent vs Buy — Best Option for Navi Mumbai Factories 2026",
+    category: "Pricing",
+    excerpt:
+      "Should you rent or buy a forklift for your Navi Mumbai MIDC factory? A financial breakdown comparing upfront cost, maintenance, operator salary and breakeven point.",
+    image: "eq-forklift.png",
+  },
 ];
 </script>

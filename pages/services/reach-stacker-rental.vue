@@ -79,7 +79,7 @@
     <section class="py-16 bg-[#FF4057]/5 dark:bg-[#FF4057]/10">
       <div class="max-w-3xl mx-auto text-center px-4">
         <h2 class="text-3xl font-bold mb-4">Book Reach Stacker in Navi Mumbai</h2>
-        <p class="text-gray-500 dark:text-gray-300 mb-6">Also see: <NuxtLink to="/services/container-stacker-rental" class="text-[#FF4057] hover:underline">Container Stacker</NuxtLink> | <NuxtLink to="/services/side-shifter-rental" class="text-[#FF4057] hover:underline">Side Shifter</NuxtLink></p>
+        <p class="text-gray-500 dark:text-gray-300 mb-6">Also see: <NuxtLink to="/equipment/reach-stacker" class="text-[#FF4057] hover:underline">Full Reach Stacker Specs</NuxtLink> | <NuxtLink to="/services/container-stacker-rental" class="text-[#FF4057] hover:underline">Container Stacker</NuxtLink> | <NuxtLink to="/services/side-shifter-rental" class="text-[#FF4057] hover:underline">Side Shifter</NuxtLink></p>
         <div class="flex flex-wrap gap-4 justify-center">
           <a href="tel:+919322296990" class="bg-[#FF4057] hover:bg-red-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors">Call: +91 9322296990</a>
           <NuxtLink to="/contact-us" class="border-2 border-[#FF4057] text-[#FF4057] hover:bg-[#FF4057] hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors">Send Enquiry</NuxtLink>

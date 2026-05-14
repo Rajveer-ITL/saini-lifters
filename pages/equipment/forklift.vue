@@ -53,6 +53,30 @@
         </li>
       </ul>
 
+      <!-- Why Rent Section -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Why Rent a Forklift in Navi Mumbai Instead of Buying?</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">For most Navi Mumbai MIDC factories and warehouses, renting a forklift on an as-needed basis is significantly more economical than owning one. A new 5T diesel forklift costs ₹12–18 lakhs, plus maintenance, operator salary, insurance and licence renewal. When your material handling requirement is less than 200 working days a year, renting from Saini Lifters at a day rate of ₹3,500–₹8,000 is the smarter financial decision.</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">Renting also eliminates maintenance headaches — tyres, hydraulics, engine servicing and pre-delivery inspections are all handled by Saini Lifters. You get a certified, well-maintained machine every time, with an experienced operator who knows Navi Mumbai's MIDC zones, factory layouts and port access roads near JNPT.</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border border-gray-200 dark:border-zinc-700 rounded-xl overflow-hidden">
+            <thead class="bg-[#FF4057] text-white">
+              <tr>
+                <th class="p-3 text-left font-semibold">Factor</th>
+                <th class="p-3 text-left font-semibold">Renting (Saini Lifters)</th>
+                <th class="p-3 text-left font-semibold">Buying</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 dark:divide-zinc-700">
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Upfront Cost</td><td class="p-3 text-green-600 dark:text-green-400">₹0 ✓</td><td class="p-3">₹12–30 lakhs</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Maintenance</td><td class="p-3 text-green-600 dark:text-green-400">Included ✓</td><td class="p-3">Your responsibility</td></tr>
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Operator</td><td class="p-3 text-green-600 dark:text-green-400">Included ✓</td><td class="p-3">Hire + train separately</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Best When</td><td class="p-3">&lt;200 days/year use</td><td class="p-3">&gt;250 days/year</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <h2 class="text-3xl font-bold mb-6">FAQs — Forklift Rental Navi Mumbai</h2>
       <div class="space-y-5 mb-12">
         <div v-for="faq in faqs" :key="faq.q" class="border-b border-gray-200 dark:border-zinc-700 pb-4">
@@ -98,7 +122,7 @@ useHead({
   script: [
     { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "Service", "name": "Forklift Rental Navi Mumbai", "provider": { "@type": "LocalBusiness", "name": "Saini Lifters Crane Service", "telephone": "+91-9322296990", "url": "https://www.sainilifters.com" }, "areaServed": ["Navi Mumbai", "Kalamboli", "Panvel MIDC", "Taloja", "JNPT"], "url": "https://www.sainilifters.com/equipment/forklift" }) },
     { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.sainilifters.com" }, { "@type": "ListItem", position: 2, name: "Equipment", item: "https://www.sainilifters.com/equipment" }, { "@type": "ListItem", position: 3, name: "Forklift", item: "https://www.sainilifters.com/equipment/forklift" }] }) },
-    { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "What types of forklifts are available on rent in Navi Mumbai?", acceptedAnswer: { "@type": "Answer", text: "Saini Lifters offers diesel and electric counterbalance forklifts ranging from 5T to 25T in Navi Mumbai. Diesel forklifts are used for outdoor yard operations near JNPT and MIDC, while electric forklifts are preferred for indoor warehouse operations." } }, { "@type": "Question", name: "Is a forklift available for MIDC factory operations?", acceptedAnswer: { "@type": "Answer", text: "Yes — we deploy forklifts to Panvel MIDC, Taloja MIDC, Kalamboli and all Navi Mumbai industrial zones. Our forklifts are used for machine shifting, pallet handling and raw material movement inside factories and warehouses." } }, { "@type": "Question", name: "What is the difference between a forklift and a reach stacker?", acceptedAnswer: { "@type": "Answer", text: "A forklift handles pallets, machinery and general warehouse loads at ground level using forks. A reach stacker is a specialised container handling machine designed to lift, move and stack ISO shipping containers. Both are available on rent from Saini Lifters in Navi Mumbai." } }] }) },
+    { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "What types of forklifts are available on rent in Navi Mumbai?", acceptedAnswer: { "@type": "Answer", text: "Saini Lifters offers diesel and electric counterbalance forklifts ranging from 5T to 25T in Navi Mumbai. Diesel forklifts are used for outdoor yard operations near JNPT and MIDC, while electric forklifts are preferred for indoor warehouse operations." } }, { "@type": "Question", name: "Is a forklift available for MIDC factory operations?", acceptedAnswer: { "@type": "Answer", text: "Yes — we deploy forklifts to Panvel MIDC, Taloja MIDC, Kalamboli and all Navi Mumbai industrial zones. Our forklifts are used for machine shifting, pallet handling and raw material movement inside factories and warehouses." } }, { "@type": "Question", name: "What is the difference between a forklift and a reach stacker?", acceptedAnswer: { "@type": "Answer", text: "A forklift handles pallets, machinery and general warehouse loads at ground level using forks. A reach stacker is a specialised container handling machine designed to lift, move and stack ISO shipping containers. Both are available on rent from Saini Lifters in Navi Mumbai." } }, { "@type": "Question", name: "What is the daily rental rate for a forklift in Navi Mumbai?", acceptedAnswer: { "@type": "Answer", text: "A 5T diesel forklift costs approximately ₹3,500–₹5,500/day including operator; 10T is ₹5,500–₹8,000/day; heavy 25T is ₹10,000–₹14,000/day. Monthly rates available at reduced cost. Call +91 9322296990 for rates specific to your MIDC zone." } }, { "@type": "Question", name: "How quickly can a forklift be deployed to my factory in Panvel or Taloja?", acceptedAnswer: { "@type": "Answer", text: "Saini Lifters operates from Kalamboli and can typically deploy a forklift to Panvel MIDC, Taloja or Kalamboli factories within 2–4 hours of confirmation. Call +91 9322296990 for availability." } }] }) },
   ],
 });
 
@@ -122,5 +146,7 @@ const faqs = [
   { q: "What types of forklifts are available on rent in Navi Mumbai?", a: "Saini Lifters offers diesel counterbalance forklifts from 5T to 25T in Navi Mumbai. Diesel forklifts suit outdoor yard operations near JNPT and MIDC zones." },
   { q: "Is a forklift available for MIDC factory operations?", a: "Yes — we deploy forklifts to Panvel MIDC, Taloja MIDC, Kalamboli and all Navi Mumbai industrial zones for machine shifting, pallet handling and raw material movement." },
   { q: "What is the difference between a forklift and a reach stacker?", a: "A forklift handles pallets, machinery and general loads using forks. A reach stacker lifts, moves and stacks ISO shipping containers. Both are available on rent from Saini Lifters in Navi Mumbai." },
+  { q: "What is the daily rental rate for a forklift in Navi Mumbai?", a: "A 5T diesel forklift costs approximately ₹3,500–₹5,500 per day including operator. A 10T forklift is ₹5,500–₹8,000 per day, and a heavy 25T forklift is ₹10,000–₹14,000 per day. Monthly rates are available at reduced cost. Call +91 9322296990 for rates specific to your MIDC zone and shift requirements." },
+  { q: "How quickly can a forklift be deployed to my factory in Panvel or Taloja?", a: "Saini Lifters operates from Kalamboli and can typically deploy a forklift to Panvel MIDC, Taloja or Kalamboli factories within 2–4 hours of confirmation. For urgent requirements in other Navi Mumbai zones, call +91 9322296990 directly to check availability and fastest mobilisation time." },
 ];
 </script>

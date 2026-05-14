@@ -53,6 +53,31 @@
         </li>
       </ul>
 
+      <!-- Why Rent Section -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Why Rent a Reach Stacker from Saini Lifters Near JNPT?</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Saini Lifters is based in Kalamboli — minutes from JNPT (Jawaharlal Nehru Port Trust), Asia's busiest container port. Our Kalmar 45T reach stacker is available 24/7 for container yards, private ICDs and logistics operations in the JNPT catchment area. Whether you need to stack laden containers 3-high, reposition boxes across yard rows or load containers onto flatbed trailers, we deploy fast.</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">Reach stackers are significantly more cost-effective than maintaining your own fleet for non-daily container handling requirements. Rental includes the operator, fuel and basic insurance — eliminating the overhead of owning, maintaining and licensing heavy port equipment. For container yards handling 200–800 boxes per month, renting a reach stacker as needed makes strong financial sense versus a ₹3–4 crore capital purchase.</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border border-gray-200 dark:border-zinc-700 rounded-xl overflow-hidden">
+            <thead class="bg-[#FF4057] text-white">
+              <tr>
+                <th class="p-3 text-left font-semibold">Feature</th>
+                <th class="p-3 text-left font-semibold">Reach Stacker</th>
+                <th class="p-3 text-left font-semibold">Side Shifter</th>
+                <th class="p-3 text-left font-semibold">Empty Container Handler</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 dark:divide-zinc-700">
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Laden Containers</td><td class="p-3 text-green-600 dark:text-green-400">Yes — up to 45T ✓</td><td class="p-3 text-green-600 dark:text-green-400">Yes ✓</td><td class="p-3 text-red-500">Empty only</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Stack Height</td><td class="p-3">3 containers high</td><td class="p-3">Ground level only</td><td class="p-3">5 containers high</td></tr>
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Row Reach</td><td class="p-3">2nd row ✓</td><td class="p-3">Lateral shift only</td><td class="p-3">1st row only</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Best For</td><td class="p-3">Active yard operations</td><td class="p-3">Fine positioning, CFS</td><td class="p-3">Empty container depots</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <h2 class="text-3xl font-bold mb-6">FAQs — Reach Stacker Rental Navi Mumbai</h2>
       <div class="space-y-5 mb-12">
         <div v-for="faq in faqs" :key="faq.q" class="border-b border-gray-200 dark:border-zinc-700 pb-4">
@@ -98,7 +123,7 @@ useHead({
   script: [
     { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "Service", "name": "Reach Stacker Rental", "provider": { "@type": "LocalBusiness", "name": "Saini Lifters Crane Service", "telephone": "+91-9322296990", "url": "https://www.sainilifters.com" }, "areaServed": ["Navi Mumbai", "Panvel", "Kalamboli", "JNPT", "Raigad"], "url": "https://www.sainilifters.com/equipment/reach-stacker" }) },
     { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.sainilifters.com" }, { "@type": "ListItem", position: 2, name: "Equipment", item: "https://www.sainilifters.com/equipment" }, { "@type": "ListItem", position: 3, name: "Reach Stacker", item: "https://www.sainilifters.com/equipment/reach-stacker" }] }) },
-    { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "What is the difference between a reach stacker and a container stacker?", acceptedAnswer: { "@type": "Answer", text: "A reach stacker can handle laden (loaded) containers up to 45T and reach into the second and third row of a container stack. A container stacker (empty container handler) is designed for empty containers only, stacking them 5 high or more. Reach stackers are more versatile but more expensive to operate." } }, { "@type": "Question", name: "Can a reach stacker handle laden 40ft containers?", acceptedAnswer: { "@type": "Answer", text: "Yes — our Kalmar 45T reach stacker can handle fully laden 20ft and 40ft ISO containers. It can stack containers 3 high and reach into the second row of a container block, making it ideal for container yards near JNPT." } }, { "@type": "Question", name: "Is the reach stacker available near JNPT Navi Mumbai?", acceptedAnswer: { "@type": "Answer", text: "Yes, Saini Lifters operates from Kalamboli, Navi Mumbai — just minutes from JNPT. Our reach stackers are available 24/7 for container yards, ICDs and logistics operations near JNPT." } }] }) },
+    { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "What is the difference between a reach stacker and a container stacker?", acceptedAnswer: { "@type": "Answer", text: "A reach stacker can handle laden (loaded) containers up to 45T and reach into the second and third row of a container stack. A container stacker (empty container handler) is designed for empty containers only, stacking them 5 high or more. Reach stackers are more versatile but more expensive to operate." } }, { "@type": "Question", name: "Can a reach stacker handle laden 40ft containers?", acceptedAnswer: { "@type": "Answer", text: "Yes — our Kalmar 45T reach stacker can handle fully laden 20ft and 40ft ISO containers. It can stack containers 3 high and reach into the second row of a container block, making it ideal for container yards near JNPT." } }, { "@type": "Question", name: "Is the reach stacker available near JNPT Navi Mumbai?", acceptedAnswer: { "@type": "Answer", text: "Yes, Saini Lifters operates from Kalamboli, Navi Mumbai — just minutes from JNPT. Our reach stackers are available 24/7 for container yards, ICDs and logistics operations near JNPT." } }, { "@type": "Question", name: "How much does reach stacker rental cost per day in Navi Mumbai?", acceptedAnswer: { "@type": "Answer", text: "Reach stacker rental rates in Navi Mumbai are typically ₹25,000–₹40,000 per day for a 45T Kalmar reach stacker including operator. Weekly and monthly rates available at preferential pricing. Call +91 9322296990 for a specific quote." } }, { "@type": "Question", name: "Can a reach stacker work inside a covered container depot (ICD)?", acceptedAnswer: { "@type": "Answer", text: "Yes — our Kalmar reach stacker can operate inside covered ICDs and CFS facilities provided internal height clearance is at least 12–14 metres and the floor is rated for the machine's ground pressure. Saini Lifters conducts a pre-deployment site check." } }] }) },
   ],
 });
 
@@ -121,5 +146,7 @@ const faqs = [
   { q: "What is the difference between a reach stacker and a container stacker?", a: "A reach stacker handles laden containers up to 45T and reaches into the 2nd and 3rd row. A container stacker handles empty containers only, stacking them 5+ high. Reach stackers are more versatile for mixed laden/empty operations." },
   { q: "Can a reach stacker handle laden 40ft containers?", a: "Yes — our Kalmar 45T reach stacker handles fully laden 20ft and 40ft ISO containers, stacking 3 high and reaching the 2nd row — ideal for container yards near JNPT." },
   { q: "Is the reach stacker available near JNPT Navi Mumbai?", a: "Yes, Saini Lifters is based in Kalamboli, minutes from JNPT. Our reach stackers are available 24/7 for container yards, ICDs and logistics operations near JNPT." },
+  { q: "How much does reach stacker rental cost per day in Navi Mumbai?", a: "Reach stacker rental rates in Navi Mumbai depend on shift duration and operational requirements. Typically ₹25,000–₹40,000 per day for a 45T Kalmar reach stacker including operator. Weekly and monthly rates are available at preferential pricing. Call +91 9322296990 for a specific quote based on your yard's requirements." },
+  { q: "Can a reach stacker work inside a covered container depot (ICD)?", a: "Yes — our Kalmar reach stacker can operate inside covered ICDs and CFS facilities provided the internal height clearance is at least 12–14 metres and the floor is rated for the machine's ground pressure. Saini Lifters conducts a pre-deployment site check to confirm operational feasibility." },
 ];
 </script>

@@ -76,6 +76,31 @@
         </li>
       </ul>
 
+      <!-- Why Rent Section -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Why Rent a Crawler Crane from Saini Lifters?</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Crawler cranes are the backbone of India's mega infrastructure projects — bridge construction across major rivers, power plant boiler erection, dam construction and long-duration industrial projects where a mobile crane would need to be repositioned too frequently. Saini Lifters deploys SANY crawler cranes from 100T to 400T with experienced operators and full ODC transport support.</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">Unlike a mobile or all terrain crane that needs outriggers on prepared hard ground, our crawler cranes distribute their enormous weight across steel tracks — enabling them to work on soft riverbanks, reclaimed land and waterfront sites where other cranes simply cannot operate safely. Saini Lifters has deployed crawler cranes across Maharashtra, Odisha (Angul, Paradip) and Madhya Pradesh (Singrauli) power plant projects.</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border border-gray-200 dark:border-zinc-700 rounded-xl overflow-hidden">
+            <thead class="bg-[#FF4057] text-white">
+              <tr>
+                <th class="p-3 text-left font-semibold">Factor</th>
+                <th class="p-3 text-left font-semibold">Crawler Crane</th>
+                <th class="p-3 text-left font-semibold">All Terrain Crane</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 dark:divide-zinc-700">
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Ground Stability</td><td class="p-3 text-green-600 dark:text-green-400">Maximum — steel tracks ✓</td><td class="p-3">Outriggers on hard ground</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Road Travel</td><td class="p-3 text-red-500">Trailer transport only</td><td class="p-3 text-green-600 dark:text-green-400">Highway speed ✓</td></tr>
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Setup Time</td><td class="p-3">2–5 days</td><td class="p-3">2–6 hours</td></tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Best Project Type</td><td class="p-3">30+ day mega projects</td><td class="p-3">Short lifts, multi-site</td></tr>
+              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Soft Ground</td><td class="p-3 text-green-600 dark:text-green-400">Excellent ✓</td><td class="p-3 text-red-500">Limited</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <h2 class="text-3xl font-bold mb-6">FAQs — Crawler Crane Rental</h2>
       <div class="space-y-5 mb-12">
         <div v-for="faq in faqs" :key="faq.q" class="border-b border-gray-200 dark:border-zinc-700 pb-4">
@@ -121,7 +146,7 @@ useHead({
   script: [
     { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "Service", "name": "Crawler Crane Rental", "provider": { "@type": "LocalBusiness", "name": "Saini Lifters Crane Service", "telephone": "+91-9322296990", "url": "https://www.sainilifters.com" }, "areaServed": ["Navi Mumbai", "Panvel", "Kalamboli", "Maharashtra", "Odisha", "Madhya Pradesh", "Pan-India"], "url": "https://www.sainilifters.com/equipment/crawler-crane" }) },
     { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.sainilifters.com" }, { "@type": "ListItem", position: 2, name: "Equipment", item: "https://www.sainilifters.com/equipment" }, { "@type": "ListItem", position: 3, name: "Crawler Crane", item: "https://www.sainilifters.com/equipment/crawler-crane" }] }) },
-    { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "What is the advantage of a crawler crane over a mobile crane?", acceptedAnswer: { "@type": "Answer", text: "Crawler cranes run on steel tracks, providing maximum ground stability without outriggers. They can lift and travel with a load on flat ground and are ideal for long-duration projects on soft or unstable ground where a mobile crane cannot operate safely." } }, { "@type": "Question", name: "How long does it take to set up a crawler crane?", acceptedAnswer: { "@type": "Answer", text: "Setup and assembly of a crawler crane typically takes 2–5 days depending on crane size and site conditions. Saini Lifters handles all ODC transportation permits and site preparation coordination." } }, { "@type": "Question", name: "Do you deploy crawler cranes pan-India — Odisha, Madhya Pradesh?", acceptedAnswer: { "@type": "Answer", text: "Yes, Saini Lifters deploys crawler cranes across India — including Odisha (Rourkela, Angul, Paradip), Madhya Pradesh (Singrauli, Satna, Pithampur) and other states for power plants, cement plants and infrastructure projects." } }] }) },
+    { type: "application/ld+json", innerHTML: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "What is the advantage of a crawler crane over a mobile crane?", acceptedAnswer: { "@type": "Answer", text: "Crawler cranes run on steel tracks, providing maximum ground stability without outriggers. They can lift and travel with a load on flat ground and are ideal for long-duration projects on soft or unstable ground where a mobile crane cannot operate safely." } }, { "@type": "Question", name: "How long does it take to set up a crawler crane?", acceptedAnswer: { "@type": "Answer", text: "Setup and assembly of a crawler crane typically takes 2–5 days depending on crane size and site conditions. Saini Lifters handles all ODC transportation permits and site preparation coordination." } }, { "@type": "Question", name: "Do you deploy crawler cranes pan-India — Odisha, Madhya Pradesh?", acceptedAnswer: { "@type": "Answer", text: "Yes, Saini Lifters deploys crawler cranes across India — including Odisha (Rourkela, Angul, Paradip), Madhya Pradesh (Singrauli, Satna, Pithampur) and other states for power plants, cement plants and infrastructure projects." } }, { "@type": "Question", name: "What is the minimum project duration for renting a crawler crane?", acceptedAnswer: { "@type": "Answer", text: "Crawler cranes are most economical for projects lasting 30 days or more given the 2–5 day assembly and disassembly time. For shorter lifts, an all terrain crane is more cost-effective. Call +91 9322296990 to discuss which crane suits your project." } }, { "@type": "Question", name: "Can a crawler crane lift and travel with a load?", acceptedAnswer: { "@type": "Answer", text: "Yes — crawler cranes can travel short distances while holding a load on flat, firm ground provided the load is within travel load chart limits. This pick and carry on tracks capability is a key advantage over mobile cranes on outriggers." } }] }) },
   ],
 });
 
@@ -145,5 +170,7 @@ const faqs = [
   { q: "What is the advantage of a crawler crane over a mobile crane?", a: "Crawler cranes run on steel tracks, providing maximum ground stability without outriggers. They can lift and travel with a load on flat ground — ideal for long-duration projects on soft or unstable ground." },
   { q: "How long does it take to set up a crawler crane?", a: "Setup takes 2–5 days depending on crane size and site conditions. Saini Lifters handles all ODC transportation permits and site preparation coordination." },
   { q: "Do you deploy crawler cranes pan-India — Odisha, Madhya Pradesh?", a: "Yes — Saini Lifters deploys crawler cranes across India, including Odisha (Rourkela, Angul, Paradip), Madhya Pradesh (Singrauli, Satna, Pithampur) and other states." },
+  { q: "What is the minimum project duration for renting a crawler crane?", a: "Crawler cranes are most economical for projects lasting 30 days or more, given the assembly and disassembly time involved (2–5 days each way). For shorter lifts of 1–5 days, an all terrain crane is more cost-effective. Call +91 9322296990 to discuss which crane fits your project timeline." },
+  { q: "Can a crawler crane lift and travel with a load?", a: "Yes — crawler cranes can travel short distances while holding a load (called 'pick and carry on tracks'), provided the ground is flat and firm and the load is within the crane's travel load chart limits. This is one of their key advantages over mobile cranes on outriggers, which must be set up stationary for every lift." },
 ];
 </script>
