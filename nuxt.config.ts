@@ -44,7 +44,27 @@ export default defineNuxtConfig({
   nitro: {
     routeRules: {
       "/": { cache: { swr: true } },
+      "/_nuxt/**": {
+        headers: { "cache-control": "public, max-age=31536000, immutable" },
+      },
+      "/image/**": {
+        headers: { "cache-control": "public, max-age=31536000, immutable" },
+      },
+      "/fonts/**": {
+        headers: { "cache-control": "public, max-age=31536000, immutable" },
+      },
+      "/video/**": { headers: { "cache-control": "public, max-age=86400" } },
+      "/equipment/container-stacker": {
+        redirect: { to: "/equipment/forklift", statusCode: 301 },
+      },
     },
+    compressPublicAssets: { gzip: true, brotli: true },
+  },
+
+  image: {
+    quality: 80,
+    format: ["webp", "avif", "png", "jpg"],
+    screens: { xs: 320, sm: 640, md: 768, lg: 1024, xl: 1280, xxl: 1920 },
   },
 
   app: {
@@ -52,8 +72,7 @@ export default defineNuxtConfig({
     layoutTransition: { name: "layout", mode: "out-in" },
 
     head: {
-      title:
-        "Best Crane Rental Services - Reliable & Affordable | Saini Lifters",
+      title: "Crane on Rent in Navi Mumbai | Saini Lifters",
       htmlAttrs: {
         lang: "en",
       },
@@ -61,20 +80,21 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Looking for crane rental services? We provide top-quality cranes for construction, industrial use, and heavy lifting. Available 24/7.",
+            "Saini Lifters - crane on rent in Navi Mumbai, Panvel & Kalamboli since 2001. Mobile cranes, hydra, manlift, reach stacker & container stacker. Call +91 9322296990.",
         },
         {
           name: "keywords",
           content:
-            "crane rental, crane services, heavy lifting, industrial cranes, mobile crane hire",
+            "crane on rent in navi mumbai, crane on rent in panvel, crane rental navi mumbai, crane hire navi mumbai, crane on hire panvel, crane service near me, heavy crane on rent, mobile crane rental, hydra crane rental, manlift rental, boom lift rental, container stacker rental, reach stacker rental, side shifter rental, crawler crane rental, all terrain crane rental, pick and carry crane, crane rental kalamboli, crane rental raigad, crane rental thane, crane rental mumbai",
         },
         {
           property: "og:title",
-          content: "Best Crane Rental Services - Saini Lifters",
+          content: "Crane on Rent in Navi Mumbai | Saini Lifters",
         },
         {
           property: "og:description",
-          content: "Reliable crane rental services for all your needs.",
+          content:
+            "Crane on rent in Navi Mumbai, Panvel & Kalamboli. Mobile cranes, hydra, manlift & more. Call Saini Lifters: +91 9322296990.",
         },
         {
           property: "og:image",
@@ -82,10 +102,18 @@ export default defineNuxtConfig({
             "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
         },
         { property: "og:url", content: "https://www.sainilifters.com/" },
+        { property: "og:locale", content: "en_IN" },
+        { property: "og:site_name", content: "Saini Lifters" },
       ],
 
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        {
+          rel: "preload",
+          as: "image",
+          href: "/image/eq-all-terrain-crane-poster.jpg",
+          fetchpriority: "high",
+        },
         {
           rel: "icon",
           type: "image/png",
@@ -95,18 +123,6 @@ export default defineNuxtConfig({
         {
           rel: "apple-touch-icon",
           href: "/apple-touch-icon-180x180.png",
-        },
-        {
-          rel: "preload",
-          as: "video",
-          href: "/video/headerCardMainVideo.mp4",
-          type: "video/mp4",
-        },
-        {
-          rel: "preload",
-          as: "video",
-          href: "/video/cranesWorking.mp4",
-          type: "video/mp4",
         },
         {
           rel: "preload",
@@ -123,39 +139,7 @@ export default defineNuxtConfig({
           crossorigin: "anonymous",
         },
       ],
-      script: [
-        {
-          type: "text/javascript",
-          src: "https://www.googletagmanager.com/gtag/js?id=G-G2G9X0Y0DG",
-          async: true,
-          "data-partytown": true,
-        },
-        {
-          type: "text/javascript",
-          innerHTML: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'G-G2G9X0Y0DG');
-          `,
-          "data-partytown": true,
-        },
-        {
-          type: "text/javascript",
-          innerHTML: `
-            (function(w, d, s, l, i) {
-              w[l] = w[l] || [];
-              w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-              var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-              j.async = true;
-              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-              f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-KPZBMV9J');
-          `,
-          "data-partytown": true,
-        },
-      ],
+      script: [],
     },
   },
 });

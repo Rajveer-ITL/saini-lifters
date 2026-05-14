@@ -8,7 +8,15 @@
     <transition name="fade">
       <div class="py-4 flex items-center justify-center w-full">
         <div class="absolute left-1 ml-4">
-          <Menu v-if="!isMenuOpen" class="h-6 w-6" @click="toggleMenu" />
+          <button
+            v-if="!isMenuOpen"
+            @click="toggleMenu"
+            :aria-expanded="isMenuOpen"
+            aria-label="Open navigation menu"
+            class="p-1 rounded focus:outline-none"
+          >
+            <Menu class="h-6 w-6" aria-hidden="true" />
+          </button>
         </div>
         <div
           class="font-roslindale cursor-pointer w-fit flex items-center justify-center text-[28px] logo-text"
@@ -18,27 +26,41 @@
           <span class="text-[#FF4057]"> Lifters</span>
         </div>
         <div class="absolute right-1 mr-4">
-          <Sun v-if="isDark" class="h-6 w-6" @click="handleToggleDark" />
-          <Moon v-else class="h-6 w-6" @click="handleToggleDark" />
+          <button
+            @click="handleToggleDark"
+            :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+            class="p-1 rounded focus:outline-none"
+          >
+            <Sun v-if="isDark" class="h-6 w-6" aria-hidden="true" />
+            <Moon v-else class="h-6 w-6" aria-hidden="true" />
+          </button>
         </div>
       </div>
     </transition>
     <transition name="mobileMenu">
       <div
         v-show="isMenuOpen"
-        class="w-full h-screen absolute top-0 z-[100] mobileMenu"
+        class="w-full h-screen absolute top-0 z-[100] mobileMenu flex flex-col"
         :class="isDark ? 'bg-black' : 'bg-white'"
       >
-        <div
-          class="font-roslindale cursor-pointer w-full flex items-center justify-start text-[28px] ml-8 py-[16px]"
-          @click="logoClick"
-        >
-          Saini &nbsp;
-          <span class="text-[#FF4057]"> Lifters</span>
+        <div class="flex items-center justify-between px-6 py-4 flex-shrink-0">
+          <div
+            class="font-roslindale cursor-pointer flex items-center text-[28px]"
+            @click="logoClick"
+          >
+            Saini &nbsp;
+            <span class="text-[#FF4057]"> Lifters</span>
+          </div>
+          <button
+            @click="toggleMenu"
+            aria-label="Close navigation menu"
+            class="p-1 rounded focus:outline-none"
+          >
+            <X class="w-6 h-6" aria-hidden="true" />
+          </button>
         </div>
-        <X class="w-6 h-6 absolute right-6 top-6" @click="toggleMenu" />
         <div
-          class="w-full flex flex-col items-start gap-10 font-roslindale mt-20 ml-8 text-[25px]"
+          class="flex-1 overflow-y-auto w-full flex flex-col items-start gap-8 font-roslindale px-8 py-6 text-[25px]"
         >
           <div
             v-for="(option, index) in menuOptions"
@@ -74,6 +96,11 @@
         @click="$router.push('/services')"
       />
       <baseButton
+        text="EQUIPMENT"
+        :isLoading="false"
+        @click="$router.push('/equipment')"
+      />
+      <baseButton
         text="WHATSAPP"
         :isLoading="false"
         @click="sendWhatsAppMessage"
@@ -90,6 +117,16 @@
       <span class="text-[#FF4057]"> Lifters</span>
     </div>
     <div class="flex items-center justify-between gap-2">
+      <baseButton
+        text="BLOG"
+        :isLoading="false"
+        @click="$router.push('/blog')"
+      />
+      <baseButton
+        text="RATES"
+        :isLoading="false"
+        @click="$router.push('/pricing')"
+      />
       <baseButton
         text="CONTACT"
         :isLoading="false"
@@ -120,21 +157,24 @@ import {
 } from "../utils/commonFunctions.js";
 import { commonVariables } from "~/assets/variables/commonVariables";
 
-const { gsap } = await import("gsap");
-const hasVisited =
-  import.meta.client && sessionStorage.getItem("homepage-visited");
+let gsap = null;
 const isDark = ref(false);
 const isMenuOpen = ref(false);
 const selectedOption = ref(null);
-const screenWidth = ref(0); // Initialize to 0 to avoid undefined
-const isMobile = ref(false); // Initialize as false
+const screenWidth = ref(0);
+const isMobile = ref(false);
 
 const updateScreenSize = () => {
   screenWidth.value = window.innerWidth;
-  isMobile.value = window.innerWidth <= 779; // No need for matchMedia, direct condition works
+  isMobile.value = window.innerWidth <= 779;
 };
 
-onMounted(() => {
+onMounted(async () => {
+  const { gsap: g } = await import("gsap");
+  gsap = g;
+
+  const hasVisited = sessionStorage.getItem("homepage-visited");
+
   updateScreenSize();
   window.addEventListener("resize", updateScreenSize);
   const savedTheme = localStorage.getItem("theme");
@@ -143,9 +183,7 @@ onMounted(() => {
     : window.matchMedia("(prefers-color-scheme: dark)").matches;
   document.documentElement.classList.toggle("dark", isDark.value);
 
-  if (hasVisited) {
-    gsap.to(".header", { opacity: 1, duration: 1 });
-  } else {
+  if (!hasVisited) {
     setTimeout(runHeaderAnimation, 100);
   }
 });
@@ -154,13 +192,6 @@ onBeforeUnmount(() => {
   window.removeEventListener("resize", updateScreenSize);
 });
 
-watch(isMobile, (newValue) => {
-  if (newValue) {
-    setTimeout(() => {
-      gsap.to(".header", { opacity: 1, duration: 1 });
-    }, 300);
-  }
-});
 
 watch(
   () => isDark.value,
@@ -170,12 +201,6 @@ watch(
 );
 
 const runHeaderAnimation = () => {
-  gsap.to(".header", {
-    opacity: 1,
-    duration: 1,
-    delay: 0.2,
-  });
-
   gsap.from(".logo-text", {
     y: -100,
     opacity: 0,
@@ -218,6 +243,9 @@ const logoClick = () => {
 const menuOptions = [
   { name: "ABOUT", route: "/about-us" },
   { name: "SERVICES", route: "/services" },
+  { name: "EQUIPMENT", route: "/equipment" },
+  { name: "BLOG", route: "/blog" },
+  { name: "RATES", route: "/pricing" },
   { name: "WHATSAPP", link: "sendWhatsAppMessage" },
   { name: "CONTACT", route: "/contact-us" },
   { name: "EMAIL", link: "redirectToEmail" },
@@ -226,7 +254,7 @@ const menuOptions = [
 
 <style scoped>
 .header {
-  opacity: 0;
+  opacity: 1;
 }
 .header-bg-white {
   background-color: rgba(255, 255, 255, 0.515);

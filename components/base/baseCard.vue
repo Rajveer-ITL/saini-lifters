@@ -1,48 +1,53 @@
 <template>
-  <div class="relative overflow-hidden backdrop-blur-sm border-2 rounded-lg">
-    <div class="relative aspect-video w-full overflow-hidden p-3">
+  <div class="relative overflow-hidden backdrop-blur-sm border-2 rounded-lg flex flex-col h-full">
+    <div class="relative aspect-video w-full overflow-hidden p-3 bg-gray-50 dark:bg-zinc-800">
       <NuxtImg
         :src="`/image/${crane.image}`"
-        :alt="`${crane.name} crane`"
+        :alt="`${crane.name} on rent in Navi Mumbai`"
         class="object-contain w-full h-full"
+        width="400"
+        height="225"
         format="webp"
+        quality="80"
         loading="lazy"
-        width="100%"
-        height="100%"
+        decoding="async"
       />
     </div>
-    <div class="p-6">
-      <div class="mb-4 flex items-center justify-between">
-        <div>
-          <h3 class="text-xl font-bold">{{ crane.name }}</h3>
-          <p class="text-lg font-semibold text-[#FF4057]">
-            {{ crane.capacity }}
-          </p>
-        </div>
-        <Download
-          class="h-5 w-5 cursor-pointer"
-          @click="downloadFleet(crane.name)"
-          aria-label="Download fleet details"
-        />
+    <div class="p-6 flex flex-col flex-1">
+      <div class="mb-4">
+        <h3 class="text-xl font-bold">{{ crane.name }}</h3>
+        <p class="text-lg font-semibold text-[#FF4057]">
+          {{ crane.capacity }}
+        </p>
       </div>
-      <div class="grid grid-cols-2 gap-4 text-sm">
+      <div class="grid grid-cols-2 gap-4 text-sm mb-5">
         <div
           v-for="(spec, index) in specs"
           :key="index"
-          class="flex justify-between"
+          class="flex flex-col"
         >
-          <span class="dark:text-zinc-300 text-zinc-500">{{ spec.label }}</span>
-          <span class="font-medium">{{ spec.value }}</span>
+          <span class="dark:text-zinc-400 text-zinc-500 text-xs uppercase tracking-wider">{{ spec.label }}</span>
+          <span class="font-medium mt-0.5 truncate" :title="spec.value">{{ spec.value }}</span>
         </div>
+      </div>
+      <div class="mt-auto">
+        <NuxtLink
+          v-if="crane.link"
+          :to="crane.link"
+          class="flex items-center gap-1 text-sm font-semibold text-[#FF4057] hover:underline"
+        >
+          View Details
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </NuxtLink>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { Download } from "lucide-vue-next";
 import { computed } from "vue";
-import { useNuxtApp } from "#app";
 
 const props = defineProps({
   crane: {
@@ -51,18 +56,12 @@ const props = defineProps({
   },
 });
 
-const nuxtApp = useNuxtApp();
-
 const specs = computed(() => [
   props.crane.mainBoom,
   props.crane.jib,
   props.crane.luffing,
   props.crane.totalBoom,
 ]);
-
-const downloadFleet = (name) => {
-  nuxtApp.$toast.success(`Downloading fleet details for ${name}`);
-};
 </script>
 
 <style scoped>

@@ -3,7 +3,7 @@
     <HeaderCard
       :title="aboutUsPageTitle"
       videoUrl="/video/headerCardMainVideo.mp4"
-      subTitle="Leading the way in crane rental services since 2008, providing reliable and efficient heavy-lifting solutions."
+      subTitle="Leading the way in crane rental services in Navi Mumbai since 2001, providing reliable and efficient heavy-lifting solutions."
       isDownIconHash="our-journey"
     />
     <section class="py-20 container mx-auto px-4" id="our-journey">
@@ -11,10 +11,11 @@
         <div>
           <h2 class="text-4xl font-bold mb-6">Our Journey</h2>
           <p class="dark:text-gray-300 mb-6">
-            Founded in 2008 by Mr. Charanjit Singh, Saini Lifters has grown to
-            become a leading name in the crane rental industry. With over 15
-            years of experience, we've built our reputation on the pillars of
-            safety, reliability, and exceptional service.
+            Founded in 2001 by Mr. Charanjit Singh, Saini Lifters has grown to
+            become a leading name in the crane rental industry in Navi Mumbai,
+            Panvel and Kalamboli. With over 20 years of experience, we've built
+            our reputation on the pillars of safety, reliability, and
+            exceptional service.
           </p>
           <div class="grid grid-cols-2 gap-6">
             <div
@@ -74,30 +75,89 @@ const industries = ref([
 ]);
 
 const journeyInfo = ref([
-  { icon: Calendar, label: "Est. 2008" },
+  { icon: Calendar, label: "Est. 2001" },
   { icon: Building2, label: "Maharashtra India" },
   { icon: Forklift, label: "50-400 Ton Capacity" },
   { icon: Users, label: "Expert Team" },
 ]);
 
-// Set up Open Graph and SEO meta tags
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.sainilifters.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "About Us",
+      item: "https://www.sainilifters.com/about-us",
+    },
+  ],
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Saini Lifters Crane Service",
+  url: "https://www.sainilifters.com",
+  logo: "https://www.sainilifters.com/favicon.png",
+  foundingDate: "2001",
+  founder: { "@type": "Person", name: "Charanjit Singh" },
+  description:
+    "Saini Lifters provides crane on rent across India - mobile cranes, hydra cranes, manlifts, reach stackers and all-terrain cranes. Based in Kalamboli, Navi Mumbai. Serving Maharashtra, Odisha, Madhya Pradesh and pan-India since 2001.",
+  telephone: "+91-9322296990",
+  email: "charanjit@sainilifters.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Plot No. J-854, Steel Market Rd, Sector AWC",
+    addressLocality: "Kalamboli, Panvel",
+    addressRegion: "Navi Mumbai, Maharashtra",
+    postalCode: "410218",
+    addressCountry: "IN",
+  },
+  areaServed: [
+    "Maharashtra",
+    "Odisha",
+    "Madhya Pradesh",
+    "Gujarat",
+    "Andhra Pradesh",
+    "India",
+  ],
+  numberOfEmployees: { "@type": "QuantitativeValue", value: 60 },
+};
+
 useHead({
-  title: "About Us - Saini Lifters | Experts in Heavy Lifting & Crane Services",
+  title: "About Saini Lifters | Crane Rental Company in Navi Mumbai Since 2001",
   meta: [
     {
       name: "description",
       content:
-        "Learn about Saini Lifters, a leader in heavy lifting and crane services since 2001. Specializing in container cranes, reach stackers, side shifters, and all-terrain cranes, we provide reliable lifting solutions for industrial and construction projects.",
+        "Saini Lifters - crane rental company in Navi Mumbai since 2001. Founded by Mr. Charanjit Singh. Mobile cranes, hydra, manlift, 50-400T fleet. Serving Panvel, Kalamboli, Raigad, Mumbai & Thane.",
     },
-
-    // Open Graph / Facebook
+    { name: "robots", content: "index, follow" },
+    { name: "author", content: "Saini Lifters" },
+    {
+      name: "keywords",
+      content:
+        "saini lifters about, crane rental company navi mumbai, crane company panvel, heavy lifting company kalamboli, crane service since 2001",
+    },
     { property: "og:type", content: "website" },
     { property: "og:url", content: "https://www.sainilifters.com/about-us" },
-    { property: "og:title", content: "About Us - Saini Lifters" },
+    { property: "og:locale", content: "en_IN" },
+    { property: "og:site_name", content: "Saini Lifters" },
+    {
+      property: "og:title",
+      content: "About Saini Lifters | Crane Rental Company in Navi Mumbai",
+    },
     {
       property: "og:description",
       content:
-        "Discover the story of Saini Lifters, a trusted name in heavy lifting for over two decades. We specialize in advanced crane solutions for industrial and bridge construction projects, ensuring safety, efficiency, and precision.",
+        "Crane rental company in Navi Mumbai since 2001. Mobile cranes, hydra, manlift, 50-400T fleet. Serving Panvel, Kalamboli, Raigad, Mumbai & Thane.",
     },
     {
       property: "og:image",
@@ -106,30 +166,33 @@ useHead({
     },
     { property: "og:image:width", content: "1200" },
     { property: "og:image:height", content: "630" },
-
-    // Twitter
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:url", content: "https://www.sainilifters.com/about-us" },
-    { name: "twitter:title", content: "About Us - Saini Lifters" },
+    {
+      name: "twitter:title",
+      content: "About Saini Lifters | Crane Rental Navi Mumbai",
+    },
     {
       name: "twitter:description",
       content:
-        "Learn about Saini Lifters' expertise in heavy lifting and crane services. With over two decades of experience, we provide innovative lifting solutions for large-scale industrial projects.",
+        "Crane rental company in Navi Mumbai since 2001. Mobile cranes, hydra, manlift & more. Call +91 9322296990.",
     },
     {
       name: "twitter:image",
       content:
         "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/about-us-sRj1OQtzVztCEErJRykB66GqGrIVih.webp?v=1",
     },
-
-    // Additional SEO Boosters
+  ],
+  link: [{ rel: "canonical", href: "https://www.sainilifters.com/about-us" }],
+  script: [
     {
-      name: "keywords",
-      content:
-        "heavy lifting company, crane rental services, industrial lifting solutions, bridge construction cranes, Saini Lifters history, lifting equipment providers",
+      type: "application/ld+json",
+      innerHTML: JSON.stringify(breadcrumbSchema),
     },
-    { name: "robots", content: "index, follow" },
-    { name: "author", content: "Saini Lifters" },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify(organizationSchema),
+    },
   ],
 });
 </script>

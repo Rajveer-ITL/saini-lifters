@@ -44,10 +44,13 @@
         v-if="isDesktop && isDownIconHash"
         class="absolute bottom-[-100px] left-1/2 chevron-down"
       >
-        <ChevronDown
-          class="h-10 w-10 cursor-pointer text-[#FF4057]"
+        <button
           @click="scrollToElement"
-        />
+          aria-label="Scroll down to main content"
+          class="p-1 rounded focus:outline-none"
+        >
+          <ChevronDown class="h-10 w-10 text-[#FF4057]" aria-hidden="true" />
+        </button>
       </div>
     </div>
 
@@ -58,7 +61,8 @@
         muted
         playsinline
         autoplay
-        preload="metadata"
+        preload="none"
+        poster="/image/eq-all-terrain-crane-poster.jpg"
         class="video-player object-cover md:rounded-[34px]"
       >
         <source :src="videoUrl" type="video/mp4" />
@@ -121,41 +125,10 @@ onMounted(async () => {
       const gsap = (await import("gsap")).default;
 
       const tl = gsap.timeline();
-      tl.from(".header-card", {
-        opacity: 0,
-        duration: 2.5,
-        delay: 2,
-        y: 600,
-        scale: 0,
-        ease: "circ.out",
-      }).to(".header-card", {
-        opacity: 1,
-        duration: 2,
-        y: 0,
-        scale: 1,
-        ease: "circ.out",
-      });
-
-      tl.from(
+      tl.fromTo(
         ".header-card-title",
-        {
-          opacity: 0,
-          duration: 1,
-          y: 100,
-          ease: "circ.out",
-          stagger: 0.3,
-        },
-        "-=2.4"
-      ).to(
-        ".header-card-title",
-        {
-          opacity: 1,
-          duration: 1,
-          y: 0,
-          ease: "circ.out",
-          stagger: 0.3,
-        },
-        "-=2.4"
+        { opacity: 0, y: 60 },
+        { opacity: 1, y: 0, duration: 0.8, ease: "circ.out", stagger: 0.15 }
       );
     }
   }
