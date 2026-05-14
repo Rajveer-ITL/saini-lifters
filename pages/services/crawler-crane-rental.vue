@@ -40,15 +40,30 @@
     <section class="max-w-5xl mx-auto px-4 py-16">
       <h2 class="text-3xl font-bold mb-6">Why Choose a Crawler Crane?</h2>
       <p class="text-gray-600 dark:text-gray-300 mb-4 text-lg">
-        Crawler cranes operate on tracks instead of wheels, providing exceptional stability on soft or uneven ground and the ability to lift at full rated capacity without outriggers. They are the preferred choice for long-duration projects — particularly bridge construction, power plant erection and dam projects — where the crane needs to stay in position for weeks or months.
+        Crawler cranes operate on tracks instead of wheels, providing
+        exceptional stability on soft or uneven ground and the ability to lift
+        at full rated capacity without outriggers. They are the preferred choice
+        for long-duration projects - particularly bridge construction, power
+        plant erection and dam projects - where the crane needs to stay in
+        position for weeks or months.
       </p>
       <p class="text-gray-600 dark:text-gray-300 mb-8">
-        Unlike mobile cranes which must be repositioned and re-outriggered for each lift, a crawler crane can slew and travel with a suspended load (within its travel limits), making it more efficient for repetitive lifts such as placing precast bridge segments or erecting steel columns. The tracks also distribute the crane's weight over a larger area — critical for soft ground near river banks, coastal areas and reclaimed land around the Mumbai region.
+        Unlike mobile cranes which must be repositioned and re-outriggered for
+        each lift, a crawler crane can slew and travel with a suspended load
+        (within its travel limits), making it more efficient for repetitive
+        lifts such as placing precast bridge segments or erecting steel columns.
+        The tracks also distribute the crane's weight over a larger area -
+        critical for soft ground near river banks, coastal areas and reclaimed
+        land around the Mumbai region.
       </p>
-      <h2 class="text-3xl font-bold mb-6">Crawler vs Mobile Crane — Key Differences</h2>
+      <h2 class="text-3xl font-bold mb-6">
+        Crawler vs Mobile Crane - Key Differences
+      </h2>
       <div class="grid md:grid-cols-2 gap-6 mb-10">
         <div class="border border-gray-200 dark:border-zinc-700 rounded-xl p-5">
-          <h3 class="font-bold text-lg mb-3 text-[#FF4057]">Crawler Crane Advantages</h3>
+          <h3 class="font-bold text-lg mb-3 text-[#FF4057]">
+            Crawler Crane Advantages
+          </h3>
           <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
             <li>✓ Full capacity without outriggers</li>
             <li>✓ Can travel with load suspended</li>
@@ -58,7 +73,9 @@
           </ul>
         </div>
         <div class="border border-gray-200 dark:border-zinc-700 rounded-xl p-5">
-          <h3 class="font-bold text-lg mb-3 text-[#FF4057]">Setup & Transport</h3>
+          <h3 class="font-bold text-lg mb-3 text-[#FF4057]">
+            Setup & Transport
+          </h3>
           <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
             <li>✓ Transported on lowbed trailers</li>
             <li>✓ On-site assembly: 1–3 days depending on size</li>
@@ -96,9 +113,13 @@
         </li>
       </ul>
 
-      <h2 class="text-3xl font-bold mb-4">FAQs — Crawler Crane Rental</h2>
+      <h2 class="text-3xl font-bold mb-4">FAQs - Crawler Crane Rental</h2>
       <div class="space-y-5">
-        <div v-for="faq in faqs" :key="faq.q" class="border-b border-gray-200 dark:border-zinc-700 pb-4">
+        <div
+          v-for="faq in faqs"
+          :key="faq.q"
+          class="border-b border-gray-200 dark:border-zinc-700 pb-4"
+        >
           <h3 class="font-bold mb-2">{{ faq.q }}</h3>
           <p class="text-gray-500 dark:text-gray-400 text-sm">{{ faq.a }}</p>
         </div>
@@ -192,10 +213,22 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Crawler Crane Rental",
-        "provider": { "@type": "LocalBusiness", "name": "Saini Lifters Crane Service", "telephone": "+91-9322296990", "url": "https://www.sainilifters.com" },
-        "areaServed": ["Navi Mumbai", "Panvel", "Kalamboli", "Raigad", "Mumbai", "Thane"],
-        "url": "https://www.sainilifters.com/services/crawler-crane-rental"
+        name: "Crawler Crane Rental",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "Saini Lifters Crane Service",
+          telephone: "+91-9322296990",
+          url: "https://www.sainilifters.com",
+        },
+        areaServed: [
+          "Navi Mumbai",
+          "Panvel",
+          "Kalamboli",
+          "Raigad",
+          "Mumbai",
+          "Thane",
+        ],
+        url: "https://www.sainilifters.com/services/crawler-crane-rental",
       }),
     },
     {
@@ -203,11 +236,26 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sainilifters.com" },
-          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.sainilifters.com/services" },
-          { "@type": "ListItem", "position": 3, "name": "Crawler Crane Rental", "item": "https://www.sainilifters.com/services/crawler-crane-rental" }
-        ]
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.sainilifters.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: "https://www.sainilifters.com/services",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Crawler Crane Rental",
+            item: "https://www.sainilifters.com/services/crawler-crane-rental",
+          },
+        ],
       }),
     },
     {
@@ -215,12 +263,40 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-          { "@type": "Question", "name": "What is a crawler crane and when should I use one?", "acceptedAnswer": { "@type": "Answer", "text": "A crawler crane runs on tracks instead of wheels, giving it exceptional stability on soft or uneven ground. Use a crawler crane when you need a large-capacity crane (80T–400T) to stay on site for a long duration — bridge construction, power plant erection or dam projects — and when the ground conditions won't support a wheeled mobile crane." } },
-          { "@type": "Question", "name": "How long does it take to set up a crawler crane?", "acceptedAnswer": { "@type": "Answer", "text": "Setup time depends on the crane size: smaller 80T–100T crawlers take 1 day to assemble; larger 260T–400T cranes can take 2–3 days. Saini Lifters handles all transport, lowbed delivery and on-site assembly with our own crew." } },
-          { "@type": "Question", "name": "Can crawler cranes operate outside Maharashtra?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Saini Lifters deploys crawler cranes pan-India, including Odisha (steel plants, power projects), Madhya Pradesh (cement plants, bridge construction) and other states. Call +91 9322296990 to discuss mobilisation to your project site." } },
-          { "@type": "Question", "name": "What is the difference between a crawler crane and a mobile crane?", "acceptedAnswer": { "@type": "Answer", "text": "A crawler crane travels on tracks (no outriggers needed), can carry a suspended load while moving, and applies lower ground pressure — ideal for soft ground. A mobile crane travels faster on roads but needs outriggers and firm ground for each lift. Mobile cranes suit projects with many locations; crawler cranes suit one location with many repeated lifts." } },
-        ]
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is a crawler crane and when should I use one?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "A crawler crane runs on tracks instead of wheels, giving it exceptional stability on soft or uneven ground. Use a crawler crane when you need a large-capacity crane (80T–400T) to stay on site for a long duration - bridge construction, power plant erection or dam projects - and when the ground conditions won't support a wheeled mobile crane.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How long does it take to set up a crawler crane?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Setup time depends on the crane size: smaller 80T–100T crawlers take 1 day to assemble; larger 260T–400T cranes can take 2–3 days. Saini Lifters handles all transport, lowbed delivery and on-site assembly with our own crew.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can crawler cranes operate outside Maharashtra?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Saini Lifters deploys crawler cranes pan-India, including Odisha (steel plants, power projects), Madhya Pradesh (cement plants, bridge construction) and other states. Call +91 9322296990 to discuss mobilisation to your project site.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is the difference between a crawler crane and a mobile crane?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "A crawler crane travels on tracks (no outriggers needed), can carry a suspended load while moving, and applies lower ground pressure - ideal for soft ground. A mobile crane travels faster on roads but needs outriggers and firm ground for each lift. Mobile cranes suit projects with many locations; crawler cranes suit one location with many repeated lifts.",
+            },
+          },
+        ],
       }),
     },
   ],
@@ -277,19 +353,19 @@ const applications = [
 const faqs = [
   {
     q: "What is a crawler crane and when should I use one?",
-    a: "A crawler crane runs on tracks for exceptional stability on soft or uneven ground without outriggers. It's the right choice when you need high capacity (80T–400T) on site for weeks or months — bridge construction, power plant erection, dam work — and when ground conditions won't support a wheeled crane.",
+    a: "A crawler crane runs on tracks for exceptional stability on soft or uneven ground without outriggers. It's the right choice when you need high capacity (80T–400T) on site for weeks or months - bridge construction, power plant erection, dam work - and when ground conditions won't support a wheeled crane.",
   },
   {
     q: "How long does it take to set up a crawler crane?",
-    a: "Smaller 80T–100T crawlers assemble in 1 day; larger 260T–400T cranes take 2–3 days. Saini Lifters manages all lowbed transport and on-site assembly with our own crew — you don't need to arrange anything separately.",
+    a: "Smaller 80T–100T crawlers assemble in 1 day; larger 260T–400T cranes take 2–3 days. Saini Lifters manages all lowbed transport and on-site assembly with our own crew - you don't need to arrange anything separately.",
   },
   {
     q: "What is the difference between a crawler crane and a mobile crane?",
-    a: "A crawler crane uses tracks (no outriggers), can carry a load while moving, and applies lower ground pressure — ideal for soft ground, repeated lifts at one location. A mobile crane travels faster on roads but needs firm ground and outrigger setup for each lift. Mobile suits multi-location projects; crawler suits sustained heavy lifting in one spot.",
+    a: "A crawler crane uses tracks (no outriggers), can carry a load while moving, and applies lower ground pressure - ideal for soft ground, repeated lifts at one location. A mobile crane travels faster on roads but needs firm ground and outrigger setup for each lift. Mobile suits multi-location projects; crawler suits sustained heavy lifting in one spot.",
   },
   {
     q: "Do you deploy crawler cranes outside Maharashtra?",
-    a: "Yes. Saini Lifters deploys crawler cranes pan-India — Odisha (steel plants, power projects), Madhya Pradesh (cement plants, bridge work) and more. Call +91 9322296990 to discuss mobilisation to your state.",
+    a: "Yes. Saini Lifters deploys crawler cranes pan-India - Odisha (steel plants, power projects), Madhya Pradesh (cement plants, bridge work) and more. Call +91 9322296990 to discuss mobilisation to your state.",
   },
 ];
 </script>

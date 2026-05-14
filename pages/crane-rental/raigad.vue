@@ -144,10 +144,20 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sainilifters.com" },
-          { "@type": "ListItem", "position": 2, "name": "Crane Rental Raigad", "item": "https://www.sainilifters.com/crane-rental/raigad" }
-        ]
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.sainilifters.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Crane Rental Raigad",
+            item: "https://www.sainilifters.com/crane-rental/raigad",
+          },
+        ],
       }),
     },
     {
@@ -155,13 +165,18 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Saini Lifters Crane Service — Raigad",
-        "telephone": "+91-9322296990",
-        "url": "https://www.sainilifters.com/crane-rental/raigad",
-        "address": { "@type": "PostalAddress", "addressLocality": "Raigad", "addressRegion": "Maharashtra", "addressCountry": "IN" },
-        "areaServed": "Raigad District",
-        "openingHours": "Mo-Su 00:00-24:00",
-        "priceRange": "$$"
+        name: "Saini Lifters Crane Service - Raigad",
+        telephone: "+91-9322296990",
+        url: "https://www.sainilifters.com/crane-rental/raigad",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Raigad",
+          addressRegion: "Maharashtra",
+          addressCountry: "IN",
+        },
+        areaServed: "Raigad District",
+        openingHours: "Mo-Su 00:00-24:00",
+        priceRange: "$$",
       }),
     },
   ],

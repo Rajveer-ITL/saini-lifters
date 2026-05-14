@@ -12,13 +12,18 @@
         <!-- Company Info -->
         <div class="space-y-4 lg:col-span-2">
           <NuxtLink to="/" class="flex items-center space-x-2">
-            <span class="text-3xl font-bold">Saini <span class="text-[#FF4057]">Lifters</span></span>
+            <span class="text-3xl font-bold"
+              >Saini <span class="text-[#FF4057]">Lifters</span></span
+            >
           </NuxtLink>
           <p
-            :class="commonVariables.darkMode ? 'text-gray-400' : 'text-[#234a76]/80'"
+            :class="
+              commonVariables.darkMode ? 'text-gray-400' : 'text-[#234a76]/80'
+            "
             class="text-sm"
           >
-            Crane on rent across India — Navi Mumbai, Panvel, Kalamboli, Odisha, Madhya Pradesh &amp; more since 2001.<br />
+            Crane on rent across India - Navi Mumbai, Panvel, Kalamboli, Odisha,
+            Madhya Pradesh &amp; more since 2001.<br />
             Strength in Every Lift, Reliability in Every Rise.
           </p>
           <div class="flex flex-col gap-2 pt-1">
@@ -46,7 +51,11 @@
           <h3 class="text-lg font-semibold">Quick Links</h3>
           <ul class="space-y-2 text-sm">
             <li v-for="link in quickLinks" :key="link.to">
-              <NuxtLink :to="link.to" class="transition-colors" :class="linkClass">
+              <NuxtLink
+                :to="link.to"
+                class="transition-colors"
+                :class="linkClass"
+              >
                 {{ link.label }}
               </NuxtLink>
             </li>
@@ -58,7 +67,11 @@
           <h3 class="text-lg font-semibold">Our Services</h3>
           <ul class="space-y-2 text-sm">
             <li v-for="link in serviceLinks" :key="link.to">
-              <NuxtLink :to="link.to" class="transition-colors" :class="linkClass">
+              <NuxtLink
+                :to="link.to"
+                class="transition-colors"
+                :class="linkClass"
+              >
                 {{ link.label }}
               </NuxtLink>
             </li>
@@ -70,7 +83,11 @@
           <h3 class="text-lg font-semibold">Equipment</h3>
           <ul class="space-y-2 text-sm">
             <li v-for="link in equipmentLinks" :key="link.to">
-              <NuxtLink :to="link.to" class="transition-colors" :class="linkClass">
+              <NuxtLink
+                :to="link.to"
+                class="transition-colors"
+                :class="linkClass"
+              >
                 {{ link.label }}
               </NuxtLink>
             </li>
@@ -82,7 +99,11 @@
           <h3 class="text-lg font-semibold">Areas We Serve</h3>
           <ul class="space-y-2 text-sm">
             <li v-for="link in areaLinks" :key="link.to">
-              <NuxtLink :to="link.to" class="transition-colors" :class="linkClass">
+              <NuxtLink
+                :to="link.to"
+                class="transition-colors"
+                :class="linkClass"
+              >
                 {{ link.label }}
               </NuxtLink>
             </li>
@@ -146,7 +167,11 @@
         class="mt-12 pt-8 border-t text-center text-sm transition-colors"
         :class="borderClass"
       >
-        <p>&copy; {{ currentYear }} Saini Lifters Crane Service. All rights reserved. | Plot No. J-854, Steel Market Rd, Kalamboli, Navi Mumbai 410218</p>
+        <p>
+          &copy; {{ currentYear }} Saini Lifters Crane Service. All rights
+          reserved. | Plot No. J-854, Steel Market Rd, Kalamboli, Navi Mumbai
+          410218
+        </p>
       </div>
     </div>
   </footer>
@@ -213,18 +238,18 @@ const areaLinks = [
 const linkClass = computed(() =>
   commonVariables.value.darkMode
     ? "text-gray-400 hover:text-[#FF4057]"
-    : "text-[#234a76] hover:text-[#FF4057]"
+    : "text-[#234a76] hover:text-[#FF4057]",
 );
 const textClass = computed(() =>
-  commonVariables.value.darkMode ? "text-gray-400" : "text-[#234a76]"
+  commonVariables.value.darkMode ? "text-gray-400" : "text-[#234a76]",
 );
 const mapBg = computed(() =>
-  commonVariables.value.darkMode ? "bg-gray-800" : "bg-gray-300"
+  commonVariables.value.darkMode ? "bg-gray-800" : "bg-gray-300",
 );
 const borderClass = computed(() =>
   commonVariables.value.darkMode
     ? "border-gray-800 text-gray-400"
-    : "border-gray-300 text-[#234a76]/80"
+    : "border-gray-300 text-[#234a76]/80",
 );
 </script>
 

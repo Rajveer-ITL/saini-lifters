@@ -79,37 +79,78 @@
     <!-- Expanded content for Thane -->
     <section class="max-w-5xl mx-auto px-4 pb-16">
       <h2 class="text-3xl font-bold mb-6">
-        Crane on Rent Near Me — Thane & MIDC Areas
+        Crane on Rent Near Me - Thane & MIDC Areas
       </h2>
       <p class="text-gray-600 dark:text-gray-300 mb-6">
-        Searching for <strong>crane on rent near me</strong> in Thane? Saini Lifters deploys from our Navi Mumbai base and can reach most Thane MIDC locations within 1–2 hours. Thane is home to major industrial estates including Wagle Estate MIDC, Bhiwandi warehousing hub, Dombivli MIDC, and Ambernath industrial area — all requiring regular crane and heavy equipment support.
+        Searching for <strong>crane on rent near me</strong> in Thane? Saini
+        Lifters deploys from our Navi Mumbai base and can reach most Thane MIDC
+        locations within 1–2 hours. Thane is home to major industrial estates
+        including Wagle Estate MIDC, Bhiwandi warehousing hub, Dombivli MIDC,
+        and Ambernath industrial area - all requiring regular crane and heavy
+        equipment support.
       </p>
       <p class="text-gray-600 dark:text-gray-300 mb-6">
-        Whether you need a mobile crane for a residential high-rise in Thane West, a hydra crane for factory equipment relocation in Wagle Estate, or a boom lift for façade maintenance in Ghodbunder Road's commercial buildings — Saini Lifters provides the right equipment with certified operators and competitive daily rates.
+        Whether you need a mobile crane for a residential high-rise in Thane
+        West, a hydra crane for factory equipment relocation in Wagle Estate, or
+        a boom lift for façade maintenance in Ghodbunder Road's commercial
+        buildings - Saini Lifters provides the right equipment with certified
+        operators and competitive daily rates.
       </p>
       <div class="grid md:grid-cols-3 gap-4 mt-8">
-        <div class="p-5 border border-gray-200 dark:border-zinc-700 rounded-xl text-center">
+        <div
+          class="p-5 border border-gray-200 dark:border-zinc-700 rounded-xl text-center"
+        >
           <p class="text-3xl font-bold text-[#FF4057]">50T–300T</p>
-          <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Mobile crane capacity range</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+            Mobile crane capacity range
+          </p>
         </div>
-        <div class="p-5 border border-gray-200 dark:border-zinc-700 rounded-xl text-center">
+        <div
+          class="p-5 border border-gray-200 dark:border-zinc-700 rounded-xl text-center"
+        >
           <p class="text-3xl font-bold text-[#FF4057]">24/7</p>
-          <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Availability including holidays</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+            Availability including holidays
+          </p>
         </div>
-        <div class="p-5 border border-gray-200 dark:border-zinc-700 rounded-xl text-center">
+        <div
+          class="p-5 border border-gray-200 dark:border-zinc-700 rounded-xl text-center"
+        >
           <p class="text-3xl font-bold text-[#FF4057]">1–2 hrs</p>
-          <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Typical mobilisation to Thane</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+            Typical mobilisation to Thane
+          </p>
         </div>
       </div>
       <div class="mt-8 p-5 bg-gray-50 dark:bg-zinc-800 rounded-xl">
         <h3 class="font-bold text-lg mb-3">Common Thane Projects We Serve</h3>
-        <ul class="grid md:grid-cols-2 gap-2 text-sm text-gray-600 dark:text-gray-300">
-          <li class="flex items-center gap-2"><span class="text-[#FF4057]">✓</span> Wagle Estate MIDC factory installations</li>
-          <li class="flex items-center gap-2"><span class="text-[#FF4057]">✓</span> Dombivli MIDC chemical plant equipment</li>
-          <li class="flex items-center gap-2"><span class="text-[#FF4057]">✓</span> Bhiwandi warehouse steel structure erection</li>
-          <li class="flex items-center gap-2"><span class="text-[#FF4057]">✓</span> Ambernath industrial heavy lifts</li>
-          <li class="flex items-center gap-2"><span class="text-[#FF4057]">✓</span> Ghodbunder Road high-rise construction</li>
-          <li class="flex items-center gap-2"><span class="text-[#FF4057]">✓</span> Kalyan-Dombivli infrastructure projects</li>
+        <ul
+          class="grid md:grid-cols-2 gap-2 text-sm text-gray-600 dark:text-gray-300"
+        >
+          <li class="flex items-center gap-2">
+            <span class="text-[#FF4057]">✓</span> Wagle Estate MIDC factory
+            installations
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-[#FF4057]">✓</span> Dombivli MIDC chemical plant
+            equipment
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-[#FF4057]">✓</span> Bhiwandi warehouse steel
+            structure erection
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-[#FF4057]">✓</span> Ambernath industrial heavy
+            lifts
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-[#FF4057]">✓</span> Ghodbunder Road high-rise
+            construction
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-[#FF4057]">✓</span> Kalyan-Dombivli infrastructure
+            projects
+          </li>
         </ul>
       </div>
     </section>
@@ -179,10 +220,20 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sainilifters.com" },
-          { "@type": "ListItem", "position": 2, "name": "Crane Rental Thane", "item": "https://www.sainilifters.com/crane-rental/thane" }
-        ]
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.sainilifters.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Crane Rental Thane",
+            item: "https://www.sainilifters.com/crane-rental/thane",
+          },
+        ],
       }),
     },
     {
@@ -190,13 +241,18 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Saini Lifters Crane Service — Thane",
-        "telephone": "+91-9322296990",
-        "url": "https://www.sainilifters.com/crane-rental/thane",
-        "address": { "@type": "PostalAddress", "addressLocality": "Thane", "addressRegion": "Maharashtra", "addressCountry": "IN" },
-        "areaServed": "Thane",
-        "openingHours": "Mo-Su 00:00-24:00",
-        "priceRange": "$$"
+        name: "Saini Lifters Crane Service - Thane",
+        telephone: "+91-9322296990",
+        url: "https://www.sainilifters.com/crane-rental/thane",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Thane",
+          addressRegion: "Maharashtra",
+          addressCountry: "IN",
+        },
+        areaServed: "Thane",
+        openingHours: "Mo-Su 00:00-24:00",
+        priceRange: "$$",
       }),
     },
   ],

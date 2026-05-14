@@ -27,7 +27,11 @@
         Our <span class="text-[#FF4057]">Equipment Fleet</span>
       </h2>
       <p class="text-gray-600 dark:text-gray-300 mb-8 max-w-4xl">
-        Browse photos of Saini Lifters' crane and heavy equipment fleet — XCMG all-terrain cranes (160T to 300T), SANY crawler cranes, Kalmar reach stackers and Farana pick &amp; carry cranes. All equipment operates with trained, certified operators experienced in Navi Mumbai, Panvel MIDC and pan-India project logistics.
+        Browse photos of Saini Lifters' crane and heavy equipment fleet - XCMG
+        all-terrain cranes (160T to 300T), SANY crawler cranes, Kalmar reach
+        stackers and Farana pick &amp; carry cranes. All equipment operates with
+        trained, certified operators experienced in Navi Mumbai, Panvel MIDC and
+        pan-India project logistics.
       </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
         <div
@@ -139,7 +143,7 @@ useHead({
     {
       name: "description",
       content:
-        "Gallery of Saini Lifters crane and lifting equipment fleet in Navi Mumbai — XCMG all-terrain cranes (160T–300T), SANY crawler cranes, Kalmar reach stackers, Farana pick & carry cranes and manlifts. Call +91 9322296990.",
+        "Gallery of Saini Lifters crane and lifting equipment fleet in Navi Mumbai - XCMG all-terrain cranes (160T–300T), SANY crawler cranes, Kalmar reach stackers, Farana pick & carry cranes and manlifts. Call +91 9322296990.",
     },
     { name: "robots", content: "index, follow" },
     { property: "og:url", content: "https://www.sainilifters.com/gallery" },
@@ -165,10 +169,20 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sainilifters.com" },
-          { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://www.sainilifters.com/gallery" }
-        ]
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.sainilifters.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Gallery",
+            item: "https://www.sainilifters.com/gallery",
+          },
+        ],
       }),
     },
     {
@@ -176,10 +190,15 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "ImageGallery",
-        "name": "Saini Lifters Crane & Equipment Gallery",
-        "description": "Photos and videos of Saini Lifters crane fleet in action — XCMG all-terrain cranes, mobile cranes, hydra cranes and manlifts in Navi Mumbai.",
-        "url": "https://www.sainilifters.com/gallery",
-        "provider": { "@type": "LocalBusiness", "name": "Saini Lifters Crane Service", "telephone": "+91-9322296990" }
+        name: "Saini Lifters Crane & Equipment Gallery",
+        description:
+          "Photos and videos of Saini Lifters crane fleet in action - XCMG all-terrain cranes, mobile cranes, hydra cranes and manlifts in Navi Mumbai.",
+        url: "https://www.sainilifters.com/gallery",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "Saini Lifters Crane Service",
+          telephone: "+91-9322296990",
+        },
       }),
     },
   ],
@@ -188,37 +207,37 @@ useHead({
 const images = [
   {
     src: "crane-1.webp",
-    title: "XCMG QAY160 — 160T All-Terrain Crane",
+    title: "XCMG QAY160 - 160T All-Terrain Crane",
     alt: "XCMG QAY160 all-terrain crane on rent in Navi Mumbai",
     desc: "160-tonne XCMG QAY160 all-terrain crane deployed at a bridge construction project in Navi Mumbai. Available on rent with certified operator and rigger team for infrastructure, power plant erection and heavy industrial lifting.",
   },
   {
     src: "crane-2.webp",
-    title: "XCMG QAY300 — 300T All-Terrain Crane",
+    title: "XCMG QAY300 - 300T All-Terrain Crane",
     alt: "XCMG QAY300 crane on rent in Panvel Navi Mumbai",
     desc: "300-tonne XCMG QAY300 all-terrain crane at a heavy infrastructure project in Maharashtra. Our largest mobile crane handles tandem lifts, heavy girder erection and process plant equipment installation across pan-India project sites.",
   },
   {
     src: "crane-3.webp",
-    title: "Mobile Crane — Kalamboli Industrial Site",
+    title: "Mobile Crane - Kalamboli Industrial Site",
     alt: "Mobile crane on rent in Navi Mumbai Kalamboli",
     desc: "Mobile crane deployed at a factory in Kalamboli MIDC for machine erection and equipment installation. Our cranes are available for short-duration lifts with fast deployment across Navi Mumbai and Panvel.",
   },
   {
     src: "crane-4.webp",
-    title: "XCMG QAY200 — 200T All-Terrain Crane",
+    title: "XCMG QAY200 - 200T All-Terrain Crane",
     alt: "XCMG QAY200 crane on rent in Navi Mumbai",
     desc: "200-tonne XCMG QAY200 performing structural steel lift at an industrial project in Panvel MIDC. Suitable for power substation equipment setting, steel structure erection and precast concrete panel installation.",
   },
   {
     src: "crane-5.webp",
-    title: "Grove GMK90 — 90T Mobile Crane",
+    title: "Grove GMK90 - 90T Mobile Crane",
     alt: "Grove GMK90 mobile crane on rent Panvel Navi Mumbai",
     desc: "Grove GMK90 90-tonne all-terrain mobile crane available on rent in Navi Mumbai. Ideal for mid-scale construction projects, equipment setting and roof slab positioning where a large crane footprint is impractical.",
   },
   {
     src: "eq-reach-stacker.png",
-    title: "Kalmar Reach Stacker — 45T Container Handler",
+    title: "Kalmar Reach Stacker - 45T Container Handler",
     alt: "Kalmar reach stacker on rent in Navi Mumbai near JNPT",
     desc: "Kalmar 45T reach stacker for container yard and CFS operations near JNPT, Navi Mumbai. Stacks 20ft and 40ft ISO containers three-high and is deployed to container freight stations and inland container depots across the region.",
   },

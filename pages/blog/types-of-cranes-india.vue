@@ -20,7 +20,7 @@
       <div class="w-full rounded-xl overflow-hidden mb-8">
         <img
           src="/image/blog-types-of-cranes.png"
-          alt="Types of cranes used in construction in India — complete visual guide"
+          alt="Types of cranes used in construction in India - complete visual guide"
           class="w-full h-auto"
           loading="eager"
         />
@@ -111,7 +111,10 @@ useHead({
       content:
         "Complete guide to crane types used in Indian construction - mobile, hydra, all-terrain, crawler, tower cranes and more.",
     },
-    { property: "og:image", content: "https://www.sainilifters.com/image/blog-types-of-cranes.png" },
+    {
+      property: "og:image",
+      content: "https://www.sainilifters.com/image/blog-types-of-cranes.png",
+    },
   ],
   link: [
     {
@@ -125,14 +128,23 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Types of Cranes Used in Construction in India",
-        "datePublished": "2025-05-13",
-        "dateModified": "2025-05-13",
-        "author": { "@type": "Organization", "name": "Saini Lifters" },
-        "publisher": { "@type": "Organization", "name": "Saini Lifters", "logo": { "@type": "ImageObject", "url": "https://www.sainilifters.com/favicon.png" } },
-        "image": "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
-        "url": "https://www.sainilifters.com/blog/types-of-cranes-india",
-        "description": "A guide to the most common types of cranes used in construction and infrastructure projects in India, with capacity and use case details."
+        headline: "Types of Cranes Used in Construction in India",
+        datePublished: "2025-05-13",
+        dateModified: "2025-05-13",
+        author: { "@type": "Organization", name: "Saini Lifters" },
+        publisher: {
+          "@type": "Organization",
+          name: "Saini Lifters",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://www.sainilifters.com/favicon.png",
+          },
+        },
+        image:
+          "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
+        url: "https://www.sainilifters.com/blog/types-of-cranes-india",
+        description:
+          "A guide to the most common types of cranes used in construction and infrastructure projects in India, with capacity and use case details.",
       }),
     },
   ],

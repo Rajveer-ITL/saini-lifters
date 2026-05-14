@@ -76,9 +76,15 @@
         </li>
       </ul>
 
-      <h2 class="text-3xl font-bold mb-6">FAQs — Farana / Pick &amp; Carry Crane Rental</h2>
+      <h2 class="text-3xl font-bold mb-6">
+        FAQs - Farana / Pick &amp; Carry Crane Rental
+      </h2>
       <div class="space-y-5 mb-10">
-        <div v-for="faq in faqs" :key="faq.q" class="border-b border-gray-200 dark:border-zinc-700 pb-4">
+        <div
+          v-for="faq in faqs"
+          :key="faq.q"
+          class="border-b border-gray-200 dark:border-zinc-700 pb-4"
+        >
           <h3 class="font-bold mb-2">{{ faq.q }}</h3>
           <p class="text-gray-500 dark:text-gray-400 text-sm">{{ faq.a }}</p>
         </div>
@@ -172,10 +178,22 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Pick & Carry (Farana) Crane Rental",
-        "provider": { "@type": "LocalBusiness", "name": "Saini Lifters Crane Service", "telephone": "+91-9322296990", "url": "https://www.sainilifters.com" },
-        "areaServed": ["Navi Mumbai", "Panvel", "Kalamboli", "Raigad", "Mumbai", "Thane"],
-        "url": "https://www.sainilifters.com/services/pick-carry-crane-rental"
+        name: "Pick & Carry (Farana) Crane Rental",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "Saini Lifters Crane Service",
+          telephone: "+91-9322296990",
+          url: "https://www.sainilifters.com",
+        },
+        areaServed: [
+          "Navi Mumbai",
+          "Panvel",
+          "Kalamboli",
+          "Raigad",
+          "Mumbai",
+          "Thane",
+        ],
+        url: "https://www.sainilifters.com/services/pick-carry-crane-rental",
       }),
     },
     {
@@ -183,11 +201,26 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sainilifters.com" },
-          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.sainilifters.com/services" },
-          { "@type": "ListItem", "position": 3, "name": "Pick & Carry Crane Rental", "item": "https://www.sainilifters.com/services/pick-carry-crane-rental" }
-        ]
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.sainilifters.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: "https://www.sainilifters.com/services",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Pick & Carry Crane Rental",
+            item: "https://www.sainilifters.com/services/pick-carry-crane-rental",
+          },
+        ],
       }),
     },
     {
@@ -199,19 +232,28 @@ useHead({
           {
             "@type": "Question",
             name: "What is the difference between a farana crane and a hydra crane?",
-            acceptedAnswer: { "@type": "Answer", text: "Both are pick-and-carry cranes but they serve different weight ranges. A hydra crane handles 8T–14T loads and is compact, ideal for light machine shifting inside factories. A farana (pharana) crane handles 20T–50T loads with a longer boom — suited for heavier industrial machinery, transformer shifting and operations in larger MIDC zones where a hydra cannot handle the load." }
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Both are pick-and-carry cranes but they serve different weight ranges. A hydra crane handles 8T–14T loads and is compact, ideal for light machine shifting inside factories. A farana (pharana) crane handles 20T–50T loads with a longer boom - suited for heavier industrial machinery, transformer shifting and operations in larger MIDC zones where a hydra cannot handle the load.",
+            },
           },
           {
             "@type": "Question",
             name: "What is the daily rate for farana crane rental in Navi Mumbai?",
-            acceptedAnswer: { "@type": "Answer", text: "Farana crane rental rates in Navi Mumbai depend on the capacity and shift duration. A 20T farana crane typically costs ₹10,000–₹14,000 per day (8-hour shift), while a 50T farana is ₹15,000–₹20,000 per day. Call Saini Lifters at +91 9322296990 for a firm quote based on your specific requirement." }
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Farana crane rental rates in Navi Mumbai depend on the capacity and shift duration. A 20T farana crane typically costs ₹10,000–₹14,000 per day (8-hour shift), while a 50T farana is ₹15,000–₹20,000 per day. Call Saini Lifters at +91 9322296990 for a firm quote based on your specific requirement.",
+            },
           },
           {
             "@type": "Question",
             name: "Can farana cranes be used inside factory buildings?",
-            acceptedAnswer: { "@type": "Answer", text: "Yes, farana cranes can be used inside factory buildings provided the ceiling height and floor loading capacity are sufficient. The crane's raised boom requires a minimum clearance of approximately 8–12 metres depending on the model. Saini Lifters conducts a site check before deployment to confirm access. For tighter indoor spaces, a hydra crane may be more suitable." }
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes, farana cranes can be used inside factory buildings provided the ceiling height and floor loading capacity are sufficient. The crane's raised boom requires a minimum clearance of approximately 8–12 metres depending on the model. Saini Lifters conducts a site check before deployment to confirm access. For tighter indoor spaces, a hydra crane may be more suitable.",
+            },
           },
-        ]
+        ],
       }),
     },
   ],
@@ -219,7 +261,7 @@ useHead({
 const faqs = [
   {
     q: "What is the difference between a farana crane and a hydra crane?",
-    a: "Both are pick-and-carry cranes but serve different weight ranges. A hydra handles 8T–14T and is compact for light machine shifting inside factories. A farana handles 20T–50T with a longer boom — suited for heavier machinery, transformer shifting and larger MIDC zone operations.",
+    a: "Both are pick-and-carry cranes but serve different weight ranges. A hydra handles 8T–14T and is compact for light machine shifting inside factories. A farana handles 20T–50T with a longer boom - suited for heavier machinery, transformer shifting and larger MIDC zone operations.",
   },
   {
     q: "What is the daily rate for farana crane rental in Navi Mumbai?",
@@ -227,7 +269,7 @@ const faqs = [
   },
   {
     q: "Can farana cranes be used inside factory buildings?",
-    a: "Yes — farana cranes can work inside factory buildings if ceiling height (min ~8–12m depending on model) and floor loading are sufficient. Saini Lifters conducts a site check before deployment to confirm access. For tighter indoor spaces, a hydra crane may be more suitable.",
+    a: "Yes - farana cranes can work inside factory buildings if ceiling height (min ~8–12m depending on model) and floor loading are sufficient. Saini Lifters conducts a site check before deployment to confirm access. For tighter indoor spaces, a hydra crane may be more suitable.",
   },
 ];
 

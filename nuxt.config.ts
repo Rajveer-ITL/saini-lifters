@@ -44,11 +44,19 @@ export default defineNuxtConfig({
   nitro: {
     routeRules: {
       "/": { cache: { swr: true } },
-      "/_nuxt/**": { headers: { "cache-control": "public, max-age=31536000, immutable" } },
-      "/image/**": { headers: { "cache-control": "public, max-age=31536000, immutable" } },
-      "/fonts/**": { headers: { "cache-control": "public, max-age=31536000, immutable" } },
+      "/_nuxt/**": {
+        headers: { "cache-control": "public, max-age=31536000, immutable" },
+      },
+      "/image/**": {
+        headers: { "cache-control": "public, max-age=31536000, immutable" },
+      },
+      "/fonts/**": {
+        headers: { "cache-control": "public, max-age=31536000, immutable" },
+      },
       "/video/**": { headers: { "cache-control": "public, max-age=86400" } },
-      "/equipment/container-stacker": { redirect: { to: "/equipment/forklift", statusCode: 301 } },
+      "/equipment/container-stacker": {
+        redirect: { to: "/equipment/forklift", statusCode: 301 },
+      },
     },
     compressPublicAssets: { gzip: true, brotli: true },
   },
@@ -64,8 +72,7 @@ export default defineNuxtConfig({
     layoutTransition: { name: "layout", mode: "out-in" },
 
     head: {
-      title:
-        "Crane on Rent in Navi Mumbai | Saini Lifters",
+      title: "Crane on Rent in Navi Mumbai | Saini Lifters",
       htmlAttrs: {
         lang: "en",
       },
@@ -73,7 +80,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Saini Lifters — crane on rent in Navi Mumbai, Panvel & Kalamboli since 2001. Mobile cranes, hydra, manlift, reach stacker & container stacker. Call +91 9322296990.",
+            "Saini Lifters - crane on rent in Navi Mumbai, Panvel & Kalamboli since 2001. Mobile cranes, hydra, manlift, reach stacker & container stacker. Call +91 9322296990.",
         },
         {
           name: "keywords",
@@ -86,7 +93,8 @@ export default defineNuxtConfig({
         },
         {
           property: "og:description",
-          content: "Crane on rent in Navi Mumbai, Panvel & Kalamboli. Mobile cranes, hydra, manlift & more. Call Saini Lifters: +91 9322296990.",
+          content:
+            "Crane on rent in Navi Mumbai, Panvel & Kalamboli. Mobile cranes, hydra, manlift & more. Call Saini Lifters: +91 9322296990.",
         },
         {
           property: "og:image",

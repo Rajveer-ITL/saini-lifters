@@ -75,9 +75,13 @@
           >{{ app }}
         </li>
       </ul>
-      <h2 class="text-3xl font-bold mb-4">FAQs — All-Terrain Crane Rental</h2>
+      <h2 class="text-3xl font-bold mb-4">FAQs - All-Terrain Crane Rental</h2>
       <div class="space-y-5 mb-4">
-        <div v-for="faq in faqs" :key="faq.q" class="border-b border-gray-200 dark:border-zinc-700 pb-4">
+        <div
+          v-for="faq in faqs"
+          :key="faq.q"
+          class="border-b border-gray-200 dark:border-zinc-700 pb-4"
+        >
           <h3 class="font-bold mb-2">{{ faq.q }}</h3>
           <p class="text-gray-500 dark:text-gray-400 text-sm">{{ faq.a }}</p>
         </div>
@@ -172,10 +176,22 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "All-Terrain Crane Rental",
-        "provider": { "@type": "LocalBusiness", "name": "Saini Lifters Crane Service", "telephone": "+91-9322296990", "url": "https://www.sainilifters.com" },
-        "areaServed": ["Navi Mumbai", "Panvel", "Kalamboli", "Raigad", "Mumbai", "Thane"],
-        "url": "https://www.sainilifters.com/services/all-terrain-crane-rental"
+        name: "All-Terrain Crane Rental",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "Saini Lifters Crane Service",
+          telephone: "+91-9322296990",
+          url: "https://www.sainilifters.com",
+        },
+        areaServed: [
+          "Navi Mumbai",
+          "Panvel",
+          "Kalamboli",
+          "Raigad",
+          "Mumbai",
+          "Thane",
+        ],
+        url: "https://www.sainilifters.com/services/all-terrain-crane-rental",
       }),
     },
     {
@@ -183,11 +199,26 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sainilifters.com" },
-          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.sainilifters.com/services" },
-          { "@type": "ListItem", "position": 3, "name": "All-Terrain Crane Rental", "item": "https://www.sainilifters.com/services/all-terrain-crane-rental" }
-        ]
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.sainilifters.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: "https://www.sainilifters.com/services",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "All-Terrain Crane Rental",
+            item: "https://www.sainilifters.com/services/all-terrain-crane-rental",
+          },
+        ],
       }),
     },
     {
@@ -195,11 +226,32 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-          { "@type": "Question", "name": "What is an all-terrain crane and when should I use it?", "acceptedAnswer": { "@type": "Answer", "text": "An all-terrain crane combines the road mobility of a truck crane with off-road capability, making it ideal for project sites with rough or uneven terrain. It's the best choice when you need high capacity (160T–300T) and fast mobilisation between sites." } },
-          { "@type": "Question", "name": "What XCMG all-terrain cranes does Saini Lifters operate?", "acceptedAnswer": { "@type": "Answer", "text": "Saini Lifters operates the XCMG QAY160 (160 tonne), QAY200 (200 tonne) and QAY300 (300 tonne) all-terrain cranes — among the most modern heavy crane fleet in the Navi Mumbai region." } },
-          { "@type": "Question", "name": "Can the all-terrain crane be deployed outside Maharashtra?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Saini Lifters deploys all-terrain cranes pan-India, including Odisha, Madhya Pradesh, Gujarat and other states for major industrial and infrastructure projects. Call +91 9322296990 to discuss mobilisation." } },
-        ]
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is an all-terrain crane and when should I use it?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "An all-terrain crane combines the road mobility of a truck crane with off-road capability, making it ideal for project sites with rough or uneven terrain. It's the best choice when you need high capacity (160T–300T) and fast mobilisation between sites.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What XCMG all-terrain cranes does Saini Lifters operate?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Saini Lifters operates the XCMG QAY160 (160 tonne), QAY200 (200 tonne) and QAY300 (300 tonne) all-terrain cranes - among the most modern heavy crane fleet in the Navi Mumbai region.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can the all-terrain crane be deployed outside Maharashtra?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Saini Lifters deploys all-terrain cranes pan-India, including Odisha, Madhya Pradesh, Gujarat and other states for major industrial and infrastructure projects. Call +91 9322296990 to discuss mobilisation.",
+            },
+          },
+        ],
       }),
     },
   ],
@@ -244,11 +296,11 @@ const faqs = [
   },
   {
     q: "What XCMG all-terrain cranes does Saini Lifters operate?",
-    a: "Saini Lifters operates the XCMG QAY160 (160T, 78m main boom), QAY200 (200T, 84m main boom) and QAY300 (300T, 90m main boom) — among the most modern heavy all-terrain crane fleet in the Mumbai Metropolitan Region.",
+    a: "Saini Lifters operates the XCMG QAY160 (160T, 78m main boom), QAY200 (200T, 84m main boom) and QAY300 (300T, 90m main boom) - among the most modern heavy all-terrain crane fleet in the Mumbai Metropolitan Region.",
   },
   {
     q: "Can the all-terrain crane be deployed outside Maharashtra?",
-    a: "Yes. Saini Lifters deploys all-terrain cranes pan-India for major industrial projects — including Odisha (steel plants, power projects), Madhya Pradesh (cement plants, infrastructure) and other states. Call +91 9322296990 to discuss mobilisation costs and timelines.",
+    a: "Yes. Saini Lifters deploys all-terrain cranes pan-India for major industrial projects - including Odisha (steel plants, power projects), Madhya Pradesh (cement plants, infrastructure) and other states. Call +91 9322296990 to discuss mobilisation costs and timelines.",
   },
 ];
 </script>

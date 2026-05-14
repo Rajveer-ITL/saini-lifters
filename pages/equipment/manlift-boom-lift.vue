@@ -63,7 +63,7 @@
           <div>
             <p class="text-gray-600 dark:text-gray-300 mb-4">
               Articulated boom lifts (knuckle booms) can reach over and around
-              obstacles — ideal for complex access situations. Their
+              obstacles - ideal for complex access situations. Their
               articulating arm can position the platform horizontally even in
               tight spaces.
             </p>
@@ -147,7 +147,7 @@
         <div class="flex items-center gap-3 mb-6">
           <div class="w-1 h-8 bg-[#FF4057] rounded-full"></div>
           <h2 class="text-2xl md:text-3xl font-bold">
-            Scissor Lift — Electric &amp; Diesel
+            Scissor Lift - Electric &amp; Diesel
           </h2>
         </div>
         <div class="grid md:grid-cols-2 gap-8 items-center mb-8">
@@ -210,11 +210,28 @@
 
       <!-- Why Rent Section -->
       <div class="mb-12">
-        <h2 class="text-3xl font-bold mb-6">Why Rent Aerial Work Platforms from Saini Lifters?</h2>
-        <p class="text-gray-600 dark:text-gray-300 mb-4">Saini Lifters maintains a diverse fleet of aerial work platforms (AWP) — telescopic boom lifts, articulated boom lifts and scissor lifts — to cover every height access requirement in Navi Mumbai, Panvel and Kalamboli. Whether you need to reach a 56-metre chimney stack or maintain industrial lighting 6 metres above a factory floor, we have the right platform.</p>
-        <p class="text-gray-600 dark:text-gray-300 mb-6">All our manlifts are delivered with a certified operator, pre-delivery inspection certificate and safety harness. Our operators are trained in working at height protocols under Indian safety regulations — reducing your site's liability while ensuring the work gets done efficiently and safely.</p>
+        <h2 class="text-3xl font-bold mb-6">
+          Why Rent Aerial Work Platforms from Saini Lifters?
+        </h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Saini Lifters maintains a diverse fleet of aerial work platforms (AWP)
+          - telescopic boom lifts, articulated boom lifts and scissor lifts - to
+          cover every height access requirement in Navi Mumbai, Panvel and
+          Kalamboli. Whether you need to reach a 56-metre chimney stack or
+          maintain industrial lighting 6 metres above a factory floor, we have
+          the right platform.
+        </p>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">
+          All our manlifts are delivered with a certified operator, pre-delivery
+          inspection certificate and safety harness. Our operators are trained
+          in working at height protocols under Indian safety regulations -
+          reducing your site's liability while ensuring the work gets done
+          efficiently and safely.
+        </p>
         <div class="overflow-x-auto">
-          <table class="w-full text-sm border border-gray-200 dark:border-zinc-700 rounded-xl overflow-hidden">
+          <table
+            class="w-full text-sm border border-gray-200 dark:border-zinc-700 rounded-xl overflow-hidden"
+          >
             <thead class="bg-[#FF4057] text-white">
               <tr>
                 <th class="p-3 text-left font-semibold">Platform Type</th>
@@ -224,17 +241,37 @@
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-200 dark:divide-zinc-700">
-              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Telescopic Boom Lift</td><td class="p-3">185ft (56m)</td><td class="p-3">Diesel / 4WD</td><td class="p-3">Chimneys, facades, high towers</td></tr>
-              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Articulated Boom Lift</td><td class="p-3">120ft (36m)</td><td class="p-3">Diesel</td><td class="p-3">Over-obstacle access, complex reach</td></tr>
-              <tr class="bg-white dark:bg-zinc-800"><td class="p-3 font-medium">Electric Scissor Lift</td><td class="p-3">50ft (15m)</td><td class="p-3">Electric</td><td class="p-3">Indoor factory, warehouse, mall</td></tr>
-              <tr class="bg-gray-50 dark:bg-zinc-900"><td class="p-3 font-medium">Diesel Scissor Lift</td><td class="p-3">50ft (15m)</td><td class="p-3">Diesel</td><td class="p-3">Outdoor rough terrain, construction</td></tr>
+              <tr class="bg-white dark:bg-zinc-800">
+                <td class="p-3 font-medium">Telescopic Boom Lift</td>
+                <td class="p-3">185ft (56m)</td>
+                <td class="p-3">Diesel / 4WD</td>
+                <td class="p-3">Chimneys, facades, high towers</td>
+              </tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900">
+                <td class="p-3 font-medium">Articulated Boom Lift</td>
+                <td class="p-3">120ft (36m)</td>
+                <td class="p-3">Diesel</td>
+                <td class="p-3">Over-obstacle access, complex reach</td>
+              </tr>
+              <tr class="bg-white dark:bg-zinc-800">
+                <td class="p-3 font-medium">Electric Scissor Lift</td>
+                <td class="p-3">50ft (15m)</td>
+                <td class="p-3">Electric</td>
+                <td class="p-3">Indoor factory, warehouse, mall</td>
+              </tr>
+              <tr class="bg-gray-50 dark:bg-zinc-900">
+                <td class="p-3 font-medium">Diesel Scissor Lift</td>
+                <td class="p-3">50ft (15m)</td>
+                <td class="p-3">Diesel</td>
+                <td class="p-3">Outdoor rough terrain, construction</td>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
 
       <h2 class="text-3xl font-bold mb-6">
-        FAQs — Manlift & Boom Lift Rental Navi Mumbai
+        FAQs - Manlift & Boom Lift Rental Navi Mumbai
       </h2>
       <div class="space-y-5 mb-12">
         <div
@@ -300,7 +337,7 @@ useHead({
     {
       name: "description",
       content:
-        "Manlift & boom lift on rent in Navi Mumbai — telescopic boom lifts up to 185ft, articulated boom lifts 60–120ft, scissor lifts 19–50ft (electric & diesel). Call +91 9322296990.",
+        "Manlift & boom lift on rent in Navi Mumbai - telescopic boom lifts up to 185ft, articulated boom lifts 60–120ft, scissor lifts 19–50ft (electric & diesel). Call +91 9322296990.",
     },
     { name: "robots", content: "index, follow" },
     {
@@ -395,7 +432,7 @@ useHead({
             name: "What is the difference between an articulated and telescopic boom lift?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "A telescopic (straight) boom lift extends in a straight line for maximum height reach — ideal for high facades and industrial chimneys. An articulated boom lift has a knuckle joint that lets it reach over and around obstacles, perfect for complex access situations.",
+              text: "A telescopic (straight) boom lift extends in a straight line for maximum height reach - ideal for high facades and industrial chimneys. An articulated boom lift has a knuckle joint that lets it reach over and around obstacles, perfect for complex access situations.",
             },
           },
           {
@@ -403,7 +440,7 @@ useHead({
             name: "Is an electric scissor lift safe for indoor factory use?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes — electric scissor lifts produce zero emissions and operate quietly, making them ideal for indoor factory, warehouse and mall environments. For outdoor rough terrain, we recommend diesel scissor lifts.",
+              text: "Yes - electric scissor lifts produce zero emissions and operate quietly, making them ideal for indoor factory, warehouse and mall environments. For outdoor rough terrain, we recommend diesel scissor lifts.",
             },
           },
           {
@@ -427,7 +464,7 @@ useHead({
             name: "Do you provide a trained operator with boom lift rental?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes — all Saini Lifters aerial work platform rentals include a trained and certified operator with working-at-height certification, experienced in HVAC, electrical, telecom and construction access work across Navi Mumbai and Panvel industrial zones.",
+              text: "Yes - all Saini Lifters aerial work platform rentals include a trained and certified operator with working-at-height certification, experienced in HVAC, electrical, telecom and construction access work across Navi Mumbai and Panvel industrial zones.",
             },
           },
         ],
@@ -450,15 +487,15 @@ const applications = [
 const faqs = [
   {
     q: "What is the difference between an articulated and telescopic boom lift?",
-    a: "A telescopic boom extends straight for maximum height reach — ideal for high facades. An articulated boom has a knuckle joint that lets it reach over and around obstacles, perfect for complex access situations.",
+    a: "A telescopic boom extends straight for maximum height reach - ideal for high facades. An articulated boom has a knuckle joint that lets it reach over and around obstacles, perfect for complex access situations.",
   },
   {
     q: "Is an electric scissor lift safe for indoor factory use?",
-    a: "Yes — electric scissor lifts produce zero emissions and operate quietly, ideal for indoor factory, warehouse and mall environments. For outdoor rough terrain, we recommend diesel scissor lifts.",
+    a: "Yes - electric scissor lifts produce zero emissions and operate quietly, ideal for indoor factory, warehouse and mall environments. For outdoor rough terrain, we recommend diesel scissor lifts.",
   },
   {
     q: "How high is a 185ft boom lift in metres?",
-    a: "A 185ft telescopic boom lift reaches approximately 56 metres — among the tallest aerial work platforms available on rent in Navi Mumbai, suitable for high-rise facades, cooling towers and tall industrial structures.",
+    a: "A 185ft telescopic boom lift reaches approximately 56 metres - among the tallest aerial work platforms available on rent in Navi Mumbai, suitable for high-rise facades, cooling towers and tall industrial structures.",
   },
   {
     q: "What is the daily rental rate for a boom lift in Navi Mumbai?",
@@ -466,7 +503,7 @@ const faqs = [
   },
   {
     q: "Do you provide a trained operator with boom lift rental?",
-    a: "Yes — all Saini Lifters aerial work platform rentals include a trained and certified operator. Our operators hold working-at-height certifications and are experienced in HVAC, electrical, telecom and construction access work across Navi Mumbai and Panvel industrial zones.",
+    a: "Yes - all Saini Lifters aerial work platform rentals include a trained and certified operator. Our operators hold working-at-height certifications and are experienced in HVAC, electrical, telecom and construction access work across Navi Mumbai and Panvel industrial zones.",
   },
 ];
 </script>

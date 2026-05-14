@@ -13,7 +13,7 @@
         >
           <img
             src="../../assets/images/strength-small.jpg"
-            alt="Strength — crane lifting heavy load safely"
+            alt="Strength - crane lifting heavy load safely"
             loading="lazy"
             class="rounded-[12px] w-[140px] md:w-[110px]"
             width="110"
@@ -40,7 +40,7 @@
         >
           <img
             src="../../assets/images/rise-small.jpg"
-            alt="Reliability — crane rising to new heights"
+            alt="Reliability - crane rising to new heights"
             loading="lazy"
             class="rounded-[12px] w-full md:w-[120px]"
             width="120"
@@ -101,12 +101,12 @@ onMounted(async () => {
         .fromTo(
           ".three-dots",
           { y: 0 },
-          { duration: 0.8, y: -10, stagger: 0.2, ease: "power1.inOut" }
+          { duration: 0.8, y: -10, stagger: 0.2, ease: "power1.inOut" },
         )
         .to(
           ".three-dots",
           { duration: 0.8, y: 0, stagger: 0.2, ease: "power1.inOut" },
-          "-=0.8"
+          "-=0.8",
         );
 
       // Image Hover Animations
@@ -116,7 +116,7 @@ onMounted(async () => {
           .fromTo(
             el,
             { scale: 1 },
-            { duration: 0.8, scale, rotate, ease: "back.out" }
+            { duration: 0.8, scale, rotate, ease: "back.out" },
           );
       };
 

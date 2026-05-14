@@ -83,14 +83,27 @@
         Why Choose Saini Lifters for Crane on Rent in Mumbai?
       </h2>
       <p class="text-gray-600 dark:text-gray-300 mb-6">
-        When you search for <strong>crane on rent near me</strong> in Mumbai, Saini Lifters is your closest and most trusted option. Operating from our base in Kalamboli (Navi Mumbai), we can reach most Mumbai locations within 1–2 hours. Our XCMG all-terrain crane fleet — including the QAY160 (160T), QAY200 (200T) and QAY300 (300T) — is among the most modern in the Mumbai Metropolitan Region.
+        When you search for <strong>crane on rent near me</strong> in Mumbai,
+        Saini Lifters is your closest and most trusted option. Operating from
+        our base in Kalamboli (Navi Mumbai), we can reach most Mumbai locations
+        within 1–2 hours. Our XCMG all-terrain crane fleet - including the
+        QAY160 (160T), QAY200 (200T) and QAY300 (300T) - is among the most
+        modern in the Mumbai Metropolitan Region.
       </p>
       <p class="text-gray-600 dark:text-gray-300 mb-6">
-        Mumbai's construction industry is one of the most demanding in India. From high-rise residential towers in Worli and Bandra to industrial plant installations in Bhiwandi and Turbhe, and from port machinery at JNPT to infrastructure work on the Mumbai Trans Harbour Link — every major project requires heavy lifting expertise. With 20+ years of experience and certified operators, Saini Lifters has the equipment and know-how to handle any lift safely.
+        Mumbai's construction industry is one of the most demanding in India.
+        From high-rise residential towers in Worli and Bandra to industrial
+        plant installations in Bhiwandi and Turbhe, and from port machinery at
+        JNPT to infrastructure work on the Mumbai Trans Harbour Link - every
+        major project requires heavy lifting expertise. With 20+ years of
+        experience and certified operators, Saini Lifters has the equipment and
+        know-how to handle any lift safely.
       </p>
       <div class="grid md:grid-cols-2 gap-4 mt-8">
         <div class="p-5 border border-gray-200 dark:border-zinc-700 rounded-xl">
-          <h3 class="font-bold text-lg mb-2 text-[#FF4057]">Project Types We Handle in Mumbai</h3>
+          <h3 class="font-bold text-lg mb-2 text-[#FF4057]">
+            Project Types We Handle in Mumbai
+          </h3>
           <ul class="text-sm text-gray-600 dark:text-gray-300 space-y-1">
             <li>• High-rise building construction & topping out</li>
             <li>• Industrial plant and machinery installation</li>
@@ -184,10 +197,20 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sainilifters.com" },
-          { "@type": "ListItem", "position": 2, "name": "Crane Rental Mumbai", "item": "https://www.sainilifters.com/crane-rental/mumbai" }
-        ]
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.sainilifters.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Crane Rental Mumbai",
+            item: "https://www.sainilifters.com/crane-rental/mumbai",
+          },
+        ],
       }),
     },
     {
@@ -195,13 +218,18 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Saini Lifters Crane Service — Mumbai",
-        "telephone": "+91-9322296990",
-        "url": "https://www.sainilifters.com/crane-rental/mumbai",
-        "address": { "@type": "PostalAddress", "addressLocality": "Mumbai", "addressRegion": "Maharashtra", "addressCountry": "IN" },
-        "areaServed": "Mumbai",
-        "openingHours": "Mo-Su 00:00-24:00",
-        "priceRange": "$$"
+        name: "Saini Lifters Crane Service - Mumbai",
+        telephone: "+91-9322296990",
+        url: "https://www.sainilifters.com/crane-rental/mumbai",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Mumbai",
+          addressRegion: "Maharashtra",
+          addressCountry: "IN",
+        },
+        areaServed: "Mumbai",
+        openingHours: "Mo-Su 00:00-24:00",
+        priceRange: "$$",
       }),
     },
   ],

@@ -20,7 +20,7 @@
       <div class="w-full rounded-xl overflow-hidden mb-8">
         <img
           src="/image/blog-crane-rent-vs-buy.png"
-          alt="Crane rental vs buying — which is better for your business in India"
+          alt="Crane rental vs buying - which is better for your business in India"
           class="w-full h-auto"
           loading="eager"
         />
@@ -139,7 +139,10 @@ useHead({
       content:
         "Rent vs buy crane analysis for Indian businesses. Most companies in Navi Mumbai save significantly by renting.",
     },
-    { property: "og:image", content: "https://www.sainilifters.com/image/blog-crane-rent-vs-buy.png" },
+    {
+      property: "og:image",
+      content: "https://www.sainilifters.com/image/blog-crane-rent-vs-buy.png",
+    },
   ],
   link: [
     {
@@ -153,14 +156,24 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Crane Rent vs Buy in India — Which Makes More Sense for Your Business?",
-        "datePublished": "2025-05-13",
-        "dateModified": "2025-05-13",
-        "author": { "@type": "Organization", "name": "Saini Lifters" },
-        "publisher": { "@type": "Organization", "name": "Saini Lifters", "logo": { "@type": "ImageObject", "url": "https://www.sainilifters.com/favicon.png" } },
-        "image": "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
-        "url": "https://www.sainilifters.com/blog/crane-rent-vs-buy",
-        "description": "Should you rent or buy a crane in India? A complete financial comparison for construction companies and project managers."
+        headline:
+          "Crane Rent vs Buy in India - Which Makes More Sense for Your Business?",
+        datePublished: "2025-05-13",
+        dateModified: "2025-05-13",
+        author: { "@type": "Organization", name: "Saini Lifters" },
+        publisher: {
+          "@type": "Organization",
+          name: "Saini Lifters",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://www.sainilifters.com/favicon.png",
+          },
+        },
+        image:
+          "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
+        url: "https://www.sainilifters.com/blog/crane-rent-vs-buy",
+        description:
+          "Should you rent or buy a crane in India? A complete financial comparison for construction companies and project managers.",
       }),
     },
   ],

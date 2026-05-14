@@ -20,7 +20,11 @@
         <p
           class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto"
         >
-          Saini Lifters is headquartered in Kalamboli, Navi Mumbai — your closest crane rental company. Searching for <strong>crane on rent near me</strong> in Kalamboli? We're right here. Mobile cranes, hydra cranes, manlifts and more, available for immediate same-day deployment in Kalamboli and surrounding areas.
+          Saini Lifters is headquartered in Kalamboli, Navi Mumbai - your
+          closest crane rental company. Searching for
+          <strong>crane on rent near me</strong> in Kalamboli? We're right here.
+          Mobile cranes, hydra cranes, manlifts and more, available for
+          immediate same-day deployment in Kalamboli and surrounding areas.
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
           <a
@@ -177,20 +181,34 @@ useHead({
     },
   ],
   script: [
-    { type: "application/ld+json", innerHTML: JSON.stringify(breadcrumbSchema) },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify(breadcrumbSchema),
+    },
     {
       type: "application/ld+json",
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Saini Lifters Crane Service — Kalamboli",
-        "telephone": "+91-9322296990",
-        "url": "https://www.sainilifters.com/crane-rental/kalamboli",
-        "address": { "@type": "PostalAddress", "streetAddress": "Plot No. J-854, Steel Market Rd, Sector AWC", "addressLocality": "Kalamboli", "addressRegion": "Navi Mumbai, Maharashtra", "postalCode": "410218", "addressCountry": "IN" },
-        "geo": { "@type": "GeoCoordinates", "latitude": 19.0319, "longitude": 73.1042 },
-        "areaServed": "Kalamboli",
-        "openingHours": "Mo-Su 00:00-24:00",
-        "priceRange": "$$"
+        name: "Saini Lifters Crane Service - Kalamboli",
+        telephone: "+91-9322296990",
+        url: "https://www.sainilifters.com/crane-rental/kalamboli",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Plot No. J-854, Steel Market Rd, Sector AWC",
+          addressLocality: "Kalamboli",
+          addressRegion: "Navi Mumbai, Maharashtra",
+          postalCode: "410218",
+          addressCountry: "IN",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 19.0319,
+          longitude: 73.1042,
+        },
+        areaServed: "Kalamboli",
+        openingHours: "Mo-Su 00:00-24:00",
+        priceRange: "$$",
       }),
     },
   ],

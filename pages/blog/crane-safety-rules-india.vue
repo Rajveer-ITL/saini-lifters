@@ -20,7 +20,7 @@
       <div class="w-full rounded-xl overflow-hidden mb-8">
         <img
           src="/image/blog-crane-safety-rules.png"
-          alt="Top 10 crane safety rules every site manager must know — Saini Lifters"
+          alt="Top 10 crane safety rules every site manager must know - Saini Lifters"
           class="w-full h-auto"
           loading="eager"
         />
@@ -101,7 +101,10 @@ useHead({
       content:
         "Essential crane safety rules for Indian construction sites. Protect your workers and project in Navi Mumbai.",
     },
-    { property: "og:image", content: "https://www.sainilifters.com/image/blog-crane-safety-rules.png" },
+    {
+      property: "og:image",
+      content: "https://www.sainilifters.com/image/blog-crane-safety-rules.png",
+    },
   ],
   link: [
     {
@@ -115,14 +118,23 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Top 10 Crane Safety Rules Every Site Manager Must Know",
-        "datePublished": "2025-05-13",
-        "dateModified": "2025-05-13",
-        "author": { "@type": "Organization", "name": "Saini Lifters" },
-        "publisher": { "@type": "Organization", "name": "Saini Lifters", "logo": { "@type": "ImageObject", "url": "https://www.sainilifters.com/favicon.png" } },
-        "image": "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
-        "url": "https://www.sainilifters.com/blog/crane-safety-rules-india",
-        "description": "Top 10 crane safety rules for construction sites in India. Essential guidelines for site managers, operators and workers."
+        headline: "Top 10 Crane Safety Rules Every Site Manager Must Know",
+        datePublished: "2025-05-13",
+        dateModified: "2025-05-13",
+        author: { "@type": "Organization", name: "Saini Lifters" },
+        publisher: {
+          "@type": "Organization",
+          name: "Saini Lifters",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://www.sainilifters.com/favicon.png",
+          },
+        },
+        image:
+          "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
+        url: "https://www.sainilifters.com/blog/crane-safety-rules-india",
+        description:
+          "Top 10 crane safety rules for construction sites in India. Essential guidelines for site managers, operators and workers.",
       }),
     },
   ],

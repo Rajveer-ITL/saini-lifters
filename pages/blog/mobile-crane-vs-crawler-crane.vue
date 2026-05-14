@@ -20,7 +20,7 @@
       <div class="w-full rounded-xl overflow-hidden mb-8">
         <img
           src="/image/blog-mobile-vs-crawler.png"
-          alt="Mobile crane vs crawler crane — key differences comparison guide"
+          alt="Mobile crane vs crawler crane - key differences comparison guide"
           class="w-full h-auto"
           loading="eager"
         />
@@ -140,7 +140,10 @@ useHead({
       content:
         "Mobile crane vs crawler crane comparison - mobility, capacity, setup and cost. Which is right for your project in Navi Mumbai?",
     },
-    { property: "og:image", content: "https://www.sainilifters.com/image/blog-mobile-vs-crawler.png" },
+    {
+      property: "og:image",
+      content: "https://www.sainilifters.com/image/blog-mobile-vs-crawler.png",
+    },
   ],
   link: [
     {
@@ -154,14 +157,23 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Mobile Crane vs Crawler Crane: Key Differences",
-        "datePublished": "2025-05-13",
-        "dateModified": "2025-05-13",
-        "author": { "@type": "Organization", "name": "Saini Lifters" },
-        "publisher": { "@type": "Organization", "name": "Saini Lifters", "logo": { "@type": "ImageObject", "url": "https://www.sainilifters.com/favicon.png" } },
-        "image": "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
-        "url": "https://www.sainilifters.com/blog/mobile-crane-vs-crawler-crane",
-        "description": "Mobile crane vs crawler crane — complete comparison of setup time, mobility, capacity and cost for Indian construction projects."
+        headline: "Mobile Crane vs Crawler Crane: Key Differences",
+        datePublished: "2025-05-13",
+        dateModified: "2025-05-13",
+        author: { "@type": "Organization", name: "Saini Lifters" },
+        publisher: {
+          "@type": "Organization",
+          name: "Saini Lifters",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://www.sainilifters.com/favicon.png",
+          },
+        },
+        image:
+          "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
+        url: "https://www.sainilifters.com/blog/mobile-crane-vs-crawler-crane",
+        description:
+          "Mobile crane vs crawler crane - complete comparison of setup time, mobility, capacity and cost for Indian construction projects.",
       }),
     },
   ],

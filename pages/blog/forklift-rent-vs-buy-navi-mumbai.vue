@@ -15,23 +15,23 @@
         >Guide</span
       >
       <h1 class="text-4xl md:text-5xl font-bold mt-3 mb-6">
-        Forklift on Rent vs Buy — Best Option for Navi Mumbai Factories in 2026
+        Forklift on Rent vs Buy - Best Option for Navi Mumbai Factories in 2026
       </h1>
       <div class="w-full rounded-xl overflow-hidden mb-8">
         <img
           src="/image/eq-forklift.png"
-          alt="Forklift on rent vs buy — best option for Navi Mumbai factories — Saini Lifters"
+          alt="Forklift on rent vs buy - best option for Navi Mumbai factories - Saini Lifters"
           class="w-full h-auto"
           loading="eager"
         />
       </div>
       <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
-        Navi Mumbai factories face this decision constantly — buy a forklift outright,
-        or rent one as needed? Both options have real merit depending on how frequently
-        you use the equipment, your maintenance capacity and how you manage capital
-        expenditure. The answer depends on utilisation, maintenance costs and cash flow.
-        Here is a clear, factor-by-factor breakdown to help you make the right call
-        for your operation.
+        Navi Mumbai factories face this decision constantly - buy a forklift
+        outright, or rent one as needed? Both options have real merit depending
+        on how frequently you use the equipment, your maintenance capacity and
+        how you manage capital expenditure. The answer depends on utilisation,
+        maintenance costs and cash flow. Here is a clear, factor-by-factor
+        breakdown to help you make the right call for your operation.
       </p>
 
       <div class="space-y-8">
@@ -43,47 +43,66 @@
           <div class="bg-gray-50 dark:bg-zinc-800 px-6 py-3">
             <h2 class="text-lg font-bold">{{ row.factor }}</h2>
           </div>
-          <div class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-zinc-700">
+          <div
+            class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-zinc-700"
+          >
             <div class="px-6 py-4">
-              <p class="text-xs text-gray-400 uppercase font-semibold mb-1">Renting</p>
-              <p class="text-gray-700 dark:text-gray-300 text-sm">{{ row.renting }}</p>
+              <p class="text-xs text-gray-400 uppercase font-semibold mb-1">
+                Renting
+              </p>
+              <p class="text-gray-700 dark:text-gray-300 text-sm">
+                {{ row.renting }}
+              </p>
             </div>
             <div class="px-6 py-4">
-              <p class="text-xs text-gray-400 uppercase font-semibold mb-1">Buying</p>
-              <p class="text-gray-700 dark:text-gray-300 text-sm">{{ row.buying }}</p>
+              <p class="text-xs text-gray-400 uppercase font-semibold mb-1">
+                Buying
+              </p>
+              <p class="text-gray-700 dark:text-gray-300 text-sm">
+                {{ row.buying }}
+              </p>
             </div>
             <div class="px-6 py-4 bg-[#FF4057]/5 dark:bg-[#FF4057]/10">
-              <p class="text-xs text-[#FF4057] uppercase font-semibold mb-1">Verdict</p>
-              <p class="text-gray-700 dark:text-gray-300 text-sm font-medium">{{ row.verdict }}</p>
+              <p class="text-xs text-[#FF4057] uppercase font-semibold mb-1">
+                Verdict
+              </p>
+              <p class="text-gray-700 dark:text-gray-300 text-sm font-medium">
+                {{ row.verdict }}
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="mt-10 border border-gray-200 dark:border-zinc-700 rounded-xl p-6">
+      <div
+        class="mt-10 border border-gray-200 dark:border-zinc-700 rounded-xl p-6"
+      >
         <h2 class="text-2xl font-bold mb-3 text-[#FF4057]">Conclusion</h2>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          For most Navi Mumbai MIDC factories, renting makes more financial sense —
-          especially for non-daily requirements. When you rent from Saini Lifters, the
-          operator, maintenance, insurance and statutory compliance are all included in
-          the day rate. There is no capital expenditure, no depreciation to account for,
-          and no risk of being stuck with a broken-down machine on a critical production day.
+          For most Navi Mumbai MIDC factories, renting makes more financial
+          sense - especially for non-daily requirements. When you rent from
+          Saini Lifters, the operator, maintenance, insurance and statutory
+          compliance are all included in the day rate. There is no capital
+          expenditure, no depreciation to account for, and no risk of being
+          stuck with a broken-down machine on a critical production day.
         </p>
         <p class="text-gray-600 dark:text-gray-300">
-          Buying a forklift may make financial sense only if your operation genuinely
-          needs a forklift every working day of the year and you have the in-house
-          maintenance capacity to keep it running. For everyone else — especially
-          factories with seasonal peaks, project-based needs or limited maintenance
-          staff — renting is the smarter, lower-risk choice.
+          Buying a forklift may make financial sense only if your operation
+          genuinely needs a forklift every working day of the year and you have
+          the in-house maintenance capacity to keep it running. For everyone
+          else - especially factories with seasonal peaks, project-based needs
+          or limited maintenance staff - renting is the smarter, lower-risk
+          choice.
         </p>
       </div>
 
       <div class="mt-12 p-6 bg-[#FF4057]/5 dark:bg-[#FF4057]/10 rounded-xl">
         <h2 class="text-2xl font-bold mb-3">Forklift on Rent in Navi Mumbai</h2>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Saini Lifters provides forklifts on rent across Navi Mumbai, Panvel and
-          Kalamboli MIDC — with certified operators, all maintenance included and
-          flexible hire periods. Call us for availability and a same-day quote.
+          Saini Lifters provides forklifts on rent across Navi Mumbai, Panvel
+          and Kalamboli MIDC - with certified operators, all maintenance
+          included and flexible hire periods. Call us for availability and a
+          same-day quote.
         </p>
         <div class="flex flex-wrap gap-4">
           <a
@@ -104,7 +123,8 @@
 <script setup>
 import { useHead } from "#imports";
 useHead({
-  title: "Forklift on Rent vs Buy — Best Option for Navi Mumbai Factories 2026 | Saini Lifters",
+  title:
+    "Forklift on Rent vs Buy - Best Option for Navi Mumbai Factories 2026 | Saini Lifters",
   meta: [
     {
       name: "description",
@@ -125,17 +145,16 @@ useHead({
     {
       property: "og:title",
       content:
-        "Forklift on Rent vs Buy — Best Option for Navi Mumbai Factories in 2026",
+        "Forklift on Rent vs Buy - Best Option for Navi Mumbai Factories in 2026",
     },
     {
       property: "og:description",
       content:
-        "A factor-by-factor comparison of renting vs buying a forklift for Navi Mumbai MIDC factories — cost, maintenance, flexibility and cash flow.",
+        "A factor-by-factor comparison of renting vs buying a forklift for Navi Mumbai MIDC factories - cost, maintenance, flexibility and cash flow.",
     },
     {
       property: "og:image",
-      content:
-        "https://www.sainilifters.com/image/eq-forklift.png",
+      content: "https://www.sainilifters.com/image/eq-forklift.png",
     },
   ],
   link: [
@@ -151,7 +170,7 @@ useHead({
         "@context": "https://schema.org",
         "@type": "Article",
         headline:
-          "Forklift on Rent vs Buy — Best Option for Navi Mumbai Factories in 2026",
+          "Forklift on Rent vs Buy - Best Option for Navi Mumbai Factories in 2026",
         datePublished: "2026-05-14",
         dateModified: "2026-05-14",
         author: {
@@ -166,11 +185,10 @@ useHead({
             url: "https://www.sainilifters.com/favicon.png",
           },
         },
-        image:
-          "https://www.sainilifters.com/image/eq-forklift.png",
+        image: "https://www.sainilifters.com/image/eq-forklift.png",
         url: "https://www.sainilifters.com/blog/forklift-rent-vs-buy-navi-mumbai",
         description:
-          "A comprehensive comparison of renting versus buying a forklift for factories in Navi Mumbai and the MIDC industrial zone — covering cost, maintenance, flexibility, operator and cash flow.",
+          "A comprehensive comparison of renting versus buying a forklift for factories in Navi Mumbai and the MIDC industrial zone - covering cost, maintenance, flexibility, operator and cash flow.",
       }),
     },
     {
@@ -220,7 +238,7 @@ const comparisonRows = [
     buying:
       "All maintenance, AMC, spare parts, tyres and breakdown repair are your responsibility and cost.",
     verdict:
-      "Owned forklifts carry a significant hidden maintenance burden — especially for factories without a dedicated maintenance team.",
+      "Owned forklifts carry a significant hidden maintenance burden - especially for factories without a dedicated maintenance team.",
   },
   {
     factor: "Flexibility",
@@ -236,9 +254,9 @@ const comparisonRows = [
     renting:
       "Saini Lifters provides a certified forklift operator with every rental. Operator cost is included in the day rate.",
     buying:
-      "You must hire, train and hold a certified operator on payroll — with all associated HR, salary and compliance costs.",
+      "You must hire, train and hold a certified operator on payroll - with all associated HR, salary and compliance costs.",
     verdict:
-      "Rental includes the operator — saving you recruitment, training and ongoing payroll costs.",
+      "Rental includes the operator - saving you recruitment, training and ongoing payroll costs.",
   },
   {
     factor: "Utilisation Threshold",
@@ -252,9 +270,9 @@ const comparisonRows = [
   {
     factor: "Cash Flow Impact",
     renting:
-      "Operating expense — paid per use, directly tied to revenue-generating activity. Preserves working capital.",
+      "Operating expense - paid per use, directly tied to revenue-generating activity. Preserves working capital.",
     buying:
-      "Capital expenditure — ties up lakhs in a depreciating asset. Funds that could be deployed in production or growth.",
+      "Capital expenditure - ties up lakhs in a depreciating asset. Funds that could be deployed in production or growth.",
     verdict:
       "Renting preserves cash flow and keeps working capital available for your core business.",
   },

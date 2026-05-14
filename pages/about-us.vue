@@ -85,32 +85,50 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.sainilifters.com" },
-    { "@type": "ListItem", position: 2, name: "About Us", item: "https://www.sainilifters.com/about-us" },
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.sainilifters.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "About Us",
+      item: "https://www.sainilifters.com/about-us",
+    },
   ],
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Saini Lifters Crane Service",
-  "url": "https://www.sainilifters.com",
-  "logo": "https://www.sainilifters.com/favicon.png",
-  "foundingDate": "2001",
-  "founder": { "@type": "Person", "name": "Charanjit Singh" },
-  "description": "Saini Lifters provides crane on rent across India — mobile cranes, hydra cranes, manlifts, reach stackers and all-terrain cranes. Based in Kalamboli, Navi Mumbai. Serving Maharashtra, Odisha, Madhya Pradesh and pan-India since 2001.",
-  "telephone": "+91-9322296990",
-  "email": "charanjit@sainilifters.com",
-  "address": {
+  name: "Saini Lifters Crane Service",
+  url: "https://www.sainilifters.com",
+  logo: "https://www.sainilifters.com/favicon.png",
+  foundingDate: "2001",
+  founder: { "@type": "Person", name: "Charanjit Singh" },
+  description:
+    "Saini Lifters provides crane on rent across India - mobile cranes, hydra cranes, manlifts, reach stackers and all-terrain cranes. Based in Kalamboli, Navi Mumbai. Serving Maharashtra, Odisha, Madhya Pradesh and pan-India since 2001.",
+  telephone: "+91-9322296990",
+  email: "charanjit@sainilifters.com",
+  address: {
     "@type": "PostalAddress",
-    "streetAddress": "Plot No. J-854, Steel Market Rd, Sector AWC",
-    "addressLocality": "Kalamboli, Panvel",
-    "addressRegion": "Navi Mumbai, Maharashtra",
-    "postalCode": "410218",
-    "addressCountry": "IN"
+    streetAddress: "Plot No. J-854, Steel Market Rd, Sector AWC",
+    addressLocality: "Kalamboli, Panvel",
+    addressRegion: "Navi Mumbai, Maharashtra",
+    postalCode: "410218",
+    addressCountry: "IN",
   },
-  "areaServed": ["Maharashtra", "Odisha", "Madhya Pradesh", "Gujarat", "Andhra Pradesh", "India"],
-  "numberOfEmployees": { "@type": "QuantitativeValue", "value": 60 },
+  areaServed: [
+    "Maharashtra",
+    "Odisha",
+    "Madhya Pradesh",
+    "Gujarat",
+    "Andhra Pradesh",
+    "India",
+  ],
+  numberOfEmployees: { "@type": "QuantitativeValue", value: 60 },
 };
 
 useHead({
@@ -167,8 +185,14 @@ useHead({
   ],
   link: [{ rel: "canonical", href: "https://www.sainilifters.com/about-us" }],
   script: [
-    { type: "application/ld+json", innerHTML: JSON.stringify(breadcrumbSchema) },
-    { type: "application/ld+json", innerHTML: JSON.stringify(organizationSchema) },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify(breadcrumbSchema),
+    },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify(organizationSchema),
+    },
   ],
 });
 </script>

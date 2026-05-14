@@ -15,22 +15,22 @@
         >Guide</span
       >
       <h1 class="text-4xl md:text-5xl font-bold mt-3 mb-6">
-        How to Book a Crane on Rent in Navi Mumbai — Step-by-Step 2026 Guide
+        How to Book a Crane on Rent in Navi Mumbai - Step-by-Step 2026 Guide
       </h1>
       <div class="w-full rounded-xl overflow-hidden mb-8">
         <img
           src="/image/eq-all-terrain-crane.png"
-          alt="How to book a crane on rent in Navi Mumbai — step-by-step guide by Saini Lifters"
+          alt="How to book a crane on rent in Navi Mumbai - step-by-step guide by Saini Lifters"
           class="w-full h-auto"
           loading="eager"
         />
       </div>
       <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
-        Booking a crane for the first time can feel overwhelming — there are permits to
-        arrange, capacity calculations to get right, site surveys to conduct and
-        mobilisation logistics to coordinate. But it does not have to be complicated.
-        Here is exactly what Saini Lifters does with every client booking, from the
-        first call to final demobilisation.
+        Booking a crane for the first time can feel overwhelming - there are
+        permits to arrange, capacity calculations to get right, site surveys to
+        conduct and mobilisation logistics to coordinate. But it does not have
+        to be complicated. Here is exactly what Saini Lifters does with every
+        client booking, from the first call to final demobilisation.
       </p>
 
       <div class="space-y-6">
@@ -54,11 +54,14 @@
       </div>
 
       <div class="mt-12 p-6 bg-[#FF4057]/5 dark:bg-[#FF4057]/10 rounded-xl">
-        <h2 class="text-2xl font-bold mb-3">Ready to Book? Call Saini Lifters</h2>
+        <h2 class="text-2xl font-bold mb-3">
+          Ready to Book? Call Saini Lifters
+        </h2>
         <p class="text-gray-600 dark:text-gray-300 mb-4">
-          Saini Lifters Crane Service has managed hundreds of crane bookings across
-          Navi Mumbai, Panvel and Kalamboli since 2001. We handle everything from the
-          lift plan to the permit paperwork — so you can focus on your project.
+          Saini Lifters Crane Service has managed hundreds of crane bookings
+          across Navi Mumbai, Panvel and Kalamboli since 2001. We handle
+          everything from the lift plan to the permit paperwork - so you can
+          focus on your project.
         </p>
         <div class="flex flex-wrap gap-4">
           <a
@@ -79,12 +82,13 @@
 <script setup>
 import { useHead } from "#imports";
 useHead({
-  title: "How to Book a Crane on Rent in Navi Mumbai — Step-by-Step 2026 Guide | Saini Lifters",
+  title:
+    "How to Book a Crane on Rent in Navi Mumbai - Step-by-Step 2026 Guide | Saini Lifters",
   meta: [
     {
       name: "description",
       content:
-        "Step-by-step guide to booking a crane on rent in Navi Mumbai — from identifying your lift requirements and choosing the right crane to permits, site survey and demobilisation. Saini Lifters.",
+        "Step-by-step guide to booking a crane on rent in Navi Mumbai - from identifying your lift requirements and choosing the right crane to permits, site survey and demobilisation. Saini Lifters.",
     },
     { name: "robots", content: "index, follow" },
     {
@@ -100,17 +104,16 @@ useHead({
     {
       property: "og:title",
       content:
-        "How to Book a Crane on Rent in Navi Mumbai — Step-by-Step 2026 Guide",
+        "How to Book a Crane on Rent in Navi Mumbai - Step-by-Step 2026 Guide",
     },
     {
       property: "og:description",
       content:
-        "Everything you need to know about booking a crane in Navi Mumbai — requirements, crane type, site survey, permits and what to expect on lift day.",
+        "Everything you need to know about booking a crane in Navi Mumbai - requirements, crane type, site survey, permits and what to expect on lift day.",
     },
     {
       property: "og:image",
-      content:
-        "https://www.sainilifters.com/image/eq-all-terrain-crane.png",
+      content: "https://www.sainilifters.com/image/eq-all-terrain-crane.png",
     },
   ],
   link: [
@@ -127,7 +130,7 @@ useHead({
         "@type": "HowTo",
         name: "How to Book a Crane on Rent in Navi Mumbai",
         description:
-          "A step-by-step guide to booking a crane on rent in Navi Mumbai — from identifying lift requirements to demobilisation and invoice.",
+          "A step-by-step guide to booking a crane on rent in Navi Mumbai - from identifying lift requirements to demobilisation and invoice.",
         image: "https://www.sainilifters.com/image/eq-all-terrain-crane.png",
         totalTime: "P1D",
         supply: [
@@ -155,7 +158,7 @@ useHead({
             "@type": "HowToStep",
             position: 2,
             name: "Choose the Right Crane Type",
-            text: "Match your requirements to the correct crane type — hydra, pick-and-carry, all-terrain or crawler — based on load and site.",
+            text: "Match your requirements to the correct crane type - hydra, pick-and-carry, all-terrain or crawler - based on load and site.",
           },
           {
             "@type": "HowToStep",
@@ -190,7 +193,7 @@ useHead({
           {
             "@type": "HowToStep",
             position: 8,
-            name: "After the Lift — Demobilisation and Invoice",
+            name: "After the Lift - Demobilisation and Invoice",
             text: "Crane is demobilised and transported off site. Invoice is issued based on agreed shift rates.",
           },
         ],
@@ -230,12 +233,12 @@ const bookingSteps = [
   {
     step: 1,
     title: "Identify Your Lift Requirements",
-    desc: "Before you call anyone, determine four key numbers: the load weight (in tonnes), the required hook height (how high does the load need to go?), the lift radius (horizontal distance from the crane centre to the load), and site access width (can a crane enter and set up?). These four figures determine which crane can safely do the job — and no reputable crane company should quote without them.",
+    desc: "Before you call anyone, determine four key numbers: the load weight (in tonnes), the required hook height (how high does the load need to go?), the lift radius (horizontal distance from the crane centre to the load), and site access width (can a crane enter and set up?). These four figures determine which crane can safely do the job - and no reputable crane company should quote without them.",
   },
   {
     step: 2,
     title: "Choose the Right Crane Type",
-    desc: "Different loads and sites demand different cranes. Under 14T in a factory? A hydra crane. 20T–50T in an MIDC yard? A farana or pick-and-carry. Heavy infrastructure or bridge work? An all-terrain crane. Visit our equipment page to see Saini Lifters' full fleet with capacities — or simply describe your job and we will recommend the right machine.",
+    desc: "Different loads and sites demand different cranes. Under 14T in a factory? A hydra crane. 20T–50T in an MIDC yard? A farana or pick-and-carry. Heavy infrastructure or bridge work? An all-terrain crane. Visit our equipment page to see Saini Lifters' full fleet with capacities - or simply describe your job and we will recommend the right machine.",
   },
   {
     step: 3,
@@ -250,7 +253,7 @@ const bookingSteps = [
   {
     step: 5,
     title: "Confirm Dates, Operator and Mobilisation",
-    desc: "Once the lift plan is agreed, we confirm the crane, certified operator, rigging crew and — where required — a lowboy trailer to transport the crane to site. You will receive a written confirmation of the start time, crane specification and shift rate. For large cranes, mobilisation typically starts the evening before to ensure on-time setup.",
+    desc: "Once the lift plan is agreed, we confirm the crane, certified operator, rigging crew and - where required - a lowboy trailer to transport the crane to site. You will receive a written confirmation of the start time, crane specification and shift rate. For large cranes, mobilisation typically starts the evening before to ensure on-time setup.",
   },
   {
     step: 6,
@@ -259,12 +262,12 @@ const bookingSteps = [
   },
   {
     step: 7,
-    title: "Crane Arrives on Site — What to Expect",
-    desc: "The crane arrives with the operator and rigging crew. Outrigger pads are placed on load-spreading mats, the safety exclusion zone is established and the lift supervisor briefs the team on the lift sequence. All rigging is checked before any load is lifted. Our operators follow a pre-lift checklist on every job — there are no shortcuts.",
+    title: "Crane Arrives on Site - What to Expect",
+    desc: "The crane arrives with the operator and rigging crew. Outrigger pads are placed on load-spreading mats, the safety exclusion zone is established and the lift supervisor briefs the team on the lift sequence. All rigging is checked before any load is lifted. Our operators follow a pre-lift checklist on every job - there are no shortcuts.",
   },
   {
     step: 8,
-    title: "After the Lift — Demobilisation and Invoice",
+    title: "After the Lift - Demobilisation and Invoice",
     desc: "Once all planned lifts are complete, the crane is lowered, outriggers retracted and the machine is driven or loaded onto its transport. The site is left clear. An invoice is issued based on the agreed shift rate, plus any additional hours if the job ran longer than planned. Payment terms are agreed in advance.",
   },
 ];

@@ -3,10 +3,13 @@
     <div class="max-w-7xl mx-auto px-4">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold">
-          Crane & Equipment <span class="text-[#FF4057]">Rental Services</span> in Navi Mumbai
+          Crane & Equipment
+          <span class="text-[#FF4057]">Rental Services</span> in Navi Mumbai
         </h2>
         <p class="text-gray-500 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-          From 8-tonne hydra cranes to 300-tonne all-terrain cranes — Saini Lifters has the right equipment for every project in Navi Mumbai, Panvel and Kalamboli.
+          From 8-tonne hydra cranes to 300-tonne all-terrain cranes - Saini
+          Lifters has the right equipment for every project in Navi Mumbai,
+          Panvel and Kalamboli.
         </p>
       </div>
 
@@ -18,22 +21,43 @@
           class="group relative rounded-xl border border-gray-200 dark:border-zinc-700 p-6 bg-white dark:bg-zinc-900 hover:border-[#FF4057] hover:shadow-lg transition-all duration-300"
         >
           <div class="flex items-start gap-4">
-            <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-[#FF4057]/10 flex items-center justify-center group-hover:bg-[#FF4057] transition-colors">
-              <component :is="service.icon" class="w-6 h-6 text-[#FF4057] group-hover:text-white transition-colors" />
+            <div
+              class="flex-shrink-0 w-12 h-12 rounded-lg bg-[#FF4057]/10 flex items-center justify-center group-hover:bg-[#FF4057] transition-colors"
+            >
+              <component
+                :is="service.icon"
+                class="w-6 h-6 text-[#FF4057] group-hover:text-white transition-colors"
+              />
             </div>
             <div>
-              <h3 class="font-bold text-lg mb-1 group-hover:text-[#FF4057] transition-colors">
+              <h3
+                class="font-bold text-lg mb-1 group-hover:text-[#FF4057] transition-colors"
+              >
                 {{ service.title }}
               </h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+              <p
+                class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed"
+              >
                 {{ service.desc }}
               </p>
             </div>
           </div>
-          <div class="mt-4 text-sm font-semibold text-[#FF4057] flex items-center gap-1">
+          <div
+            class="mt-4 text-sm font-semibold text-[#FF4057] flex items-center gap-1"
+          >
             Learn More
-            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            <svg
+              class="w-4 h-4 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </div>
         </NuxtLink>
@@ -45,8 +69,18 @@
           class="inline-flex items-center gap-2 bg-[#FF4057] hover:bg-red-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
         >
           View All Services
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
           </svg>
         </NuxtLink>
       </div>
@@ -55,7 +89,17 @@
 </template>
 
 <script setup>
-import { Construction, Truck, ChevronsUp, Anchor, ArrowUpCircle, Layers, MoveHorizontal, PackageOpen, Container } from "lucide-vue-next";
+import {
+  Construction,
+  Truck,
+  ChevronsUp,
+  Anchor,
+  ArrowUpCircle,
+  Layers,
+  MoveHorizontal,
+  PackageOpen,
+  Container,
+} from "lucide-vue-next";
 
 const services = [
   {

@@ -20,7 +20,7 @@
       <div class="w-full rounded-xl overflow-hidden mb-8">
         <img
           src="/image/blog-crane-rental-cost.png"
-          alt="Crane rental cost per day in India — complete price guide with all crane types"
+          alt="Crane rental cost per day in India - complete price guide with all crane types"
           class="w-full h-auto"
           loading="eager"
         />
@@ -139,7 +139,10 @@ useHead({
       content:
         "Complete crane rental pricing guide for India - hydra cranes to 300T all-terrain cranes. Navi Mumbai rates included.",
     },
-    { property: "og:image", content: "https://www.sainilifters.com/image/blog-crane-rental-cost.png" },
+    {
+      property: "og:image",
+      content: "https://www.sainilifters.com/image/blog-crane-rental-cost.png",
+    },
   ],
   link: [
     {
@@ -153,14 +156,24 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Crane Rental Cost Per Day in India 2025 — Complete Price Guide",
-        "datePublished": "2025-05-13",
-        "dateModified": "2025-05-13",
-        "author": { "@type": "Organization", "name": "Saini Lifters" },
-        "publisher": { "@type": "Organization", "name": "Saini Lifters", "logo": { "@type": "ImageObject", "url": "https://www.sainilifters.com/favicon.png" } },
-        "image": "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
-        "url": "https://www.sainilifters.com/blog/crane-rental-cost-per-day-india",
-        "description": "Complete guide to crane rental rates per day in India. Includes pricing for hydra cranes, mobile cranes, all-terrain cranes, boom lifts and more."
+        headline:
+          "Crane Rental Cost Per Day in India 2025 - Complete Price Guide",
+        datePublished: "2025-05-13",
+        dateModified: "2025-05-13",
+        author: { "@type": "Organization", name: "Saini Lifters" },
+        publisher: {
+          "@type": "Organization",
+          name: "Saini Lifters",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://www.sainilifters.com/favicon.png",
+          },
+        },
+        image:
+          "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/home-page-zCauYRGJmdC2cPgGRmXbxzaC2Yqgpd.webp",
+        url: "https://www.sainilifters.com/blog/crane-rental-cost-per-day-india",
+        description:
+          "Complete guide to crane rental rates per day in India. Includes pricing for hydra cranes, mobile cranes, all-terrain cranes, boom lifts and more.",
       }),
     },
   ],

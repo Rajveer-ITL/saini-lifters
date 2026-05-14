@@ -1,10 +1,7 @@
 <template>
   <div>
     <div style="min-height: 100vh">
-      <HeaderCard
-        :title="homePageTitle"
-        videoUrl="/video/cranesWorking.mp4"
-      />
+      <HeaderCard :title="homePageTitle" videoUrl="/video/cranesWorking.mp4" />
     </div>
 
     <!-- Hidden SEO H1 visible to crawlers but naturally placed -->
@@ -19,9 +16,9 @@
         Saini Lifters has been providing heavy lifting solutions since 2001.
         Mobile cranes, hydra cranes, manlifts, reach stackers and more -
         available 24/7 across Navi Mumbai, Panvel, Kalamboli, Raigad, Mumbai and
-        Thane. We also deploy pan-India — Maharashtra, Odisha, Madhya Pradesh and beyond.
-        Searching for <strong>crane on rent near me</strong>? Call us for
-        same-day deployment.
+        Thane. We also deploy pan-India - Maharashtra, Odisha, Madhya Pradesh
+        and beyond. Searching for <strong>crane on rent near me</strong>? Call
+        us for same-day deployment.
       </p>
       <div class="flex flex-wrap gap-4 justify-center mt-6">
         <a

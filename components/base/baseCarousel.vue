@@ -6,7 +6,8 @@
           Our <span class="text-[#FF4057]">Equipment Fleet</span>
         </h2>
         <p class="text-gray-500 dark:text-gray-300 mt-3 max-w-2xl mx-auto">
-          Crane on rent in Navi Mumbai — All Terrain Cranes (50T–700T), Crawler Cranes, Manlifts, Reach Stackers, Forklifts and more.
+          Crane on rent in Navi Mumbai - All Terrain Cranes (50T–700T), Crawler
+          Cranes, Manlifts, Reach Stackers, Forklifts and more.
         </p>
       </div>
       <div class="relative mx-auto max-w-7xl px-4">
@@ -66,8 +67,8 @@ import { ref, onMounted, onUnmounted, defineAsyncComponent } from "vue";
 import EmblaCarousel from "embla-carousel";
 import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-vue-next";
 
-const BaseCard = defineAsyncComponent(() =>
-  import("@/components/base/baseCard.vue")
+const BaseCard = defineAsyncComponent(
+  () => import("@/components/base/baseCard.vue"),
 );
 
 const cranes = [
@@ -180,7 +181,7 @@ const initCarousel = () => {
 const startAutoplay = () => {
   autoplayInterval = setInterval(
     () => emblaApi.value?.scrollNext(),
-    autoplayDelay
+    autoplayDelay,
   );
 };
 

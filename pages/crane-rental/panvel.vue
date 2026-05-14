@@ -20,7 +20,11 @@
         <p
           class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto"
         >
-          Saini Lifters provides crane on rent in Panvel for construction, industrial, bridge and port projects. Searching for <strong>crane on rent near me</strong> in Panvel? Our Kalamboli base is just minutes away — ensuring the fastest response and same-day deployment across Panvel and surrounding areas.
+          Saini Lifters provides crane on rent in Panvel for construction,
+          industrial, bridge and port projects. Searching for
+          <strong>crane on rent near me</strong> in Panvel? Our Kalamboli base
+          is just minutes away - ensuring the fastest response and same-day
+          deployment across Panvel and surrounding areas.
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
           <a
@@ -199,19 +203,28 @@ useHead({
     },
   ],
   script: [
-    { type: "application/ld+json", innerHTML: JSON.stringify(breadcrumbSchema) },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify(breadcrumbSchema),
+    },
     {
       type: "application/ld+json",
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Saini Lifters Crane Service — Panvel",
-        "telephone": "+91-9322296990",
-        "url": "https://www.sainilifters.com/crane-rental/panvel",
-        "address": { "@type": "PostalAddress", "addressLocality": "Panvel", "addressRegion": "Navi Mumbai, Maharashtra", "postalCode": "410206", "addressCountry": "IN" },
-        "areaServed": "Panvel",
-        "openingHours": "Mo-Su 00:00-24:00",
-        "priceRange": "$$"
+        name: "Saini Lifters Crane Service - Panvel",
+        telephone: "+91-9322296990",
+        url: "https://www.sainilifters.com/crane-rental/panvel",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Panvel",
+          addressRegion: "Navi Mumbai, Maharashtra",
+          postalCode: "410206",
+          addressCountry: "IN",
+        },
+        areaServed: "Panvel",
+        openingHours: "Mo-Su 00:00-24:00",
+        priceRange: "$$",
       }),
     },
   ],

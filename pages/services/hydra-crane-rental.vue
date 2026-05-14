@@ -185,10 +185,22 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Hydra Crane Rental",
-        "provider": { "@type": "LocalBusiness", "name": "Saini Lifters Crane Service", "telephone": "+91-9322296990", "url": "https://www.sainilifters.com" },
-        "areaServed": ["Navi Mumbai", "Panvel", "Kalamboli", "Raigad", "Mumbai", "Thane"],
-        "url": "https://www.sainilifters.com/services/hydra-crane-rental"
+        name: "Hydra Crane Rental",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "Saini Lifters Crane Service",
+          telephone: "+91-9322296990",
+          url: "https://www.sainilifters.com",
+        },
+        areaServed: [
+          "Navi Mumbai",
+          "Panvel",
+          "Kalamboli",
+          "Raigad",
+          "Mumbai",
+          "Thane",
+        ],
+        url: "https://www.sainilifters.com/services/hydra-crane-rental",
       }),
     },
     {
@@ -196,11 +208,26 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sainilifters.com" },
-          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.sainilifters.com/services" },
-          { "@type": "ListItem", "position": 3, "name": "Hydra Crane Rental", "item": "https://www.sainilifters.com/services/hydra-crane-rental" }
-        ]
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.sainilifters.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: "https://www.sainilifters.com/services",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Hydra Crane Rental",
+            item: "https://www.sainilifters.com/services/hydra-crane-rental",
+          },
+        ],
       }),
     },
     {
@@ -208,11 +235,32 @@ useHead({
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-          { "@type": "Question", "name": "What is the difference between a hydra crane and a mobile crane?", "acceptedAnswer": { "@type": "Answer", "text": "A hydra crane (pick-and-carry) can carry its load while moving on rubber wheels — ideal for factory floors and confined spaces. A mobile crane is larger, outriggered for stability, and suited for heavier lifts on open sites." } },
-          { "@type": "Question", "name": "What is the cost of hydra crane rental in Navi Mumbai?", "acceptedAnswer": { "@type": "Answer", "text": "Hydra crane rental costs approximately ₹4,000–₹8,000 per day depending on capacity (8T, 10T or 14T), shift duration and location. Call +91 9322296990 for an accurate quote." } },
-          { "@type": "Question", "name": "Do you provide hydra cranes in Panvel and Kalamboli?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Saini Lifters provides hydra cranes across Navi Mumbai, Panvel, Kalamboli, Raigad and surrounding areas. Since our base is in Kalamboli, we can deploy hydra cranes within the same day for local requests." } },
-        ]
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the difference between a hydra crane and a mobile crane?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "A hydra crane (pick-and-carry) can carry its load while moving on rubber wheels - ideal for factory floors and confined spaces. A mobile crane is larger, outriggered for stability, and suited for heavier lifts on open sites.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is the cost of hydra crane rental in Navi Mumbai?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Hydra crane rental costs approximately ₹4,000–₹8,000 per day depending on capacity (8T, 10T or 14T), shift duration and location. Call +91 9322296990 for an accurate quote.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you provide hydra cranes in Panvel and Kalamboli?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Saini Lifters provides hydra cranes across Navi Mumbai, Panvel, Kalamboli, Raigad and surrounding areas. Since our base is in Kalamboli, we can deploy hydra cranes within the same day for local requests.",
+            },
+          },
+        ],
       }),
     },
   ],
