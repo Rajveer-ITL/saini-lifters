@@ -36,6 +36,16 @@
         </div>
       </div>
     </section>
+    <div class="max-w-5xl mx-auto px-4 pt-8 pb-0">
+      <div class="w-full rounded-xl overflow-hidden border border-gray-200 dark:border-zinc-700">
+        <img
+          src="/image/eq-all-terrain-crane.png"
+          alt="All terrain telescopic crane on rent in Navi Mumbai – XCMG QAY300 from Saini Lifters"
+          class="w-full h-auto max-h-[480px] object-contain p-4 bg-gray-50 dark:bg-zinc-800"
+          loading="eager"
+        />
+      </div>
+    </div>
     <section class="max-w-5xl mx-auto px-4 py-16">
       <h2 class="text-3xl font-bold mb-8">XCMG All-Terrain Crane Fleet</h2>
       <div class="grid md:grid-cols-3 gap-6 mb-12">

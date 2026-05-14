@@ -37,6 +37,16 @@
         </div>
       </div>
     </section>
+    <div class="max-w-5xl mx-auto px-4 pt-8 pb-0">
+      <div class="w-full rounded-xl overflow-hidden border border-gray-200 dark:border-zinc-700">
+        <img
+          src="/image/crane-1.webp"
+          alt="Hydra crane rental in Navi Mumbai – pick and carry hydra crane for factory and site lifting from Saini Lifters"
+          class="w-full h-auto max-h-[480px] object-contain p-4 bg-gray-50 dark:bg-zinc-800"
+          loading="eager"
+        />
+      </div>
+    </div>
 
     <section class="max-w-5xl mx-auto px-4 py-16">
       <h2 class="text-3xl font-bold mb-4">What is a Hydra Crane?</h2>

@@ -1,7 +1,9 @@
 <template>
   <div class="min-h-screen mt-[70px]">
     <!-- Breadcrumb -->
-    <nav class="container mx-auto px-4 pt-4 text-sm text-gray-500 dark:text-gray-400">
+    <nav
+      class="container mx-auto px-4 pt-4 text-sm text-gray-500 dark:text-gray-400"
+    >
       <NuxtLink to="/" class="hover:text-[#FF4057]">Home</NuxtLink>
       <span class="mx-2">/</span>
       <span>Services</span>
@@ -13,10 +15,14 @@
     >
       <div class="text-center space-y-4 px-4 z-10">
         <h1 class="text-4xl md:text-6xl font-bold">
-          <span class="text-[#FF4057]">Crane Rental Services</span> in Navi Mumbai
+          <span class="text-[#FF4057]">Crane Rental Services</span> in Navi
+          Mumbai
         </h1>
-        <p class="text-lg md:text-xl text-gray-500 dark:text-gray-300 max-w-2xl mx-auto">
-          Comprehensive heavy lifting and material handling equipment for rent across Navi Mumbai, Panvel, Kalamboli, Raigad, Mumbai and Thane.
+        <p
+          class="text-lg md:text-xl text-gray-500 dark:text-gray-300 max-w-2xl mx-auto"
+        >
+          Comprehensive heavy lifting and material handling equipment for rent
+          across Navi Mumbai, Panvel, Kalamboli, Raigad, Mumbai and Thane.
         </p>
         <div class="flex flex-wrap gap-4 justify-center pt-2">
           <a
@@ -36,6 +42,29 @@
       <DotPattern
         :class="'[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]'"
       />
+    </section>
+
+    <!-- Intro -->
+    <section class="max-w-4xl mx-auto px-4 pt-12 pb-4 text-center">
+      <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
+        Saini Lifters provides a complete range of crane and heavy lifting
+        services in Navi Mumbai, Panvel, Kalamboli, Raigad, Mumbai and Thane.
+        Our flagship service is
+        <NuxtLink
+          to="/services/all-terrain-crane-rental"
+          class="text-[#FF4057] font-semibold hover:underline"
+          >all terrain telescopic crane rental</NuxtLink
+        >
+        — with XCMG QAY160 and QAY300 cranes (160T–300T) available 24/7 from our
+        Kalamboli yard.
+      </p>
+      <p class="text-gray-600 dark:text-gray-300">
+        Whether you need a pick-and-carry Crawler crane for your MIDC factory, a
+        300T all terrain crane for bridge construction, a manlift for elevated
+        maintenance work, or a reach stacker for JNPT port operations — our
+        fleet covers every heavy lifting requirement with certified operators
+        included.
+      </p>
     </section>
 
     <!-- Services Grid -->
@@ -59,7 +88,9 @@
           Need Crane on Rent in Navi Mumbai?
         </h2>
         <p class="text-gray-500 dark:text-gray-300 mb-8">
-          Contact us today to discuss your requirements and get a customised rental solution. We serve Navi Mumbai, Panvel, Kalamboli, Raigad, Mumbai and Thane.
+          Contact us today to discuss your requirements and get a customised
+          rental solution. We serve Navi Mumbai, Panvel, Kalamboli, Raigad,
+          Mumbai and Thane.
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
           <a
@@ -100,10 +131,20 @@ import ServiceCard from "@/components/base/serviceCard.vue";
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.sainilifters.com" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.sainilifters.com/services" }
-  ]
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.sainilifters.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Services",
+      item: "https://www.sainilifters.com/services",
+    },
+  ],
 };
 
 useHead({
@@ -158,9 +199,7 @@ useHead({
         "https://7egmmdiwhthl4u2i.public.blob.vercel-storage.com/services-page-LhYMfOojrB74W0Isy9D8xlumW5mMy3.webp",
     },
   ],
-  link: [
-    { rel: "canonical", href: "https://www.sainilifters.com/services" },
-  ],
+  link: [{ rel: "canonical", href: "https://www.sainilifters.com/services" }],
   script: [
     {
       type: "application/ld+json",
@@ -170,6 +209,45 @@ useHead({
 });
 
 const services = ref([
+  {
+    title: "All-Terrain Crane Rental",
+    description:
+      "XCMG QAY160, QAY200 and QAY300 all-terrain telescopic cranes for heavy industrial and bridge construction projects across Navi Mumbai.",
+    icon: Anchor,
+    link: "/services/all-terrain-crane-rental",
+    features: [
+      "160T to 300T capacity",
+      "78m–90m main boom",
+      "Bridge & infra projects",
+      "24/7 from Kalamboli",
+    ],
+  },
+  {
+    title: "Crawler Crane Rental",
+    description:
+      "Heavy-duty crawler cranes for large-scale civil engineering, bridge construction and power plant projects in Navi Mumbai and pan-India.",
+    icon: PackageOpen,
+    link: "/services/crawler-crane-rental",
+    features: [
+      "80T to 400T capacity",
+      "Bridge construction",
+      "Power plant projects",
+      "Stable on all terrain",
+    ],
+  },
+  {
+    title: "Reach Stacker Rental",
+    description:
+      "Versatile reach stackers for container handling and stacking operations at JNPT port and logistics yards near Navi Mumbai.",
+    icon: ArrowUpCircle,
+    link: "/services/reach-stacker-rental",
+    features: [
+      "45T capacity",
+      "3-high stacking",
+      "ISO container handling",
+      "Port & yard operations",
+    ],
+  },
   {
     title: "Mobile Crane Rental",
     description:
@@ -181,19 +259,6 @@ const services = ref([
       "Certified operators included",
       "90T to 300T capacity",
       "Navi Mumbai & Panvel service",
-    ],
-  },
-  {
-    title: "Hydra Crane Rental",
-    description:
-      "Pick-and-carry hydra cranes for factory, industrial and tight-space lifting in Navi Mumbai and Kalamboli.",
-    icon: Truck,
-    link: "/services/hydra-crane-rental",
-    features: [
-      "8T to 14T capacity",
-      "All-terrain mobility",
-      "Factory & site lifting",
-      "Same-day deployment",
     ],
   },
   {
@@ -210,29 +275,16 @@ const services = ref([
     ],
   },
   {
-    title: "All-Terrain Crane Rental",
+    title: "Hydra Crane Rental",
     description:
-      "XCMG QAY160, QAY200 and QAY300 all-terrain cranes for heavy industrial and bridge construction projects.",
-    icon: Anchor,
-    link: "/services/all-terrain-crane-rental",
+      "Pick-and-carry hydra cranes for factory, industrial and tight-space lifting in Navi Mumbai and Kalamboli.",
+    icon: Truck,
+    link: "/services/hydra-crane-rental",
     features: [
-      "160T to 300T capacity",
-      "78m–90m main boom",
-      "Bridge & infra projects",
-      "Expert operators",
-    ],
-  },
-  {
-    title: "Reach Stacker Rental",
-    description:
-      "Versatile reach stackers for container handling and stacking operations at ports and logistics yards.",
-    icon: ArrowUpCircle,
-    link: "/services/reach-stacker-rental",
-    features: [
-      "45T capacity",
-      "3-high stacking",
-      "ISO container handling",
-      "Port & yard operations",
+      "8T to 14T capacity",
+      "All-terrain mobility",
+      "Factory & site lifting",
+      "Same-day deployment",
     ],
   },
   {
@@ -259,19 +311,6 @@ const services = ref([
       "Multiple attachments",
       "Warehouse & terminal use",
       "Regular maintenance",
-    ],
-  },
-  {
-    title: "Crawler Crane Rental",
-    description:
-      "Heavy-duty crawler cranes for large-scale civil engineering, bridge construction and power plant projects.",
-    icon: PackageOpen,
-    link: "/services/crawler-crane-rental",
-    features: [
-      "80T to 400T capacity",
-      "Bridge construction",
-      "Power plant projects",
-      "Stable on all terrain",
     ],
   },
   {

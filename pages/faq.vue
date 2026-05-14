@@ -98,6 +98,11 @@ const faqSchema = {
     { "@type": "Question", name: "How do I book a crane on rent in Navi Mumbai?", acceptedAnswer: { "@type": "Answer", text: "Booking is simple: (1) Call us at +91 9322296990 or send an enquiry via our contact form. (2) Describe your work requirements - equipment needed, location, dates, shift hours. (3) Receive a quote within 1-2 hours. (4) Confirm the booking. We will deploy the equipment at your site as agreed." } },
     { "@type": "Question", name: "What is the contact number for Saini Lifters Crane Service?", acceptedAnswer: { "@type": "Answer", text: "You can reach Saini Lifters at +91 9322296990 (call or WhatsApp). Our email is charanjit@sainilifters.com. We are open 24/7. Our office is located at Plot No. J-854, Steel Market Rd, Sector AWC, Kalamboli, Panvel, Navi Mumbai, Maharashtra 410218." } },
     { "@type": "Question", name: "Do you provide cranes near JNPT port area?", acceptedAnswer: { "@type": "Answer", text: "Yes. Saini Lifters regularly provides cranes, reach stackers and container stackers for projects near JNPT (Jawaharlal Nehru Port Trust). Our Kalamboli base is close to the JNPT area, ensuring quick response for port-related projects." } },
+    { "@type": "Question", name: "What is an all terrain telescopic crane and when should I use one?", acceptedAnswer: { "@type": "Answer", text: "An all terrain telescopic crane (AT crane) is a high-capacity mobile crane that travels at highway speed and operates off-road. It uses a telescoping boom to lift from 50T up to 700T. Use one for high-capacity lifts (100T+), multi-site deployment or highway travel. Saini Lifters operates XCMG QAY160 and QAY300 from Kalamboli, Navi Mumbai." } },
+    { "@type": "Question", name: "What is the difference between an all terrain crane and a mobile crane?", acceptedAnswer: { "@type": "Answer", text: "An all terrain crane has multi-axle all-wheel steering and drive for highway speed and off-road capability — giving higher capacity and versatility. A standard mobile crane has fewer axles and lower off-road performance. For 160T–300T lifts in Navi Mumbai and Raigad, the all terrain telescopic crane is preferred." } },
+    { "@type": "Question", name: "What projects in Navi Mumbai require an all terrain telescopic crane?", acceptedAnswer: { "@type": "Answer", text: "All terrain telescopic cranes are required for bridge segment erection, power plant transformer lifts, high-rise construction above 15 storeys, port and JNPT operations, machinery installation above 100T and wind turbine erection. Saini Lifters deploys all terrain cranes across Navi Mumbai, Raigad and pan-India." } },
+    { "@type": "Question", name: "Are there GST charges on crane rental in Navi Mumbai?", acceptedAnswer: { "@type": "Answer", text: "Yes. Crane rental services in India are subject to 18% GST. Saini Lifters issues proper GST invoices for all rentals. Monthly billing arrangements are available for long-term projects. Call +91 9322296990 for billing queries." } },
+    { "@type": "Question", name: "Do you handle ODC permits for crane transport?", acceptedAnswer: { "@type": "Answer", text: "Yes. For pan-India deployments of all terrain telescopic and crawler cranes, Saini Lifters handles all ODC transport permits, police escort coordination and route surveys. Contact +91 9322296990 for pan-India deployment enquiries." } },
   ],
 };
 
@@ -220,6 +225,26 @@ const faqs = [
   {
     q: "Do you provide cranes near JNPT port area?",
     a: "Yes. Saini Lifters regularly provides cranes, reach stackers and container stackers for projects near JNPT (Jawaharlal Nehru Port Trust). Our Kalamboli base is close to the JNPT area, ensuring quick response for port-related projects.",
+  },
+  {
+    q: "What is an all terrain telescopic crane and when should I use one?",
+    a: "An all terrain telescopic crane (AT crane) is a high-capacity mobile crane that can travel at highway speed on public roads and operate on rough or uneven terrain. It uses a telescoping multi-section boom to achieve great heights and lift capacities from 50T up to 700T. Use an all terrain telescopic crane when you need high capacity lifts (100T+), multi-site deployment, or highway travel between sites without a lowboy trailer. Saini Lifters operates XCMG QAY160 (160T) and QAY300 (300T) all terrain cranes from Kalamboli, Navi Mumbai.",
+  },
+  {
+    q: "What is the difference between an all terrain crane and a mobile crane?",
+    a: "Both are road-mobile cranes, but an all terrain crane has multi-axle all-wheel steering and drive for both highway speed and off-road capability — giving it higher capacity and greater versatility. A standard mobile crane typically has fewer axles and lower off-road performance. For projects in Navi Mumbai, Panvel and Raigad requiring 160T–300T lifts, the all terrain telescopic crane is the preferred choice. For lighter lifts (50T–90T) on prepared sites, a mobile crane is sufficient.",
+  },
+  {
+    q: "What projects in Navi Mumbai require an all terrain telescopic crane?",
+    a: "All terrain telescopic cranes are required for bridge segment erection (NH-66 corridor, Raigad), power plant transformer and reactor lifts, high-rise building construction above 15 storeys, port and JNPT container handling, industrial machinery installation above 100T, wind turbine erection and large infrastructure projects. Saini Lifters has deployed all terrain cranes for these project types across Navi Mumbai, Raigad, Panvel and pan-India.",
+  },
+  {
+    q: "Are there GST charges on crane rental in Navi Mumbai?",
+    a: "Yes. Crane rental services in India are subject to 18% GST. Saini Lifters issues proper GST invoices for all rentals. For long-term project contracts, monthly billing arrangements with GST are available. Please contact us at +91 9322296990 for billing and tax invoice queries.",
+  },
+  {
+    q: "Do you handle ODC (Over-Dimensional Cargo) permits for crane transport?",
+    a: "Yes. For pan-India deployments of our all terrain telescopic cranes and crawler cranes, Saini Lifters handles all ODC transport permits, police escort coordination and route surveys. This is standard for all terrain cranes travelling to Odisha, Madhya Pradesh or other states. Contact us at +91 9322296990 for pan-India deployment enquiries.",
   },
 ];
 </script>
